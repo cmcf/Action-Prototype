@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b52be6115b871e041b0f9065b9451658
+timeCreated: 1576889755
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107211
+  packageName: 2D Pixel Gun Hero
+  packageVersion: 2
+  assetPath: Assets/Gun Hero 1/Animation/acquire.anim
+  uploadId: 344321

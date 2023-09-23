@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f69e850bf36d8ef4494a22bd2df1a355
+timeCreated: 1576889805
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107211
+  packageName: 2D Pixel Gun Hero
+  packageVersion: 2
+  assetPath: Assets/Gun Hero 1/Animation/die.anim
+  uploadId: 344321

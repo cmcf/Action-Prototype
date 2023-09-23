@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4537c5f1d330c414aa8fa5e48cf91e94
+timeCreated: 1576889928
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107211
+  packageName: 2D Pixel Gun Hero
+  packageVersion: 2
+  assetPath: Assets/Gun Hero 1/Animation/skill3.anim
+  uploadId: 344321

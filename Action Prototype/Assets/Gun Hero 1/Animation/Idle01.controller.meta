@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0b005da502f76ad43845abf25a2b1d0e
+timeCreated: 1576889731
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107211
+  packageName: 2D Pixel Gun Hero
+  packageVersion: 2
+  assetPath: Assets/Gun Hero 1/Animation/Idle01.controller
+  uploadId: 344321
