@@ -22,14 +22,18 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        jumpsRemaining = maxJumps;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        playerCollider = GetComponent<CapsuleCollider2D>();
+        feetCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Run();
+        GroundCheck();
         FlipSprite();
     }
 
@@ -94,12 +98,13 @@ public class PlayerMovement : MonoBehaviour
         //AudioSource.PlayClipAtPoint(jumpSFX, Camera.main.transform.position, 0.8f);
         // player moves up by jump force amount
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        // Decreases the number of remaining jumps 
         jumpsRemaining--;
     }
     void GroundCheck()
     {
         bool wasGrounded = isGrounded;
-        isGrounded = feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        isGrounded = feetCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle"));
 
         // Reset jumps if player was in the air and landed on the ground
         if (!wasGrounded && isGrounded)
