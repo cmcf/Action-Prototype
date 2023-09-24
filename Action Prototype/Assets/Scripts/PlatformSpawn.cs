@@ -21,7 +21,7 @@ public class PlatformSpawn : MonoBehaviour
 
     void SpawnPlatform()
     {
-        if (Input.GetMouseButtonDown(0)) // Left mouse button clicked
+        if (Input.GetMouseButtonDown(1)) // Right mouse button clicked
         {
             // Convert mouse position to world coordinates
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
