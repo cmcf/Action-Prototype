@@ -6,10 +6,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f;
+    [SerializeField] float minMoveSpeed = 0.15f; // Minimum movement speed
+    [SerializeField] float moveSpeed = 1f; // Player default movement speed
     [SerializeField] float jumpForce = 5f; // How high the player can jump 
     [SerializeField] int maxJumps = 2; // Maximum amount of times the player can jump at once
-    [SerializeField] int jumpsRemaining;
+    [SerializeField] int jumpsRemaining; // Stores the amount of jumps the player has
+
     Vector2 moveInput;
 
     Rigidbody2D rb;
@@ -19,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool isAlive = true;
     bool isGrounded = true;
-    // Start is called before the first frame update
+    
     void Start()
     {
         jumpsRemaining = maxJumps;
@@ -29,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         feetCollider = GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         Run();
@@ -54,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
 
-        // Gets input values from player 
+        // Get input values from player 
         moveInput = value.Get<Vector2>();
     }
 
@@ -73,18 +75,18 @@ public class PlayerMovement : MonoBehaviour
  
     void OnJump(InputValue value)
     {
-        //  Checks if the player is alive, and whether the jump button is pressed. If the player is grounded, the player does a regular jump.
+        //  Checks if the player is alive. If the player is grounded, the player does a regular jump.
         if (!isAlive)
         {
             return;
         }
 
-        // checks if the player is grounded or has remaining jumps. If the player is in the air and has remaining jumps, the player double jumps 
+        // checks if the player is grounded or has remaining jumps. If the player is in the air and has remaining jumps, the player can double jump.
         if (!isGrounded && jumpsRemaining <= 0)
         {
             return;
         }
-
+        // Checks whether the jump button is pressed.
         if (value.isPressed)
         {
             Jump();
@@ -94,9 +96,9 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         isGrounded = true;
-        // play jump SFX at camera location
+        // play jump SFX at camera location.
         //AudioSource.PlayClipAtPoint(jumpSFX, Camera.main.transform.position, 0.8f);
-        // player moves up by jump force amount
+        // player moves up by jump force amount.
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         // Decreases the number of remaining jumps 
         jumpsRemaining--;
@@ -106,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         bool wasGrounded = isGrounded;
         isGrounded = feetCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle"));
 
-        // Reset jumps if player was in the air and landed on the ground
+        // Reset jumps if player was in the air and landed on the ground.
         if (!wasGrounded && isGrounded)
         {
             jumpsRemaining = 2; // Reset the number of jumps
@@ -115,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FlipSprite()
     {
-        // Gets value of player movement and true if greater than 0 
+        // Gets value of player movement and true if greater than 0.
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
 
         // Flips sprite by scaling the the x axis when player has horizonal speed
@@ -125,4 +127,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
+    public void DecreaseMovementSpeed(float speedDecreaseAmount)
+    {
+        // Decrease movement speed, ensuring it doesn't go below the minimum
+        moveSpeed = Mathf.Max(moveSpeed - speedDecreaseAmount, minMoveSpeed);
+    }
 }
+
