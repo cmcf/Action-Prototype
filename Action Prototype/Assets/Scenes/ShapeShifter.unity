@@ -265,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3531788779229393650, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8613425803820834232, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -583,8 +583,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1103984837}
   - {fileID: 1391091121}
+  - {fileID: 1103984837}
   - {fileID: 805688442}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -601,8 +601,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playableCharacters:
-  - {fileID: 1103984835}
   - {fileID: 1391091111}
+  - {fileID: 1103984835}
 --- !u!1 &1103984835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5034281155128642233, guid: 8ff4d040aa4e9d14098f50e8308ddb57, type: 3}
@@ -674,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 5034281155128642233, guid: 8ff4d040aa4e9d14098f50e8308ddb57, type: 3}
       propertyPath: m_Name
       value: Dog
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034281155128642233, guid: 8ff4d040aa4e9d14098f50e8308ddb57, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
