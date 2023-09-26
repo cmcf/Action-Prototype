@@ -7,11 +7,17 @@ using UnityEngine.TextCore.Text;
 public class CharacterSwitcher : MonoBehaviour
 {
 
-    public List<GameObject> playableCharacters; // List of character GameObjects
-    private int currentCharacterIndex = 0; // Index of the currently active character
-    private Vector3 currentCharacterPosition;
+    [System.Serializable]
+    public class CharacterInfo
+    {
+        public GameObject character;
+        public Vector3 position;
+    }
 
-   
+    public List<CharacterInfo> characters = new List<CharacterInfo>(); // List of character GameObjects and their positions
+    private int currentCharacterIndex = 0; // Index of the currently active character
+
+
     void Start()
     {
         // Initialize by activating the first character and deactivating others
@@ -30,12 +36,12 @@ public class CharacterSwitcher : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             // Deactivate the current character
-            playableCharacters[currentCharacterIndex].SetActive(false);
-            
-            // Switch to the next character
-            currentCharacterIndex = (currentCharacterIndex + 1) % playableCharacters.Count;
+            characters[currentCharacterIndex].character.SetActive(false);
 
-            // Activate the new character
+            // Switch to the next character
+            currentCharacterIndex = (currentCharacterIndex + 1) % characters.Count;
+
+            // Activate the new character and set its position
             SwitchCharacter(currentCharacterIndex);
         }
     }
@@ -44,10 +50,13 @@ public class CharacterSwitcher : MonoBehaviour
     private void SwitchCharacter(int characterIndex)
     {
         // Ensure the index is within the valid range
-        if (characterIndex >= 0 && characterIndex < playableCharacters.Count)
+        if (characterIndex >= 0 && characterIndex < characters.Count)
         {
-            playableCharacters[characterIndex].SetActive(true);
-            
+            CharacterInfo characterInfo = characters[characterIndex];
+            characterInfo.character.SetActive(true);
+
+            // Set the position of the character
+            characterInfo.character.transform.position = characterInfo.position;
         }
     }
 }
