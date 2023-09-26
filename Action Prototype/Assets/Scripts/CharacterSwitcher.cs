@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
@@ -8,12 +9,14 @@ public class CharacterSwitcher : MonoBehaviour
 
     public List<GameObject> playableCharacters; // List of character GameObjects
     private int currentCharacterIndex = 0; // Index of the currently active character
+    private Vector3 currentCharacterPosition;
 
    
     void Start()
     {
         // Initialize by activating the first character and deactivating others
         SwitchCharacter(currentCharacterIndex);
+        
     }
 
     void Update()
@@ -28,7 +31,7 @@ public class CharacterSwitcher : MonoBehaviour
         {
             // Deactivate the current character
             playableCharacters[currentCharacterIndex].SetActive(false);
-
+            
             // Switch to the next character
             currentCharacterIndex = (currentCharacterIndex + 1) % playableCharacters.Count;
 
@@ -44,6 +47,7 @@ public class CharacterSwitcher : MonoBehaviour
         if (characterIndex >= 0 && characterIndex < playableCharacters.Count)
         {
             playableCharacters[characterIndex].SetActive(true);
+            
         }
     }
 }
