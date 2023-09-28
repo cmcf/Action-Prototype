@@ -1,62 +1,52 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Net.Http.Headers;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+
+[System.Serializable]
+public class CharacterInfo
+{
+    public GameObject character;
+}
 
 public class CharacterSwitcher : MonoBehaviour
 {
+    public List<CharacterInfo> characters = new List<CharacterInfo>();
+    private int currentCharacterIndex = 0;
+    private Vector3 previousCharacterPosition = Vector3.zero; // Store the previous character's position
 
-    [System.Serializable]
-    public class CharacterInfo
+    private void Start()
     {
-        public GameObject character;
-        public Vector3 position;
-    }
-
-    public List<CharacterInfo> characters = new List<CharacterInfo>(); // List of character GameObjects and their positions
-    private int currentCharacterIndex = 0; // Index of the currently active character
-
-
-    void Start()
-    {
-        // Initialize by activating the first character and deactivating others
+        // Initialize by activating the first character
         SwitchCharacter(currentCharacterIndex);
-        
     }
 
-    void Update()
+    private void Update()
     {
-        NextCharacter();
-    }
-
-    private void NextCharacter()
-    {
-        // Check for character switch input, e.g., a keyboard key or button press
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            // Deactivate the current character
-            characters[currentCharacterIndex].character.SetActive(false);
+            // Store the position of the currently equipped character before deactivating them
+            CharacterInfo currentCharacter = characters[currentCharacterIndex];
+            previousCharacterPosition = currentCharacter.character.transform.position;
+
+            // Deactivate the currently equipped character
+            currentCharacter.character.SetActive(false);
 
             // Switch to the next character
             currentCharacterIndex = (currentCharacterIndex + 1) % characters.Count;
 
-            // Activate the new character and set its position
+            // Activate the new character and set their position based on the previous character's position
             SwitchCharacter(currentCharacterIndex);
         }
     }
 
-    // Activate the character at the specified index and deactivate others
     private void SwitchCharacter(int characterIndex)
     {
-        // Ensure the index is within the valid range
         if (characterIndex >= 0 && characterIndex < characters.Count)
         {
             CharacterInfo characterInfo = characters[characterIndex];
             characterInfo.character.SetActive(true);
 
-            // Set the position of the character
-            characterInfo.character.transform.position = characterInfo.position;
+            // Set the position of the character based on the previous character's position
+            characterInfo.character.transform.position = previousCharacterPosition;
         }
     }
 }
