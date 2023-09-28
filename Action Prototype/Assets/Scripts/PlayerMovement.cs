@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D feetCollider;
 
     bool isAlive = true;
-    bool isGrounded = true;
+    bool isGrounded = false;
     
     void Start()
     {
@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Run();
-        GroundCheck();
         FlipSprite();
+        GroundCheck();
     }
 
     void OnMove(InputValue value)
@@ -59,6 +59,25 @@ public class PlayerMovement : MonoBehaviour
         // Get input values from player 
         moveInput = value.Get<Vector2>();
     }
+    void OnJump(InputValue value)
+    {
+        // Player can't jump if they are not alive
+        if (!isAlive)
+        {
+            return;
+        }
+
+        // Checks if the player is grounded or has remaining jumps
+        if (!isGrounded && jumpsRemaining <= 0)
+        {
+            return;
+        }
+        // Jump is called when space button is pressed
+        if (value.isPressed)
+        {
+            Jump();
+        }
+    }
 
     void Run()
     {
@@ -72,26 +91,6 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
 
- 
-    void OnJump(InputValue value)
-    {
-        //  Checks if the player is alive. If the player is grounded, the player does a regular jump.
-        if (!isAlive)
-        {
-            return;
-        }
-
-        // checks if the player is grounded or has remaining jumps. If the player is in the air and has remaining jumps, the player can double jump.
-        if (!isGrounded && jumpsRemaining <= 0)
-        {
-            return;
-        }
-        // Checks whether the jump button is pressed.
-        if (value.isPressed)
-        {
-            Jump();
-        }
-    }
 
     void Jump()
     {
@@ -108,10 +107,11 @@ public class PlayerMovement : MonoBehaviour
         bool wasGrounded = isGrounded;
         isGrounded = feetCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle"));
 
-        // Reset jumps if player was in the air and landed on the ground.
+        // Reset jumps if player was in the air and landed on the ground
         if (!wasGrounded && isGrounded)
         {
-            jumpsRemaining = 2; // Reset the number of jumps
+            // Reset the number of jumps
+            jumpsRemaining = 2;
         }
     }
 

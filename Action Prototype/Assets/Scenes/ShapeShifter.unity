@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 34704567}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,7 +245,7 @@ Transform:
   m_GameObject: {fileID: 34704566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.053, y: -1.094, z: 0}
+  m_LocalPosition: {x: -0.01, y: -1.094, z: 0}
   m_LocalScale: {x: 4.55, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -259,6 +259,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 962415808}
     m_Modifications:
+    - target: {fileID: 2876046212666425366, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3876185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876046212666425366, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.09530187
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876046212666425366, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0026230365
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876046212666425366, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.32623303
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876046212666425366, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3531788779229393650, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -266,6 +286,14 @@ PrefabInstance:
     - target: {fileID: 3531788779229393650, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045117401173421881, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.86133707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045117401173421881, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.11979264
       objectReference: {fileID: 0}
     - target: {fileID: 8613425803820834232, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -307,7 +335,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4045117401173421881, guid: d7f0c2a6985a638419d1e60f1d88849c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -584,10 +613,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1019816731}
     m_Modifications:
     - target: {fileID: 1689495593696698687, guid: 121e80d2bcf1a1848bb80bad136df75a, type: 3}
-      propertyPath: follow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1689495593696698687, guid: 121e80d2bcf1a1848bb80bad136df75a, type: 3}
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 1224925210}
@@ -643,10 +668,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4276066689341335524, guid: 121e80d2bcf1a1848bb80bad136df75a, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1391091121}
     - target: {fileID: 5587929545270868571, guid: 121e80d2bcf1a1848bb80bad136df75a, type: 3}
       propertyPath: m_Name
       value: Virtual Camera
@@ -745,7 +766,7 @@ GameObject:
   - component: {fileID: 1549307934}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,7 +878,7 @@ Transform:
   m_GameObject: {fileID: 1549307933}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.527, y: -1.094, z: 0}
+  m_LocalPosition: {x: 4.51, y: -1.094, z: 0}
   m_LocalScale: {x: 4.55, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -876,7 +897,7 @@ GameObject:
   - component: {fileID: 1760586585}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -988,7 +1009,7 @@ Transform:
   m_GameObject: {fileID: 1760586584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.093, y: -1.094, z: 0}
+  m_LocalPosition: {x: 9.05, y: -1.094, z: 0}
   m_LocalScale: {x: 4.55, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
