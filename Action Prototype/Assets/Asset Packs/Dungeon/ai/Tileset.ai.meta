@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 203e7ac9276aba34b82c8d332f793414
+timeCreated: 1440828221
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83754
+  packageName: Medieval Dungeon - Platformer Tileset
+  packageVersion: 1.0
+  assetPath: Assets/Dungeon/ai/Tileset.ai
+  uploadId: 169628

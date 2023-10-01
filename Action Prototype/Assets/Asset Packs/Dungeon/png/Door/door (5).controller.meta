@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c58f84abf2258d54aa741411aed6465c
+timeCreated: 1490416428
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83754
+  packageName: Medieval Dungeon - Platformer Tileset
+  packageVersion: 1.0
+  assetPath: Assets/Dungeon/png/Door/door (5).controller
+  uploadId: 169628
