@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Enemy
   - Dog
+  - Lever
   layers:
   - Default
   - TransparentFX

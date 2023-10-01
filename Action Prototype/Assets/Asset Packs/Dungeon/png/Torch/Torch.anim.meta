@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 05ed55b23c6e35a46996ebad9fdb69ce
+timeCreated: 1490416545
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83754
+  packageName: Medieval Dungeon - Platformer Tileset
+  packageVersion: 1.0
+  assetPath: Assets/Dungeon/png/Torch/Torch.anim
+  uploadId: 169628

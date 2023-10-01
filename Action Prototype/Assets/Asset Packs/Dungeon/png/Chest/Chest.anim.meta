@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cf8778af49bc5b142a52a1e852b0019a
+timeCreated: 1490416403
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83754
+  packageName: Medieval Dungeon - Platformer Tileset
+  packageVersion: 1.0
+  assetPath: Assets/Dungeon/png/Chest/Chest.anim
+  uploadId: 169628
