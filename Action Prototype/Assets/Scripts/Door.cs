@@ -13,6 +13,7 @@ public class Door : MonoBehaviour
     {
         Debug.Log("open");
         animator.SetBool("isOpen", true);
+        Invoke("CloseDoor", 4f);
     }
     public void CloseDoor()
     {
