@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grey_brick_animation_1_frame_01_0: 8142624345468139228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

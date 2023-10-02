@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grey_brick_state_1_center_repeating_0: 5639602779446302995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grey_brick_state_2_left_side_0: -5054662828929138081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
