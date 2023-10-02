@@ -5,8 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Dog : MonoBehaviour
 {
-    [SerializeField] float minMoveSpeed = 0.15f; // Minimum movement speed
-    [SerializeField] float moveSpeed = 1f; // Player default movement speed
+    [SerializeField] float moveSpeed = 1f; // Default movement speed
 
     Rigidbody2D rb;
     Animator animator;
@@ -71,6 +70,5 @@ public class Dog : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
-
     }
 }
