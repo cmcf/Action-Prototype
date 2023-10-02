@@ -5,7 +5,6 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
     Animator animator;
-    public bool isActivated;
 
     private void Start()
     {
@@ -13,21 +12,14 @@ public class Lever : MonoBehaviour
     }
     private void Update()
     {
-     
+
     }
 
     public void LeverPressed()
     {
         // Perform the lever activation action here (e.g., open a door).
         Debug.Log("Lever activated by player.");
-        animator.SetBool("isActivated", true);
-        Invoke("LeverDelay", 10f);
+        animator.SetBool("isActivated", true);  
 
-    }
-
-    void LeverDelay()
-    {
-        isActivated = false;
-        animator.SetBool("isActivated", false);
     }
 }
