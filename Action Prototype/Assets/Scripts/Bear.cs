@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Bear : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f; // Default movement speed
+    [SerializeField] float attackDelay = 1f;
 
     Rigidbody2D rb;
     Animator animator;
@@ -13,6 +14,7 @@ public class Bear : MonoBehaviour
     Vector2 moveInput;
 
     bool isAlive = true;
+    bool canAttack = true;
 
     void Start()
     {
@@ -24,6 +26,13 @@ public class Bear : MonoBehaviour
     {
         FlipSprite();
         Walk();
+    }
+
+    public void SwipeAnimation()
+    {
+        // Plays swipe animation when bear has interacted with breakable object
+        animator.SetBool("isAttacking", true);
+        Invoke("AttackDelay", attackDelay);
     }
 
     void OnMove(InputValue value)
@@ -46,6 +55,27 @@ public class Bear : MonoBehaviour
         // Get input values from player 
         moveInput = value.Get<Vector2>();
     }
+
+    void OnFire(InputValue value)
+    {
+        if (canAttack)
+        {
+            // CanFire is set to false stop the player firing without a delay
+            canAttack = false;
+            Debug.Log("bear attack");
+            animator.SetBool("isAttacking", true);
+            // Fire delay is called which sets can fire back to true after a delay 
+            Invoke("AttackDelay", attackDelay);
+
+        }
+    }
+
+    void AttackDelay()
+    {
+        canAttack = true;
+        animator.SetBool("isAttacking", false);
+    }
+
 
     void Walk()
     {

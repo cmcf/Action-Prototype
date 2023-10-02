@@ -4,12 +4,9 @@ public class Wall : MonoBehaviour
 {
     Animator anim;
    
-
-   
     private void Start()
     {
-       anim = GetComponent<Animator>();
-       
+       anim = GetComponent<Animator>();  
     }
 
     public void BreakWall()
