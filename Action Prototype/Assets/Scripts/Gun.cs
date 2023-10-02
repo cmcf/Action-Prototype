@@ -47,7 +47,6 @@ public class Gun : MonoBehaviour
             if (bulletRigidbody != null)
             {
                 // Calculate the bullet's velocity based on the player's direction
-                float bulletSpeed = 8f; // Set your desired bullet speed
                 Vector2 bulletVelocity = new Vector2(bulletSpeed * direction, 0f);
 
                 // Set the bullet's velocity

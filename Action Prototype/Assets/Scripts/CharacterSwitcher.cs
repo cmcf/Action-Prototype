@@ -15,8 +15,7 @@ public class CharacterSwitcher : MonoBehaviour
     private Vector3 previousCharacterPosition = Vector3.zero; // Store the previous character's position
     public Transform playerTransform;
     public CinemachineVirtualCamera virtualCamera;
-
-
+    
 
     void Start()
     {

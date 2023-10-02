@@ -3,20 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Interactable : MonoBehaviour
+public class BearInteract : MonoBehaviour
 {
     public bool inRange;
     public KeyCode interactKey;
     public UnityEvent interactAction;
+    public bool canBreakWall;
     
-    Door door;
-
-    [System.Obsolete]
-    void Start()
-    {
-        door = FindObjectOfType<Door>();
-    }
-
     
     void Update()
     {
@@ -26,30 +19,24 @@ public class Interactable : MonoBehaviour
             if (Input.GetKeyDown(interactKey))
             {
                 // Call event
-                interactAction.Invoke();
-                
-                door.OpenDoor();
-                Invoke("Timer", 10f);
+                interactAction.Invoke();    
             }
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Bear"))
         {
             inRange = true;
-            Debug.Log("In range");
+            canBreakWall = true;
+            Debug.Log("Bearrange");
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
         inRange = false;
+        canBreakWall = false;
         Debug.Log("No range");
-    }
-
-    private void Timer()
-    {
-        door.CloseDoor();
     }
 }
