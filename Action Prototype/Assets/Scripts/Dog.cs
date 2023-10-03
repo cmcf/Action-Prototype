@@ -1,11 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Dog : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f; // Default movement speed
+    [SerializeField] float defaultMoveSpeed = 5f;
+    [SerializeField] float currentMoveSpeed; // Default movement speed
+    [SerializeField] float sprintSpeed = 10f; // Speed when sprinting
+    [SerializeField]float stamina = 80f;      // Maximum stamina
+    [SerializeField] float staminaDepletionRate = 10f;
+
+    float currentStamina;
 
     Rigidbody2D rb;
     Animator animator;
@@ -13,18 +17,44 @@ public class Dog : MonoBehaviour
     Vector2 moveInput;
 
     bool isAlive = true;
+    bool isSprinting = false;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        currentStamina = stamina;
+        currentMoveSpeed = defaultMoveSpeed;
     }
 
     void Update()
     {
         FlipSprite();
         Walk();
+        StaminaManagement();
+    }
+
+    void StaminaManagement()
+    {
+        // Stamina reduces when dog is sprinting
+        if (isSprinting)
+        {
+            currentStamina -= staminaDepletionRate * Time.deltaTime;
+            currentStamina = Mathf.Clamp(currentStamina, 0f, stamina);
+
+            // Dog stops spriting when stamina runs out
+            if (currentStamina <= 0)
+            {
+                StopSprinting();
+            }
+        }
+        else
+        {
+            // Regain staminia when not sprinting
+            currentStamina += (stamina / 2) * Time.deltaTime;
+            currentStamina = Mathf.Clamp(currentStamina, 0f, stamina);
+        }
     }
 
     void OnMove(InputValue value)
@@ -51,13 +81,43 @@ public class Dog : MonoBehaviour
     void Walk()
     {
         // X velocity is multiplied by the move speed and retains current velocity on the y axis
-        Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
+        Vector2 playerVelocity = new Vector2(moveInput.x * currentMoveSpeed, rb.velocity.y);
         rb.velocity = playerVelocity;
 
         // Checks if player is moving left or right
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         // Sets animation state to run
         animator.SetBool("isWalking", playerHasHorizontalSpeed);
+    }
+
+    void OnSprint(InputValue value)
+    {
+        // Checks if the sprint button is held down and if the dog has enough stamina
+        if (value.isPressed && currentStamina > 0)
+        {
+            Sprint();
+            
+        }
+        else
+        {
+            StopSprinting();
+        }   
+    }
+
+    void Sprint()
+    {
+        // Movement speed is increased
+        isSprinting = true;
+        currentMoveSpeed = sprintSpeed;
+        Debug.Log("Start sprint: " + currentStamina);
+    }
+
+    void StopSprinting()
+    {
+        // Movement speed is set back to default
+        isSprinting = false;
+        currentMoveSpeed = defaultMoveSpeed;
+        Debug.Log("Stop sprint: "+ currentStamina);
     }
 
     void FlipSprite()
