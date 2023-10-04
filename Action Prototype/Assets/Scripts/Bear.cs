@@ -28,12 +28,6 @@ public class Bear : MonoBehaviour
         Walk();
     }
 
-    public void SwipeAnimation()
-    {
-        // Plays swipe animation when bear has interacted with breakable object
-        animator.SetBool("isAttacking", true);
-        Invoke("AttackDelay", attackDelay);
-    }
 
     void OnMove(InputValue value)
     {
