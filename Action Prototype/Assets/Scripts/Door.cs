@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    [SerializeField] float timer = 5f;
     public bool isOpen;
     Animator animator;
 
