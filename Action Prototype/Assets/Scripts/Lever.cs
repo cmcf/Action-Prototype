@@ -11,15 +11,17 @@ public class Lever : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        door= FindObjectOfType<Door>();
+        door = FindObjectOfType<Door>();
     }
- 
+
     public void LeverPressed()
     {
-        // Perform the lever activation action here (e.g., open a door).
-        Debug.Log("Lever activated by player.");
+        // Animation is played when the player interacts with the lever and door opens
         animator.SetBool("isActivated", true);  
         door.OpenDoor();
-
+    }
+    public void LeverReset()
+    {
+        animator.SetBool("isActivated", false);
     }
 }

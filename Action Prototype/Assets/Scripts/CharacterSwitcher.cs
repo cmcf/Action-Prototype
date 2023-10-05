@@ -13,15 +13,18 @@ public class CharacterSwitcher : MonoBehaviour
     public List<CharacterInfo> characters = new List<CharacterInfo>();
     private int currentCharacterIndex = 0;
     private Vector3 previousCharacterPosition = Vector3.zero; // Store the previous character's position
+
     public Transform playerTransform;
     public CinemachineVirtualCamera virtualCamera;
-    
+    // Reference to an array of spawn points
+    public Transform[] playerSpawnPoints;
+
 
     void Start()
     {
         // Initialize by activating the first character
         SwitchCharacter(currentCharacterIndex);
-
+        playerTransform.position = playerSpawnPoints[currentCharacterIndex].transform.position;
     }
 
     void Update()
