@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     PlayerMovement playerMovement;
     Lever lever;
    
+   
 
     public bool isAlive = true;
 

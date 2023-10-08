@@ -9,9 +9,10 @@ public class Gun : MonoBehaviour
     [SerializeField] Transform spawnPoint;
 
     [SerializeField] float fireDelay = 1f;
-    [SerializeField] float bulletSpeed = 15f;
+    [SerializeField] float bulletSpeed = 20f;
 
     Player player;
+    Animator animator;
 
     bool canFire = true;
 
@@ -20,6 +21,7 @@ public class Gun : MonoBehaviour
     void Start()
     {
         player = GetComponent<Player>();
+        animator = GetComponent<Animator>();
     }
 
     void OnFire(InputValue value)
@@ -30,6 +32,8 @@ public class Gun : MonoBehaviour
             canFire = false;
             // Instantiate a new bullet from the bullet prefab
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
+            // Enables animation
+            animator.SetBool("isFiring", true);
 
             // Calculate the bullet's direction based on the player's scale
             float direction = player.transform.localScale.x > 0 ? 1f : -1f;
@@ -58,7 +62,9 @@ public class Gun : MonoBehaviour
     }  
     void FireDelay()
     {
+        // Enables the player to fire again and stops firing animation
         canFire = true;
+        animator.SetBool("isFiring", false);
     }
 
 }
