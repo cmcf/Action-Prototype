@@ -8,7 +8,10 @@ public class LevelExit : MonoBehaviour
     [SerializeField] float loadDelay = 1f;
     void OnTriggerEnter2D(Collider2D collision)
     { 
-        StartCoroutine(LoadNextLevel());
+        if (collision.CompareTag("Player") || collision.CompareTag("Dog") || collision.CompareTag("Bear"))
+        {
+            StartCoroutine(LoadNextLevel());
+        }            
     }
 
     IEnumerator LoadNextLevel()

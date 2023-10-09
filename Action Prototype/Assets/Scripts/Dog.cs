@@ -9,16 +9,24 @@ public class Dog : MonoBehaviour
     [SerializeField]float stamina = 80f;      // Maximum stamina
     [SerializeField] float staminaDepletionRate = 10f;
 
+    [SerializeField] float attackRange = 10f;
+    public int barkDamage = 10;
+
     float currentStamina;
 
     Rigidbody2D rb;
     Animator animator;
     CharacterSwitcher switcher;
+    public Transform attackPoint;
+    public LayerMask enemyLayers;
 
-   [SerializeField] Vector2 moveInput;
+   
+
+    [SerializeField] Vector2 moveInput;
 
     bool isAlive = true;
     bool isSprinting = false;
+    public bool isAttacking = false;
     public bool canMoveDog = false;
 
   
@@ -123,6 +131,54 @@ public class Dog : MonoBehaviour
         isSprinting = true;
         currentMoveSpeed = sprintSpeed;
         Debug.Log("Start sprint: " + currentStamina);
+    }
+
+    void OnFire()
+    {
+        if (!isAttacking)
+        {
+            isAttacking = true;
+            animator.SetBool("isAttacking", true);
+        }
+    }
+    public void DogAttack()
+    {
+        isAttacking = true;
+        // Detect enemies in range
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("We hit " + enemy.name);
+
+            // Perform a null check before trying to access the WeakPoint component
+            WeakPoint weakPoint = enemy.GetComponent<WeakPoint>();
+            if (weakPoint != null)
+            {
+                weakPoint.TakeDamage(barkDamage);
+            }
+            else
+            {
+                Debug.LogWarning("No WeakPoint component found on " + enemy.name);
+            }
+        }
+
+        Invoke("StopAttack", 0.2f);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    void StopAttack()
+    {
+        isAttacking = false;
+        animator.SetBool("isAttacking", false);
     }
 
     void StopSprinting()
