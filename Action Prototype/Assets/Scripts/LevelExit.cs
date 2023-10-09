@@ -13,17 +13,19 @@ public class LevelExit : MonoBehaviour
 
     IEnumerator LoadNextLevel()
     {
+        // Loads level after a delay
         yield return new WaitForSecondsRealtime(loadDelay);
         // Gets current level
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         // Sets next level
         int nextSceneIndex = currentSceneIndex + 1;
 
-        // Loads first level if the player has completed all levels
+        // Resets next level if player has reached the last level
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
             nextSceneIndex = 0;
         }
-        SceneManager.LoadScene(currentSceneIndex);
+        // Loads next level
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }

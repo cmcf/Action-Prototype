@@ -13,26 +13,38 @@ public class Dog : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
+    CharacterSwitcher switcher;
 
-    Vector2 moveInput;
+   [SerializeField] Vector2 moveInput;
 
     bool isAlive = true;
     bool isSprinting = false;
+    public bool canMoveDog = false;
 
-
+  
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         currentStamina = stamina;
         currentMoveSpeed = defaultMoveSpeed;
+        switcher = GetComponent<CharacterSwitcher>();
+    }
+
+    void FixedUpdate()
+    {
+        Walk();
+        FlipSprite();
     }
 
     void Update()
-    {
-        FlipSprite();
-        Walk();
+    { 
         StaminaManagement();
+    }
+
+    public void DisableInput()
+    {
+        moveInput = Vector2.zero;
     }
 
     void StaminaManagement()
@@ -60,11 +72,12 @@ public class Dog : MonoBehaviour
     void OnMove(InputValue value)
     {
         // Player can't move if dead
-        if (!isAlive)
+        if (!isAlive && !canMoveDog)
         {
             return;
         }
-
+        rb.constraints = RigidbodyConstraints2D.None;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         // Gets value of player movement and true if greater than 0 
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
 

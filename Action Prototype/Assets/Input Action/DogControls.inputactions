@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControls",
+    "name": "DogControls",
     "maps": [
         {
             "name": "Player",
@@ -33,18 +33,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "b7ec4c0b-3544-425f-9457-0e5b66da4d52",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Switch",
-                    "type": "Button",
-                    "id": "9a90ac40-c868-4d9d-898c-332010e3cb76",
+                    "name": "Sprint",
+                    "type": "PassThrough",
+                    "id": "edda1bd8-0151-4703-9030-6957f2ea1eb3",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -274,34 +265,23 @@
                 },
                 {
                     "name": "",
-                    "id": "aea62c06-02cb-436e-8882-f5ab6041c9f5",
-                    "path": "<Keyboard>/space",
+                    "id": "eeb2f322-4c37-4183-b10e-b06b09bcb64b",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Jump",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "5fcfd759-d5fb-4423-815f-0fe45ec5fc40",
-                    "path": "<Gamepad>/buttonSouth",
+                    "id": "3054a5bd-893c-45ce-82b3-b2fb4313d5e6",
+                    "path": "<Gamepad>/leftStickPress",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4f19676f-1cec-40e9-8bfe-6d3985462a63",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Switch",
+                    "groups": "",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

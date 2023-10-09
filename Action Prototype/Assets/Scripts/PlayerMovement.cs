@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,16 +10,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] int maxJumps = 2; // Maximum amount of times the player can jump at once
     [SerializeField] int jumpsRemaining; // Stores the amount of jumps the player has
 
-    Vector2 moveInput;
+    [SerializeField] Vector2 moveInput;
 
     Rigidbody2D rb;
     Animator animator;
     CapsuleCollider2D playerCollider;
     BoxCollider2D feetCollider;
+    GameObject dog;
 
     bool isAlive = true;
     bool isGrounded = false;
-    
+    public bool canMovePlayer = true;
+
+
     void Start()
     {
         jumpsRemaining = maxJumps;
@@ -29,24 +30,31 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         playerCollider = GetComponent<CapsuleCollider2D>();
         feetCollider = GetComponent<BoxCollider2D>();
+        dog = GameObject.Find("Dog");
     }
 
-    
-    void Update()
+    void FixedUpdate()
     {
         Run();
         FlipSprite();
+    }
+    void Update()
+    { 
         GroundCheck();
+    }
+    public void DisableInput()
+    {
+        moveInput = Vector2.zero;
     }
 
     void OnMove(InputValue value)
     {
         // Player can't move if dead
-        if (!isAlive)
+        if (!isAlive && !canMovePlayer)
         {
             return;
         }
-
+        
         // Gets value of player movement and true if greater than 0 
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
 
@@ -58,6 +66,18 @@ public class PlayerMovement : MonoBehaviour
 
         // Get input values from player 
         moveInput = value.Get<Vector2>();
+    }
+
+    void Run()
+    {
+        // X velocity is multiplied by the move speed and retains current velocity on the y axis
+        Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
+        rb.velocity = playerVelocity;
+
+        // Checks if player is moving left or right
+        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        // Sets animation state to run
+        animator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
     void OnJump(InputValue value)
     {
@@ -78,19 +98,6 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
     }
-
-    void Run()
-    {
-        // X velocity is multiplied by the move speed and retains current velocity on the y axis
-        Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
-        rb.velocity = playerVelocity;
-
-        // Checks if player is moving left or right
-        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-        // Sets animation state to run
-        animator.SetBool("isRunning", playerHasHorizontalSpeed);
-    }
-
 
     void Jump()
     {

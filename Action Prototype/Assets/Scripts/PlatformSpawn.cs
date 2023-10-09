@@ -10,6 +10,7 @@ public class PlatformSpawn : MonoBehaviour
     public Transform playerTransform; // Reference to the player's Transform
 
     private List<Vector3> placedPlatformPositions = new List<Vector3>(); // Keeps track of the positions of platforms that the player has already placed
+
     void Start()
     {
         
