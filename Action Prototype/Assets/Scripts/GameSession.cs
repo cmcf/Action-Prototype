@@ -14,7 +14,6 @@ public class GameSession : MonoBehaviour
     // Decreases player lives by 1 and reloads current level
     void TakeLife()
     {
-        EventSystem.current.enabled = false;
         lives--;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);

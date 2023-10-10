@@ -8,9 +8,12 @@ public class WeakPoint : MonoBehaviour
     [SerializeField] int maxHealth = 20;
     [SerializeField] int currentHealth;
 
+    SpriteRenderer spriteRenderer;
+
     private void Start()
     {
         currentHealth = maxHealth;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(int damage)
@@ -28,5 +31,6 @@ public class WeakPoint : MonoBehaviour
     {
         Debug.Log("Weakpoint destroyed");
         isDestroyed = true;
+        spriteRenderer.color = Color.green;
     }
 }
