@@ -11,7 +11,6 @@ public class Gun : MonoBehaviour
     [SerializeField] float fireDelay = 1f;
     [SerializeField] float bulletSpeed = 20f;
 
-    Player player;
     Animator animator;
 
     bool canFire = true;
@@ -20,7 +19,7 @@ public class Gun : MonoBehaviour
    
     void Start()
     {
-        player = GetComponent<Player>();
+        
         animator = GetComponent<Animator>();
     }
 
@@ -36,7 +35,7 @@ public class Gun : MonoBehaviour
             animator.SetBool("isFiring", true);
 
             // Calculate the bullet's direction based on the player's scale
-            float direction = player.transform.localScale.x > 0 ? 1f : -1f;
+            float direction = transform.localScale.x > 0 ? 1f : -1f;
 
             // Get the sprite renderer of the bullet
             SpriteRenderer bulletSpriteRenderer = newBullet.GetComponent<SpriteRenderer>();
