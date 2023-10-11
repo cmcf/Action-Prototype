@@ -8,7 +8,7 @@ public class Gun : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform spawnPoint;
 
-    [SerializeField] float fireDelay = 1f;
+    [SerializeField] float fireDelay = 0.2f;
     [SerializeField] float bulletSpeed = 20f;
 
     Animator animator;

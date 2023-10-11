@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using System.Security.Cryptography;
 
 public class GameSession : MonoBehaviour
 {
     public int lives = 3;
+    public int keysCollected = 0;
     public void PlayerHit()
     {
         TakeLife();

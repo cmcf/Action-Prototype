@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    public int keysCollected = 0;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // If key is collected by the player, increase amount of keys collected
         if (collision.CompareTag("Player") || collision.CompareTag("Dog") || collision.CompareTag("Bear"))
         {
-            keysCollected++;
+            FindObjectOfType<GameSession>().keysCollected++;
             Destroy(gameObject);
         }
     }
