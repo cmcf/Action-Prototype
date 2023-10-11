@@ -24,4 +24,9 @@ public class Lever : MonoBehaviour
     {
         animator.SetBool("isActivated", false);
     }
+
+    public void OpenPassage()
+    {
+        animator.SetBool("isActivated", true);
+    }
 }

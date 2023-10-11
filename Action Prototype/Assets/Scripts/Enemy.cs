@@ -8,10 +8,9 @@ public class Enemy : MonoBehaviour
     Animator anim;
     
     public int currentHealth;
-    int maxHealth = 80;
+    [SerializeField] int maxHealth = 80;
     WeakPoint weakPoint;
-    [SerializeField] GameObject keyPrefab; 
-    
+    [SerializeField] GameObject keyPrefab;
 
     void Start()
     {
@@ -36,6 +35,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+
         if (weakPoint.isDestroyed)
         {
             currentHealth -= damage;
