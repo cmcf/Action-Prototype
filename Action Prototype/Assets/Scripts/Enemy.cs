@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     WeakPoint weakPoint;
     [SerializeField] GameObject keyPrefab;
 
+    bool isDead = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -57,9 +59,14 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Enemy dead");
-        Instantiate(keyPrefab, transform.position, Quaternion.identity);
-        gameObject.SetActive(false);
+        
+        if (!isDead)
+        {
+            Debug.Log("Enemy dead");
+            Instantiate(keyPrefab, transform.position, Quaternion.identity);
+            gameObject.SetActive(false);
+            isDead = true;
+        } 
     }
   
 }
