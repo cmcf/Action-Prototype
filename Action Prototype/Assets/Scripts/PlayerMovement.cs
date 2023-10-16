@@ -112,8 +112,9 @@ public class PlayerMovement : MonoBehaviour
     void GroundCheck()
     {
         bool wasGrounded = isGrounded;
-        isGrounded = feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        
+        int layerMask = LayerMask.GetMask("Ground", "Enemy");
+        isGrounded = feetCollider.IsTouchingLayers(layerMask);
+
         // Reset jumps if player was in the air and landed on the ground
         if (!wasGrounded && isGrounded)
         {
