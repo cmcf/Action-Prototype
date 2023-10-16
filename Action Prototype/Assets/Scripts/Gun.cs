@@ -6,9 +6,10 @@ using UnityEngine.InputSystem;
 public class Gun : MonoBehaviour
 {
     [SerializeField] GameObject bulletPrefab;
+    [SerializeField] GameObject inkPrefab;
     [SerializeField] Transform spawnPoint;
 
-    [SerializeField] float fireDelay = 0.2f;
+    [SerializeField] float fireDelay = 0.1f;
     [SerializeField] float bulletSpeed = 20f;
 
     Animator animator;
@@ -29,10 +30,11 @@ public class Gun : MonoBehaviour
         {
             // CanFire is set to false stop the player firing without a delay
             canFire = false;
-            // Instantiate a new bullet from the bullet prefab
-            GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
             // Enables animation
             animator.SetBool("isFiring", true);
+            // Instantiate a new bullet from the bullet prefab
+            GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
+            
 
             // Calculate the bullet's direction based on the player's scale
             float direction = transform.localScale.x > 0 ? 1f : -1f;
@@ -59,6 +61,16 @@ public class Gun : MonoBehaviour
             }
         }
     }  
+
+    void OnInk(InputValue value)
+    {
+        // Enables animation
+        animator.SetBool("isFiring", true);
+        // Instantiates ink
+        GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, spawnPoint.rotation);
+        // Fire delay is called which sets can fire back to true after a delay 
+        Invoke("FireDelay", fireDelay);
+    }
     void FireDelay()
     {
         // Enables the player to fire again and stops firing animation

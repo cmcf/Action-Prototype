@@ -8,6 +8,7 @@ public class Dog : MonoBehaviour
     [SerializeField] float sprintSpeed = 10f; // Speed when sprinting
     [SerializeField]float stamina = 80f;      // Maximum stamina
     [SerializeField] float staminaDepletionRate = 10f;
+    [SerializeField] float amplitude = 1f;
 
     [SerializeField] float attackRange = 10f;
     public int barkDamage = 10;
@@ -20,7 +21,7 @@ public class Dog : MonoBehaviour
     public Transform attackPoint;
     public LayerMask enemyLayers;
 
-   
+    Vector3 initialPosition;
 
     [SerializeField] Vector2 moveInput;
 
@@ -36,6 +37,7 @@ public class Dog : MonoBehaviour
         animator = GetComponent<Animator>();
         currentStamina = stamina;
         currentMoveSpeed = defaultMoveSpeed;
+        initialPosition = transform.position;
         switcher = GetComponent<CharacterSwitcher>();
     }
 
@@ -166,15 +168,6 @@ public class Dog : MonoBehaviour
         Invoke("StopAttack", 0.2f);
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        if (attackPoint == null)
-        {
-            return;
-        }
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
-
     void StopAttack()
     {
         isAttacking = false;
@@ -199,5 +192,18 @@ public class Dog : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Ink"))
+        {
+            Ascend();
+        }
+    }
+
+    void Ascend()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, amplitude);
     }
 }
