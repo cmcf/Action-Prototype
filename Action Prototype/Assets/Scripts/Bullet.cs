@@ -11,6 +11,10 @@ public class Bullet : MonoBehaviour
     [SerializeField] GameObject barrel;
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag == "Ignore")
+        {
+            return;
+        }
         // When the bullet hits an enemy, the enemy and bullet is destroyed 
         if (other.tag == "Enemy")
         {
@@ -21,7 +25,7 @@ public class Bullet : MonoBehaviour
         {
             crate = FindObjectOfType<Crate>();
             crate.DestroyCrate();
-        }
+        } 
         Destroy(gameObject);
     }
 }
