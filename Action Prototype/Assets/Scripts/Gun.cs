@@ -88,7 +88,7 @@ public class Gun : MonoBehaviour
             // Create a rotation (you can specify the desired rotation in degrees)
             Quaternion inkRotation = Quaternion.Euler(0f, 0f, 90f); // Rotate by 45 degrees around the Z-axis
                                                                     // Instantiates ink
-            GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, inkRotation);
+            GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, spawnPoint.rotation);
             // Add a force to make the ink move downwards
             Rigidbody2D inkRigidbody = newInk.GetComponent<Rigidbody2D>();
             if (inkRigidbody != null)
