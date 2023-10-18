@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f;
-
-    Rigidbody2D rb;
+ 
     Animator anim;
     
     public int currentHealth;
@@ -28,11 +26,6 @@ public class Enemy : MonoBehaviour
             // Use GetComponent on the child GameObject to get the WeakPoint component
             weakPoint = childTransform.GetComponent<WeakPoint>();
         }
-    }
-
-    void Update()
-    {
-       
     }
 
     public void TakeDamage(int damage)

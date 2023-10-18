@@ -13,7 +13,6 @@ public class Ink : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collided with something");
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         Invoke("DestroyInk", 5f);
     }
