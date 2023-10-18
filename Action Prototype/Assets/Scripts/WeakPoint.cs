@@ -9,11 +9,12 @@ public class WeakPoint : MonoBehaviour
     [SerializeField] int currentHealth;
 
     SpriteRenderer spriteRenderer;
-
+    CircleCollider2D boxCollider;
     private void Start()
     {
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<CircleCollider2D>();
     }
 
     public void TakeDamage(int damage)
@@ -32,5 +33,6 @@ public class WeakPoint : MonoBehaviour
         Debug.Log("Weakpoint destroyed");
         isDestroyed = true;
         spriteRenderer.color = Color.green;
+        boxCollider.enabled = false;
     }
 }
