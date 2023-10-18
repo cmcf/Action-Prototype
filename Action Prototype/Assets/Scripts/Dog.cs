@@ -194,9 +194,9 @@ public class Dog : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Ink"))
+        if (collision.gameObject.CompareTag("Ink"))
         {
             Ascend();
         }
