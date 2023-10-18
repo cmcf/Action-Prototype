@@ -6,13 +6,13 @@ public class LockedDoor : MonoBehaviour
 {
     Animator anim;
     float loadDelay = 1f;
-    private void Start()
+    void Start()
     {
         anim= GetComponent<Animator>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (FindObjectOfType<GameSession>().keysCollected == 2)
+        if (FindObjectOfType<GameSession>().keysCollected >= 2)
         {
             Debug.Log("Open door");
             anim.SetTrigger("IsOpen");

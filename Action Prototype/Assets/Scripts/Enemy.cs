@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         anim= GetComponent<Animator>();
 
         currentHealth = maxHealth;
