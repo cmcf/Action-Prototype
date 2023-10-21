@@ -5,49 +5,79 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    public static Timer Instance; // Singleton instance
     public Slider timerSlider;
-
-    [SerializeField] float totalTime = 50f;
+    GameSession gameSession;
 
     [SerializeField] float currentTime;
+    [SerializeField] float maxTime = 120;
+
     [SerializeField] float timeDelay = 0.001f;
 
     public bool stopTimer = false;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
-        timerSlider.maxValue = totalTime;
-        timerSlider.value = totalTime;
+        currentTime = maxTime;
+        timerSlider.maxValue = currentTime;
+        timerSlider.value = currentTime;
         StartTimer();
     }
 
-    void StartTimer()
+    public void StartTimer()
     {
+        gameSession = FindAnyObjectByType<GameSession>();
         StartCoroutine(StartCountdown());
+    }
+
+    private void Update()
+    {
+        if (currentTime <= 0)
+        {
+            OutOfTime();
+        }
     }
 
     IEnumerator StartCountdown()
     {
         while (!stopTimer)
         {
-            // Decreases slider time
-            totalTime -= Time.deltaTime;
-            yield return new WaitForSeconds(timeDelay);
+            if (gameSession.isAlive)
+            {
+                // Decreases slider time
+                currentTime -= Time.deltaTime;
+                yield return new WaitForSeconds(timeDelay);
 
-            if (totalTime <= 0)
-            {
-                stopTimer = true;
-            }
-            // Updates slider value
-            if (!stopTimer)
-            {
-                timerSlider.value = totalTime;
+                if (currentTime <= 0)
+                {
+                    stopTimer = true;
+                }
+                // Updates slider value
+                if (!stopTimer)
+                {
+                    if (timerSlider != null)
+                    {
+                        timerSlider.value = currentTime;
+                    }
+                    
+                }
             }
         }
-        Debug.Log("Out of time");
-        
     }
 
-    void StopTime()
+    public void StopTime()
     {
         stopTimer = true;
     }
@@ -55,9 +85,15 @@ public class Timer : MonoBehaviour
     public void IncreaseTime()
     {
         // Check if increasing totalTime by 1 will not exceed max
-        if (totalTime + 1 <= 50)
+        if (currentTime + 1 <= maxTime)
         {
-            totalTime++;
+            currentTime++;
         }
+    }
+
+    void OutOfTime ()
+    {
+        gameSession.ReloadScene();
+        currentTime = maxTime;
     }
 }
