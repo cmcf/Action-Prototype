@@ -51,4 +51,13 @@ public class Timer : MonoBehaviour
     {
         stopTimer = true;
     }
+
+    public void IncreaseTime()
+    {
+        // Check if increasing totalTime by 1 will not exceed max
+        if (totalTime + 1 <= 50)
+        {
+            totalTime++;
+        }
+    }
 }
