@@ -7,19 +7,23 @@ public class ScenePersist : MonoBehaviour
     [System.Obsolete]
     void Awake()
     {
-        // Removes game session if it already exists 
-        int numScenePersists = FindObjectsOfType<ScenePersist>().Length;
-        if (numScenePersists > 1)
+        // Find GameManager and attach this ScenePersist to it
+        GameSession gameSession = FindObjectOfType<GameSession>();
+
+        if (gameSession != null)
         {
-            Destroy(gameObject);
+            gameSession.scenePersist = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            DontDestroyOnLoad(gameObject);
+            Debug.LogWarning("GameManager not found. ScenePersist won't work as expected.");
         }
     }
+
     public void ResetScene()
     {
         Destroy(gameObject);
     }
 }
+

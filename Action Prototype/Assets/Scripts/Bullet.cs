@@ -19,7 +19,10 @@ public class Bullet : MonoBehaviour
         if (other.tag == "Enemy")
         {
             enemy = FindObjectOfType<Enemy>();
-            enemy.TakeDamage(damageAmount);
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damageAmount);
+            } 
         }
         if (other.tag == "Barrel")
         {

@@ -6,16 +6,15 @@ public class IncreaseTime : MonoBehaviour
 {
     Timer timer;
 
-    private void Start()
+    void Start()
     {
         timer = FindObjectOfType<Timer>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player"|| collision.tag == "Dog")
         {
-            Debug.Log("Picked up");
             timer.IncreaseTime();
             Destroy(gameObject);
         }
