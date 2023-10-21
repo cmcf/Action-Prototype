@@ -42,6 +42,14 @@ public class Timer : MonoBehaviour
         StartCoroutine(StartCountdown());
     }
 
+    private void Update()
+    {
+        if (currentTime <= 0)
+        {
+            OutOfTime();
+        }
+    }
+
     IEnumerator StartCountdown()
     {
         while (!stopTimer)
@@ -81,5 +89,11 @@ public class Timer : MonoBehaviour
         {
             currentTime++;
         }
+    }
+
+    void OutOfTime ()
+    {
+        gameSession.ReloadScene();
+        currentTime = maxTime;
     }
 }
