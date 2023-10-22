@@ -14,5 +14,3 @@ public class TileSmash : MonoBehaviour
         Destroy(gameObject);
     }
 }
-
-
