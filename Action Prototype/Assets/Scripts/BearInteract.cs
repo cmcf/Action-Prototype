@@ -9,8 +9,7 @@ public class BearInteract : MonoBehaviour
     public KeyCode interactKey;
     public UnityEvent interactAction;
     public bool canBreakWall;
-    
-    
+
     void Update()
     {
         // Checks if player is in range of the interactible and the player has pressed the key
@@ -26,11 +25,11 @@ public class BearInteract : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Bear"))
+        if (collision.gameObject.CompareTag("Dog"))
         {
             inRange = true;
             canBreakWall = true;
-            Debug.Log("Bearrange");
+            Debug.Log("In range");
         }
     }
     void OnTriggerExit2D(Collider2D collision)

@@ -29,12 +29,10 @@ public class HeroInteract : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             inRange = true;
-            Debug.Log("Bearrange");
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
         inRange = false;
-        Debug.Log("No range");
     }
 }

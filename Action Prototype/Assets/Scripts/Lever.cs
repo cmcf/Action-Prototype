@@ -6,12 +6,14 @@ public class Lever : MonoBehaviour
 {
     Animator animator;
     Door door;
+    Wall wall;
 
     [System.Obsolete]
     private void Start()
     {
         animator = GetComponent<Animator>();
         door = FindObjectOfType<Door>();
+        wall = FindObjectOfType<Wall>();
     }
 
     public void LeverPressed()
@@ -19,6 +21,12 @@ public class Lever : MonoBehaviour
         // Animation is played when the player interacts with the lever and door opens
         animator.SetBool("isActivated", true);  
         door.OpenDoor();
+    }
+
+    public void BreakObstacle()
+    {
+        animator.SetBool("isActivated", true);
+        wall.BreakWall();
     }
     public void LeverReset()
     {
