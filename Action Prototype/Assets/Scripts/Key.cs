@@ -10,8 +10,8 @@ public class Key : MonoBehaviour
         // If key is collected by the player, increase amount of keys collected
         if (collision.CompareTag("Player") || collision.CompareTag("Dog") || collision.CompareTag("Bear"))
         {
-            FindObjectOfType<GameSession>().keysCollected++;
             Destroy(gameObject);
+            FindObjectOfType<GameSession>().keysCollected++;
         }
     }
 }
