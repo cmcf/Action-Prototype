@@ -316,6 +316,17 @@
                 },
                 {
                     "name": "",
+                    "id": "b35f476a-a77a-4a3a-9b3a-8d9e60c739f8",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "901181a1-96b3-465d-a0e6-325dc5ad5cf5",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
@@ -332,6 +343,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Ink",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3648fe1-2a7a-4378-bbda-8a6915e9a9b1",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Ink",
                     "isComposite": false,
                     "isPartOfComposite": false

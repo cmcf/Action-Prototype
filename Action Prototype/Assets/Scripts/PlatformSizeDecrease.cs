@@ -13,9 +13,14 @@ public class PlatformSizeDecrease : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Dog"))
+        if (collision.gameObject.CompareTag("Dog"))
         {
             StartCoroutine(DecreasePlatform());
+        }
+        if (collision.gameObject.CompareTag("Player")) 
+        {
+            anim.SetTrigger("SizeDown");
+            DestroyPlatform();
         }
     }
 
