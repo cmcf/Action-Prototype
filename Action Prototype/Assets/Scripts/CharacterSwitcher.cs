@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [System.Serializable]
 public class CharacterInfo
@@ -77,7 +78,7 @@ public class CharacterSwitcher : MonoBehaviour
         }
 
         // Check for character switch input only if allowed
-        if (canSwitch && Input.GetKeyDown(KeyCode.Tab))
+        if (canSwitch && Input.GetKeyDown(KeyCode.Tab) || Gamepad.current.buttonNorth.wasPressedThisFrame)
         {
             // Disable movement for the current character during switching
             canMovePlayer = false;
