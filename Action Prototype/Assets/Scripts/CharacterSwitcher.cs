@@ -68,17 +68,22 @@ public class CharacterSwitcher : MonoBehaviour
         {
             // Handle input for the player character
             canMoveDog = true;
-            
+
         }
         else if (currentCharacterState == CharacterState.Dog && !isSwitching)
         {
             // Handle input for the dog character
             canMovePlayer = true;
-            
+
         }
 
-        // Check for character switch input only if allowed
-        if (canSwitch && Input.GetKeyDown(KeyCode.Tab) || Gamepad.current.buttonNorth.wasPressedThisFrame)
+        HandleSwitchInput();
+    }
+
+    void HandleSwitchInput()
+    {
+        // Checks if player has pressed switch button on keyboard or controller
+        if (Gamepad.current != null && canSwitch && Gamepad.current.buttonNorth.wasPressedThisFrame || Input.GetKeyDown(KeyCode.Tab))
         {
             // Disable movement for the current character during switching
             canMovePlayer = false;
@@ -96,7 +101,6 @@ public class CharacterSwitcher : MonoBehaviour
 
             // Activate the new character and set their position based on the previous character's position
             SwitchCharacter(currentCharacterIndex);
-        
         }
     }
 
