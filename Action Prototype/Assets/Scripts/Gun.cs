@@ -17,6 +17,7 @@ public class Gun : MonoBehaviour
     [SerializeField] float inkCheckRadius = 0.2f;
 
     Animator animator;
+    PlayerMovement playerMovement;
 
     bool canFire = true;
 
@@ -24,6 +25,7 @@ public class Gun : MonoBehaviour
     {
         
         animator = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     void OnFire(InputValue value)
@@ -81,25 +83,27 @@ public class Gun : MonoBehaviour
 
         if (!inkAlreadyPresent)
         {
-            // Debug log for testing
-            Debug.Log("No ink found at spawn point.");
-            // Enables animation
-            animator.SetBool("isFiring", true);
-            // Create a rotation (you can specify the desired rotation in degrees)
-            Quaternion inkRotation = Quaternion.Euler(0f, 0f, 90f); // Rotate by 45 degrees around the Z-axis
-                                                                    // Instantiates ink
-            GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, spawnPoint.rotation);
-            // Add a force to make the ink move downwards
-            Rigidbody2D inkRigidbody = newInk.GetComponent<Rigidbody2D>();
-            if (inkRigidbody != null)
+          
+            if (playerMovement.isGrounded)
             {
-                // Adjust the force values as needed to control the speed and direction
-                Vector2 downwardForce = Vector2.down * inkSpeed;
-                Vector2 forwardForce = Vector2.right * inkForwardSpeed; // Adjust forwardSpeed as needed
-                inkRigidbody.AddForce(downwardForce + forwardForce, ForceMode2D.Impulse);
-            }
-            // Fire delay is called which sets can fire back to true after a delay 
-            Invoke("FireDelay", fireDelay);
+                // Enables animation
+                animator.SetBool("isFiring", true);
+                // Create a rotation
+                Quaternion inkRotation = Quaternion.Euler(0f, 0f, 90f); // Rotate by 45 degrees around the Z-axis
+                                                                        // Spawns ink
+                GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, spawnPoint.rotation);
+                // Add a force to make the ink move downwards
+                Rigidbody2D inkRigidbody = newInk.GetComponent<Rigidbody2D>();
+                if (inkRigidbody != null)
+                {
+                    // Adjust the force values as needed to control the speed and direction
+                    Vector2 downwardForce = Vector2.down * inkSpeed;
+                    Vector2 forwardForce = Vector2.right * inkForwardSpeed; // Adjust forwardSpeed as needed
+                    inkRigidbody.AddForce(downwardForce + forwardForce, ForceMode2D.Impulse);
+                }
+                // Fire delay is called which sets can fire back to true after a delay 
+                Invoke("FireDelay", fireDelay);
+            } 
         }
          
     }

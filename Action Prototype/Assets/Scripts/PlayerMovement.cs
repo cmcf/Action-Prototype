@@ -17,10 +17,8 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     CapsuleCollider2D playerCollider;
     BoxCollider2D feetCollider;
-    GameObject dog;
-    GameSession gameSession;
 
-    bool isGrounded = false;
+    public bool isGrounded = false;
     public bool canMovePlayer = true;
 
 
@@ -31,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         playerCollider = GetComponent<CapsuleCollider2D>();
         feetCollider = GetComponent<BoxCollider2D>();
-        dog = GameObject.Find("Dog");
         
     }
 
@@ -44,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
     { 
         GroundCheck();
         Die();
-        Debug.Log(GameSession.Instance.isAlive);
     }
     public void DisableInput()
     {

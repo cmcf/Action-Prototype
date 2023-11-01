@@ -11,11 +11,7 @@ public class Wall : MonoBehaviour
 
     public void BreakWall()
     {
-        anim.SetTrigger("isDestroyed");
-        Invoke("DestroyWall", 0.8f);
-    }
-    void DestroyWall()
-    {
-        Destroy(gameObject);
+        anim.SetTrigger("moveUp");
+
     }
 }
