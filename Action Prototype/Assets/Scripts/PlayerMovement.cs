@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D playerCollider;
     BoxCollider2D feetCollider;
     GameObject dog;
+    GameSession gameSession;
 
-    bool isAlive = true;
     bool isGrounded = false;
     public bool canMovePlayer = true;
 
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         playerCollider = GetComponent<CapsuleCollider2D>();
         feetCollider = GetComponent<BoxCollider2D>();
         dog = GameObject.Find("Dog");
+        
     }
 
     void FixedUpdate()
@@ -41,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     { 
         GroundCheck();
+        Die();
+        Debug.Log(GameSession.Instance.isAlive);
     }
     public void DisableInput()
     {
@@ -50,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value)
     {
         // Player can't move if dead
-        if (!isAlive && !canMovePlayer || rb == null)
+        if (!canMovePlayer || rb == null)
         {
             return;
         }
@@ -82,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
     void OnJump(InputValue value)
     {
         // Player can't jump if they are not alive
-        if (!isAlive)
+        if (!GameSession.Instance.isAlive)
         {
             return;
         }
@@ -134,6 +138,13 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
 
+    }
+    void Die()
+    {
+        if (!GameSession.Instance.isAlive) 
+        {
+            animator.SetTrigger("isDead");
+        }   
     }
 
     public void DecreaseMovementSpeed(float speedDecreaseAmount)

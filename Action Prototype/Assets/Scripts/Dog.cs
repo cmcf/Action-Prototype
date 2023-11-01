@@ -17,7 +17,6 @@ public class Dog : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
-    CharacterSwitcher switcher;
     public Transform attackPoint;
     public LayerMask enemyLayers;
 
@@ -25,7 +24,6 @@ public class Dog : MonoBehaviour
 
     [SerializeField] Vector2 moveInput;
 
-    bool isAlive = true;
     bool isSprinting = false;
     public bool isAttacking = false;
     public bool canMoveDog = false;
@@ -38,7 +36,6 @@ public class Dog : MonoBehaviour
         currentStamina = stamina;
         currentMoveSpeed = defaultMoveSpeed;
         initialPosition = transform.position;
-        switcher = GetComponent<CharacterSwitcher>();
     }
 
     void FixedUpdate()
@@ -50,6 +47,7 @@ public class Dog : MonoBehaviour
     void Update()
     { 
         StaminaManagement();
+        Die();
     }
 
     public void DisableInput()
@@ -82,7 +80,7 @@ public class Dog : MonoBehaviour
     void OnMove(InputValue value)
     {
         // Player can't move if dead
-        if (!isAlive && !canMoveDog)
+        if (!GameSession.Instance.isAlive && !canMoveDog)
         {
             return;
         }
@@ -205,5 +203,13 @@ public class Dog : MonoBehaviour
     void Ascend()
     {
         rb.velocity = new Vector2(rb.velocity.x, amplitude);
+    }
+
+    void Die()
+    {
+        if (!GameSession.Instance.isAlive)
+        {
+            animator.SetTrigger("isDead");
+        }
     }
 }

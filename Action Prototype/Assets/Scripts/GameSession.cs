@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 
 public class GameSession : MonoBehaviour
 {
+    public static GameSession Instance { get; private set; }
     Timer timer;
 
     public ScenePersist scenePersist;
@@ -12,6 +13,11 @@ public class GameSession : MonoBehaviour
     public int lives = 3;
     public int keysCollected = 0;
     public bool isAlive = true;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -26,8 +32,8 @@ public class GameSession : MonoBehaviour
     void TakeLife()
     {
         lives--;
-        isAlive = false;   
-        ReloadScene();
+        isAlive = false;
+        Invoke("ReloadScene", 0.8f);
     }
 
     public void ReloadScene()
