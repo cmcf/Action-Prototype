@@ -9,7 +9,7 @@ public class Hazard : MonoBehaviour
     {
         if (collision.CompareTag("Player") || collision.CompareTag("Dog") || collision.CompareTag("Bear"))
         {
-            FindObjectOfType<GameSession>().PlayerHit();
+            GameSession.Instance.PlayerHit();
         }
     }
 }

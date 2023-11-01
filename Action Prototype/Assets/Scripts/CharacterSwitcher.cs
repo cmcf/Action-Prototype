@@ -15,7 +15,6 @@ public enum CharacterState
     Dog,
 }
 
-
 public class CharacterSwitcher : MonoBehaviour
 {
     public List<CharacterInfo> characters = new List<CharacterInfo>();

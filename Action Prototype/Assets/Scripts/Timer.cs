@@ -7,7 +7,6 @@ public class Timer : MonoBehaviour
 {
     public static Timer Instance; // Singleton instance
     public Slider timerSlider;
-    GameSession gameSession;
 
     [SerializeField] float currentTime;
     [SerializeField] float maxTime = 120;
@@ -38,7 +37,6 @@ public class Timer : MonoBehaviour
 
     public void StartTimer()
     {
-        gameSession = FindAnyObjectByType<GameSession>();
         StartCoroutine(StartCountdown());
     }
 
@@ -54,8 +52,6 @@ public class Timer : MonoBehaviour
     {
         while (!stopTimer)
         {
-            if (gameSession.isAlive)
-            {
                 // Decreases slider time
                 currentTime -= Time.deltaTime;
                 yield return new WaitForSeconds(timeDelay);
@@ -75,7 +71,6 @@ public class Timer : MonoBehaviour
                 }
             }
         }
-    }
 
     public void StopTime()
     {
@@ -93,7 +88,7 @@ public class Timer : MonoBehaviour
 
     void OutOfTime ()
     {
-        gameSession.ReloadScene();
+        GameSession.Instance.PlayerHit();
         currentTime = maxTime;
     }
 }
