@@ -2,63 +2,31 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
- 
-    Animator anim;
-    
-    public int currentHealth;
-    [SerializeField] int maxHealth = 80;
-    WeakPoint weakPoint;
-    [SerializeField] GameObject keyPrefab;
 
-    bool isDead = false;
+    public GameObject shieldObject;
+    private Shield shield;
+    private bool shieldDestroyed;
 
-    void Start()
+    private void Start()
     {
-        anim= GetComponent<Animator>();
+        shield = shieldObject.GetComponent<Shield>();
+        shieldDestroyed = false;
+    }
 
-        currentHealth = maxHealth;
-        // Use Transform.Find to locate the child GameObject with the WeakPoint component
-        Transform childTransform = transform.Find("Weak Point");
-        
-        if (childTransform != null)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("RedBullet") && shieldDestroyed)
         {
-            // Use GetComponent on the child GameObject to get the WeakPoint component
-            weakPoint = childTransform.GetComponent<WeakPoint>();
+            Debug.Log("Red bullet hit the enemy.");
+            // Red bullet destroys the enemy
+            Destroy(gameObject);
         }
     }
 
-    public void TakeDamage(int damage)
+    public void DestroyShield()
     {
-
-        if (weakPoint.isDestroyed)
-        {
-            currentHealth -= damage;
-            anim.SetBool("IsHit", true);
-            Invoke("SetIsHitToFalse", 0.5f);
-        }
-        
-
-        // Check if the enemy should be destroyed
-        if (currentHealth <= 0)
-        {
-            Die();
-        }   
-    }
-    void SetIsHitToFalse()
-    {
-        anim.SetBool("IsHit", false);
+        // Called when the shield is destroyed, enabling vulnerability to red bullets
+        shieldDestroyed = true;
     }
 
-    void Die()
-    {
-        
-        if (!isDead)
-        {
-            Debug.Log("Enemy dead");
-            Instantiate(keyPrefab, transform.position, Quaternion.identity);
-            gameObject.SetActive(false);
-            isDead = true;
-        } 
-    }
-  
 }

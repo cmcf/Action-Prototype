@@ -173,24 +173,6 @@ public class Dog : MonoBehaviour
     public void DogAttack()
     {
         isAttacking = true;
-        // Detect enemies in rangef
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            
-            // Perform a null check before trying to access the WeakPoint component
-            WeakPoint weakPoint = enemy.GetComponent<WeakPoint>();
-            if (weakPoint != null)
-            {
-                weakPoint.TakeDamage(barkDamage);
-            }
-            else
-            {
-                Debug.LogWarning("No WeakPoint component found on " + enemy.name);
-            }
-        }
-
         Invoke("StopAttack", 0.2f);
     }
 

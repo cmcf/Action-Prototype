@@ -3,32 +3,17 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class BlueBullet : MonoBehaviour
 {
-    int damageAmount = 20;
-    Enemy enemy;
-    Crate crate;
-    [SerializeField] GameObject barrel;
+    Shield shield;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Ignore")
+        if (other.CompareTag("Shield"))
         {
-            return;
+            Debug.Log("Blue bullet hit the shield.");
+            shield = other.GetComponent<Shield>();
+            shield.TakeDamage();
         }
-        // When the bullet hits an enemy, the enemy and bullet is destroyed 
-        if (other.tag == "Enemy")
-        {
-            enemy = FindObjectOfType<Enemy>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(damageAmount);
-            } 
-        }
-        if (other.tag == "Barrel")
-        {
-            crate = FindObjectOfType<Crate>();
-            crate.DestroyCrate();
-        } 
         Destroy(gameObject);
     }
 }

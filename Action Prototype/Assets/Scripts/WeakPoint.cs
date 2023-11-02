@@ -2,37 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeakPoint : MonoBehaviour
+public class Shield : MonoBehaviour
 {
-    public bool isDestroyed = false;
-    [SerializeField] int maxHealth = 20;
-    [SerializeField] int currentHealth;
-
-    SpriteRenderer spriteRenderer;
-    CircleCollider2D boxCollider;
+    [SerializeField] float currentHealth;
+    [SerializeField] float maxHealth = 2f;
+    SpriteRenderer sprite;
     private void Start()
     {
         currentHealth = maxHealth;
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        boxCollider = GetComponent<CircleCollider2D>();
+        sprite = GetComponent<SpriteRenderer>();    
     }
-
-    public void TakeDamage(int damage)
+    public void TakeDamage()
     {
-        currentHealth -= damage;
-
-        // Check if the enemy should be destroyed
+        // Health is decreased when hit 
+        currentHealth--;
+        sprite.color = Color.red;
+        Invoke("ResetColour", 0.2f);
+        // Shield is destroyed when health reaches 0
         if (currentHealth <= 0)
         {
-            Die();
+            Destroy(gameObject); 
         }
     }
-
-    void Die()
+    public Color ConvertHexToColor(int hex)
     {
-        Debug.Log("Weakpoint destroyed");
-        isDestroyed = true;
-        spriteRenderer.color = Color.green;
-        boxCollider.enabled = false;
+        // Convert the hex integer to separate color components
+        float r = ((hex >> 16) & 255) / 255f;
+        float g = ((hex >> 8) & 255) / 255f;
+        float b = (hex & 255) / 255f;
+
+        return new Color(r, g, b, 1f); // Assumes full alpha
+    }
+    private void ResetColour()
+    {
+        Color spriteColor = ConvertHexToColor(0x07C4D6);
+        sprite.color = spriteColor;
     }
 }
