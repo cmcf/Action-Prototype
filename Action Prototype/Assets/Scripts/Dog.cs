@@ -9,6 +9,8 @@ public class Dog : MonoBehaviour
     [SerializeField]float stamina = 80f;      // Maximum stamina
     [SerializeField] float staminaDepletionRate = 10f;
     [SerializeField] float amplitude = 1f;
+    [SerializeField] Transform spawnPoint;
+    [SerializeField] float projectileSpeed = 5f;
 
     [SerializeField] float attackRange = 10f;
     public int barkDamage = 10;
@@ -17,6 +19,9 @@ public class Dog : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
+    [SerializeField] GameObject projectilePrefab;
+
+
     public Transform attackPoint;
     public LayerMask enemyLayers;
 
@@ -138,19 +143,42 @@ public class Dog : MonoBehaviour
         if (!isAttacking)
         {
             isAttacking = true;
+            // Instantiate a new bullet from the bullet prefab
+            GameObject newBullet = Instantiate(projectilePrefab, spawnPoint.position, spawnPoint.rotation);
             animator.SetBool("isAttacking", true);
+
+            // Calculate the bullet's direction based on the player's scale
+            float direction = transform.localScale.x > 0 ? 1f : -1f;
+
+            // Get the sprite renderer of the bullet
+            SpriteRenderer bulletSpriteRenderer = newBullet.GetComponent<SpriteRenderer>();
+
+            // Flip the bullet sprite by adjusting its local scale
+            Vector3 newScale = bulletSpriteRenderer.transform.localScale;
+            newScale.x *= direction;
+            bulletSpriteRenderer.transform.localScale = newScale;
+
+            // Set the initial velocity of the bullet to move in the desired direction
+            Rigidbody2D bulletRigidbody = newBullet.GetComponent<Rigidbody2D>();
+            if (bulletRigidbody != null)
+            {
+                // Calculate the bullet's velocity based on the player's direction
+                Vector2 bulletVelocity = new Vector2(projectileSpeed * direction, 0f);
+
+                // Set the bullet's velocity
+                bulletRigidbody.velocity = bulletVelocity;
+            }
         }
     }
     public void DogAttack()
     {
         isAttacking = true;
-        // Detect enemies in range
+        // Detect enemies in rangef
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log("We hit " + enemy.name);
-
+            
             // Perform a null check before trying to access the WeakPoint component
             WeakPoint weakPoint = enemy.GetComponent<WeakPoint>();
             if (weakPoint != null)

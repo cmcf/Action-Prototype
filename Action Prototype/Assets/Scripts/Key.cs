@@ -11,7 +11,7 @@ public class Key : MonoBehaviour
         if (collision.CompareTag("Player") || collision.CompareTag("Dog") || collision.CompareTag("Bear"))
         {
             Destroy(gameObject);
-            FindObjectOfType<GameSession>().keysCollected++;
+            GameSession.Instance.keysCollected++;
         }
     }
 }

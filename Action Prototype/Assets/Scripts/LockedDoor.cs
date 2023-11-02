@@ -12,7 +12,7 @@ public class LockedDoor : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (FindObjectOfType<GameSession>().keysCollected >= 2)
+        if (GameSession.Instance.keysCollected >= 2)
         {
             Debug.Log("Open door");
             anim.SetTrigger("IsOpen");

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class IncreaseTime : MonoBehaviour
 {
-    Timer timer;
+    [SerializeField] Timer timer;
 
     void Start()
     {
-        timer = FindObjectOfType<Timer>();
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ink : MonoBehaviour
 {
     Rigidbody2D rb;
+    [SerializeField] float inkdesolveTime = 8f;
 
     private void Start()
     {
@@ -14,7 +15,7 @@ public class Ink : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
-        Invoke("DestroyInk", 5f);
+        Invoke("DestroyInk", inkdesolveTime);
     }
 
     void DestroyInk()
