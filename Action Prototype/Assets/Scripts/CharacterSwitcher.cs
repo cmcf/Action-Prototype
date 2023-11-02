@@ -27,6 +27,7 @@ public class CharacterSwitcher : MonoBehaviour
 
     public GameObject dogObject;
     public GameObject switchVFX;
+    public AudioClip switchSFX;
 
     // Reference to the GameObject with the player movement script
     public GameObject playerObject;
@@ -150,9 +151,10 @@ public class CharacterSwitcher : MonoBehaviour
             // Update the playerTransform reference to the new character's transform
             playerTransform = characterInfo.character.transform;
 
-            // Play switch VFX
+            // Play switch VFX and SFX
             Vector3 vfxPosition = playerTransform.position;
             GameObject vfxInstance = Instantiate(switchVFX, vfxPosition, playerTransform.rotation);
+            AudioSource.PlayClipAtPoint(switchSFX, Camera.main.transform.position, 0.2f);
             Destroy(vfxInstance, switchVFXDuration);
 
             // Camera follows new player
