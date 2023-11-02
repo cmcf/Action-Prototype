@@ -2,6 +2,7 @@ using Cinemachine;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.VFX;
 
 [System.Serializable]
 public class CharacterInfo
@@ -22,8 +23,10 @@ public class CharacterSwitcher : MonoBehaviour
     private Vector3 previousCharacterPosition = Vector3.zero; // Store the previous character's position
     private CharacterState currentCharacterState;
 
+    [SerializeField] float switchVFXDuration = 0.2f;
+
     public GameObject dogObject;
-    
+    public GameObject switchVFX;
 
     // Reference to the GameObject with the player movement script
     public GameObject playerObject;
@@ -146,6 +149,12 @@ public class CharacterSwitcher : MonoBehaviour
 
             // Update the playerTransform reference to the new character's transform
             playerTransform = characterInfo.character.transform;
+
+            // Play switch VFX
+            Vector3 vfxPosition = playerTransform.position;
+            GameObject vfxInstance = Instantiate(switchVFX, vfxPosition, playerTransform.rotation);
+            Destroy(vfxInstance, switchVFXDuration);
+
             // Camera follows new player
             virtualCamera.Follow = playerTransform;
             playerRigidbody.velocity = Vector2.zero;
