@@ -6,13 +6,22 @@ using UnityEngine;
 public class BlueBullet : MonoBehaviour
 {
     Shield shield;
+    BlueObject blueObject;
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("Ignore"))
+        {
+            return;
+        }
         if (other.CompareTag("Shield"))
         {
-            Debug.Log("Blue bullet hit the shield.");
             shield = other.GetComponent<Shield>();
             shield.TakeDamage();
+        }
+        if (other.CompareTag("Blue"))
+        {
+            blueObject= other.GetComponent<BlueObject>();
+            blueObject.DestroyObject();
         }
         Destroy(gameObject);
     }

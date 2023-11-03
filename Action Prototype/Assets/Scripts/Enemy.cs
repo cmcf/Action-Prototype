@@ -5,7 +5,10 @@ public class Enemy : MonoBehaviour
 
     public GameObject shieldObject;
     private Shield shield;
-    private bool shieldDestroyed;
+    public GameObject keyPrefab;
+
+
+    public bool shieldDestroyed;
 
     private void Start()
     {
@@ -13,20 +16,18 @@ public class Enemy : MonoBehaviour
         shieldDestroyed = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("RedBullet") && shieldDestroyed)
-        {
-            Debug.Log("Red bullet hit the enemy.");
-            // Red bullet destroys the enemy
-            Destroy(gameObject);
-        }
-    }
-
     public void DestroyShield()
     {
         // Called when the shield is destroyed, enabling vulnerability to red bullets
         shieldDestroyed = true;
+    }
+
+    public void EnemyDeath()
+    {
+        // Spawn offset 
+        Vector3 spawnPosition = transform.position - new Vector3(0f, 0.5f, 0f);
+        Instantiate(keyPrefab, spawnPosition, Quaternion.identity);
+        Destroy(gameObject);
     }
 
 }
