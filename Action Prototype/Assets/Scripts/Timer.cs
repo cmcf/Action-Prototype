@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public Slider timerSlider;
 
     [SerializeField] float currentTime;
-    [SerializeField] float maxTime = 120;
+    [SerializeField] float maxTime = 150;
 
     [SerializeField] float timeDelay = 0.001f;
 

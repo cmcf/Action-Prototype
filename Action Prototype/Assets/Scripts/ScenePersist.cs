@@ -17,7 +17,7 @@ public class ScenePersist : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("GameManager not found. ScenePersist won't work as expected.");
+            Debug.LogWarning("GameManager not found.");
         }
     }
 

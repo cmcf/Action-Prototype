@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
-using System.Security.Cryptography;
+
 
 public class GameSession : MonoBehaviour
 {
@@ -25,7 +24,6 @@ public class GameSession : MonoBehaviour
         TakeLife();
     }
 
-    // Reloads current level
     void TakeLife()
     {
         lives--;
@@ -36,6 +34,7 @@ public class GameSession : MonoBehaviour
     public void ReloadScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
         SceneManager.LoadScene(currentSceneIndex);
         isAlive = true;
     }

@@ -1,5 +1,7 @@
+using Abertay.Analytics;
 using Cinemachine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.VFX;
@@ -37,6 +39,8 @@ public class CharacterSwitcher : MonoBehaviour
     // Reference to an array of spawn points
     public Transform[] playerSpawnPoints;
 
+    public int timesPlayerHasSwitched = 0;
+
     private bool canSwitch = true;
     public bool isSwitching = false;
 
@@ -45,6 +49,8 @@ public class CharacterSwitcher : MonoBehaviour
 
     void Start()
     {
+        AnalyticsManager.Initialise("development");
+
         // Initialize by activating the first character
         SwitchCharacter(currentCharacterIndex);
         playerTransform.position = playerSpawnPoints[currentCharacterIndex].transform.position;
@@ -117,8 +123,13 @@ public class CharacterSwitcher : MonoBehaviour
 
     private void SwitchCharacter(int characterIndex)
     {
+        timesPlayerHasSwitched++;
         canSwitch = false;
         isSwitching = true;
+
+        Dictionary<string, object> switchData = new Dictionary<string, object>();
+        switchData.Add("timesPlayerHasSwitched", timesPlayerHasSwitched);
+        AnalyticsManager.SendCustomEvent("TimesSwitched", switchData);
 
         Rigidbody2D playerRigidbody = playerObject.GetComponent<Rigidbody2D>();
         Rigidbody2D dogRigidbody = dogObject.GetComponent<Rigidbody2D>();
