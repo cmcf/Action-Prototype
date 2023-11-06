@@ -12,9 +12,6 @@ public class Dog : MonoBehaviour
     [SerializeField] Transform spawnPoint;
     [SerializeField] float projectileSpeed = 5f;
 
-    [SerializeField] float attackRange = 10f;
-    public int barkDamage = 10;
-
     float currentStamina;
 
     Rigidbody2D rb;
