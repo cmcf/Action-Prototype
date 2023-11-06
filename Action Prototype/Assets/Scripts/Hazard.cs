@@ -7,7 +7,7 @@ public class Hazard : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") || collision.CompareTag("Dog") || collision.CompareTag("Bear"))
+        if (collision.CompareTag("Player") || collision.CompareTag("Dog"))
         {
             GameSession.Instance.PlayerHit();
         }
