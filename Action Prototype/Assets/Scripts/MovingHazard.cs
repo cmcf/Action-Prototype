@@ -5,6 +5,8 @@ public class MovingHazard : MonoBehaviour
 {
     [SerializeField] float amplitude;
     [SerializeField] float frequency; // How fast the object moves
+    [SerializeField] float decreaseAmount = 1.5f;
+    [SerializeField] float minimumFrequencyValue = 4f;
     Vector3 initialPosition;
     private void Start()
     {
@@ -16,8 +18,19 @@ public class MovingHazard : MonoBehaviour
         transform.position = new Vector3(initialPosition.x, Mathf.Sin(Time.time * frequency) * amplitude + initialPosition.y, 0);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Hit");
+        if (collision.CompareTag("RedBullet"))
+        {
+            SlowDown();
+        }
+    }
+    void SlowDown()
+    {
+        // Decrease the speed of the moving hazard
+        frequency -= decreaseAmount;
+
+        // Clamp the frequency so it doesn't go below a certain amount
+        frequency = Mathf.Max(frequency, minimumFrequencyValue);
     }
 }
