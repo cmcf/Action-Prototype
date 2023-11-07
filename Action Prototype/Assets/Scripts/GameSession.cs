@@ -1,3 +1,5 @@
+using Abertay.Analytics;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +13,7 @@ public class GameSession : MonoBehaviour
     public int lives = 3;
     public int keysCollected = 0;
     public bool isAlive = true;
+    int timesPlayerHasDied = 0;
 
     float loadLevelDelay = 0.8f;
 
@@ -27,14 +30,21 @@ public class GameSession : MonoBehaviour
     void TakeLife()
     {
         lives--;
+        timesPlayerHasDied++;
+
+        Dictionary<string, object> deathData = new Dictionary<string, object>();
+        deathData.Add("timesPlayerHasDied", timesPlayerHasDied);
+        AnalyticsManager.SendCustomEvent("TotalDeaths", deathData);
+
+
         isAlive = false;
         Invoke("ReloadScene", loadLevelDelay);
     }
 
     public void ReloadScene()
     {
+      
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
         SceneManager.LoadScene(currentSceneIndex);
         isAlive = true;
     }
