@@ -1998,5 +1998,2185 @@
     "eventParams": {
       "timesPlayerHasSwitched": 1
     }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:33:44",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "682e9122fe63d3efbbc023401d497938",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:33:48",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "cf2aa9263eec2448f41328c1f1ecbd2b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:11",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "75932ccd99f8289d7c434a8efb0205d4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:19",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "522e99ad51fb98fabc6b1857e8ed111b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:21",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "cebeb0ec6a9b744f636078ed610406d3",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7f51a7e754844a276a152ed6b3390e3f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:24",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "f2dd57a1acaab271da52fb8283b0a374",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:29",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "f7be49f4194c1b4392897bc02f63884f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:31",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "cb7c04f6fdef9f5f4d04c73636812b16",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:34",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c4945b976b63914663ede2d766917e87",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:36",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "4c7ab5d7f02a806ad9afc23095d4d801",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "aa3703572ac383385245d1033ac306b5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:34:54",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ec72fae0baa70ee4144417a8538a54f1",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:35:53",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9460b88eb893f877f5a20d4be6ff2a3c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:14",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a5aaa1e8cc985dabc1ff2a5a38b0a0e4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:16",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0dc073d77e4d92d2fc4761d676ae5d35",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:18",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "91ad3d0c4c0a03dd009b736ba75e46c7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:21",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1918c587d4947ddd232ba52a9ed856c8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:23",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "639a3f277f965539f9bf1028864091e3",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:24",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b6be36650b2d24d5ee29f4bdc6e90a94",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:27",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "f2451efcfbc9b20394923bf93a692b56",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:30",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e5f8f7d557846aba37646c8ceb00c11e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:32",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "05f7092eec75fdc9409bd60e57058db5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:33",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5a51e55938a66f6651e3b0c3ee81846e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:35",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "475fc185723084e835e57cb0d0368750",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:39",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7e57b314aa3fd88b2b915a9710f9494a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:40",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "248ec2f2eba23c1a1baf1b6a7bf2cee9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:41",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5d590d2a96215c67c6b0f4136d35da50",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:43",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "8d7b880b4146cb7ffd9fd95372ebb8cf",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e26a942ac343df202ae044eaea180b22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:47",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "65662366b19ca7698fab1f5096673449",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:50",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2a18f816c5c83dc70887cca23974b54d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:51",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "fc5335af8284bbf363f461764a5312c7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:52",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "338e4ad7b59bd46bf79e4753d3ab7d13",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:54",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2050112bc3aa39e098ac9a0b4f9a3b18",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:55",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a2886a5e8c6ba219b976d7d3f4657afd",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:56",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b88d26afc4ccd9e3deecb78a9121f42e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:36:57",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "deb580ef848bf68874fc7f07a50604d2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:01",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d0197400b7a10b82d5ab0ab0ec2c1fd3",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 15
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:03",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9eb924d153dad847a5f5b35da996687a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 16
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:06",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ce222f30a0ca21149e9c9d8b2eeac0e9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 17
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:09",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "43240a715735484c05a08c8d4b3cf026",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 18
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:10",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0277c56bf7d7447d4174798abfd410dd",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 19
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:11",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0d75d86fabd19144b266c4465923d52c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:21",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "4830994a03437616b8376f89c506e774",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 21
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:37:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1102d8ef93db3b35576c8e27f3ec40f9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 22
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:25",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d75651cec7d642654a3187a33b65d2de",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:28",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "74ff172302182c9b7d13eae16e496a5c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:30",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "655937b23ea0e97cb21cb783b9db668c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:30",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "655937b23ea0e97cb21cb783b9db668c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:31",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "acd064c979ce3fa13a8b5f3884920602",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:32",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "693059232756967c8a704026f76b2124",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:34",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "515360dbd2b40908c9fbb94e8648d1fe",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:35",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "49ed46048c496dfcc8b879884bf30964",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:36",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b0bc19f763e5066a582cec21f0f647f9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:42",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e298dd5145028b47d411eb639049a40c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:43",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "878f2e885d49c24c363db46a9cd8a45c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:44",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "76f2d8d3b1fdbd9fe6c524710b83c58c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:45",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c2d41e2c94204f776d682cde2928bbfb",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "26f6020a5032340aedc95a4022b8c43c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:47",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e89231c2ca9d1e75ce2049a7ae5a318e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 15
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:49",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b4ab8db56c346ca49fad30759ae9fcb7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 16
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:50",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "8d1612c23b1d3536282ff89bf92492b8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 17
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:51",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "312597fef9d782c5e3ba6468598c8a56",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 18
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:54",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0e8d0d91bda3faebd755600d60a3a3f5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 19
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:56",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "fa080b8455c217f731d47ae90fe91194",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:57",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "03eaea2d66bed0f56c80341d40fbbdca",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 21
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:39:58",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c7954b96607a1ed2ad02755669a47431",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 22
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:01",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e1c42ecd908d4b40d532ff589d0f7f08",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 23
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:09",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "60aaae6aab73a1abbb2c3b8823193c12",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 24
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:10",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "76ad45e860ba489476d4694441f0fbed",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 25
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:11",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "f2f2ab252f311118df5532adcab43335",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 26
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:12",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "8d86b07662624a0f7bad4245df0d4ad7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 27
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:14",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "aaba9fc230b353d8f3a9a8da417d6ba9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 28
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:16",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7fb10a4441fbbffd15d56c70675e6848",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 29
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:18",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c4468295817606a69ca9401ea1b5161c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 30
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:23",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "96558c668a50d14cf7660e84d24bbcac",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:24",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "bb6111b28d3841d8f85db022c800268b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:29",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "3260ec21cf4a4b2688e6967b22374412",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:30",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0e22296fb19ab1df39235380b9093189",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:32",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "38889f0bab40e4ff846b244c22596981",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:34",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2935b06cf12fe9d45fc04f734cb65984",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:35",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a534cf58f2b2956a819a57db9bda9cd8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:36",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "be4e572b8264f3490c9bf1e37490ef2e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:37",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9085784a13fc1f1d4e3720f1e0766e96",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:40",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "32eaca9836c0d91c9a9ccf2d989e155d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:42",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "079b55027408e6d203c1d3319fa21b17",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:43",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0801a688ec09fa69b77f61fa5a79be67",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:44",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a00b50956f236a8a9a220925f4be4409",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:50",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2ea460b5f4fe470701e6ccc7d0df73fa",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:56",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1f2a428ee2987529d1eb229a612dbf35",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 15
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:57",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a008f8412bc7169dd9776e1a2493ebad",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 16
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:58",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b9c1dc2cfd85d489b9c1ed02c673537f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 17
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:40:59",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "dbe374886a7ba8b9abcf985e64250b9a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 18
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:42:44",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c0b845a8bf017ed6f643b1b65bce4269",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:42:54",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d9b13281c6d8281f952f44b14aff6d1b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:42:55",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "666a1eb6e36d62812b88dbab3e4addf5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:42:57",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2bac3a95e4156fbb23e2ed4fe04b4c45",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:42:58",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d35c7799110d32a577227e93abffb795",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:00",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "150ee319beb9d5e41518b25af237e8af",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:01",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5b268f9c631c1ef8d479c4269fb0f946",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:02",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "92e9eff4af01da1e68fa821031522076",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:03",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "3a90d7005999f694bd7c99337a7834a4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:06",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "04850442d6952288325506a937f01cfc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:07",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "8d901712f30b1fbac9521d18570cbf25",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:10",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ee2995cd9576bf52ef940f735b1f2b95",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:11",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "4671013263987fb65214724cb76d7c86",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:12",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e2003ac3a4b1f0dde2e721f77197a0d2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:13",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5cab51ff44c7fe0dcd64680706768f1e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 15
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:15",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6e08c183a036eed3dbd53cfd40446408",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 16
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:19",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7896df669c1eda578975f2c650da9c1b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 17
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:21",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2a185fdcb5bdeeb579bfac36ba34e295",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 18
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "4f4993ee758c8125cf57c6df550389e0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 19
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:29",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1798d66822770c44440979a85eda55d9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:34",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9b614a8e42c237c4b1d07bf1570b22b9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 21
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:37",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2bac82d67646107a6f996d7ff12165c7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 22
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:38",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "771735e8ac783a5b6facb0d60f80601e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 23
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:40",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "66cd56898cad8e14caf7d9af4db824db",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 24
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:42",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ac8ed97ce60ef20434d29abf28a2fa62",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 25
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:44",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c528f0fcfa239009224646bacdbaa1fc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 26
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "db58c586100233d9199e0c4d2bb3125c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 27
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:48",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ec8e881da54df582350e8c9543b80940",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 28
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:52",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "75311e0558d7bbaa2d12cc977cd47b39",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:55",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d65a2bf954bbf3fabe99e056bd6045e8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:43:57",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2d12531606642cf5e46dd4195c369140",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:12",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1fbeaa5ea586794fea04cc8587162e3f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:13",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5d13bf0c26aeb44e1876a7dbe6f5c3fe",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "21a01705cd4e777842c0f011ae634a5b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:23",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d1661238aa2409922ef14e6fc544af0c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:24",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "34f0b890cde1f80f669e043f76e9ab95",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:26",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9a4319bc7707523306fdd171009dc09f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:32",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7606d984b936b4a93915c95822f8c5ee",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:34",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "99c7916eaa7013aeef4638f62a7eab70",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "53ecd5a13624601aca8cdbce481bd380",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:47",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "56d70cd7a8f1846307a4d6daaaae453d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:48",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5d019a9266540dd4d065605341abfa46",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:52",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "693f4eba906d912cbef73bc2892375d1",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:44:54",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "8d6c4714c26fed80f1d982efd6dfc908",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:00",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7cfeb444e565cd41ded0d6fffc34ff86",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:03",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d90734e99cf0942fa8f2f91dcbf97fe5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:08",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ca3938826693a2f7e1cc33287b1b3e38",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:13",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "45d2ac6b8f6a1fad10ff58da5d388142",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:16",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "11cb70558237183260ced6f45e0755ba",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:20",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6ed07e519312d74665766e25a2759208",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:33",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7cbce365f86897664103e8a4bbc25e30",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:36",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9dc5b5085fedb5db3ab51cf353030ae2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:38",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "30d3068aa7f3b6002ec863f933dddf38",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:45",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9ce5272299c00248d528ccb6c52c8cf0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "efbf75fad0aa77bfbeb25cf83389bc49",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:52",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "315503d2603f6f4fda05dbbf3e529350",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:53",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5d5d65aada535ea04a169f8320412c4d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:56",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7f86c3df9b2e4a4bbdaa8577d5fd5d59",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:45:56",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7f86c3df9b2e4a4bbdaa8577d5fd5d59",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 15
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:00",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d1a8320ef70fd9872880167c30d8c13f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 16
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:13",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b601b2630c109775ece4fef1f6d7b89f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 17
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:14",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "71a39354d297b17f7d2501793440f7f1",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 18
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:17",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a658643da6fffd83e81c09c374fe0422",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 19
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:19",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ccf16168d654e0844a32d5978d3e2bad",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:20",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b03086625b9b8e844c007b1bf0be39b9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 21
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:21",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "50cdad63c6fd2ab40110efc13e17f0b5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 22
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "87f330465b89bc35a12d8eb8c9765b04",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 23
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:24",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "34e2e260b3d00a74f8f02720cbb1133a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 24
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:25",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6ad69245fc0129167b964a381acdd0e4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 25
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:29",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5f7a384ea37e63226936a3a60001d6b9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 26
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:30",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "cdf2f351b6727f6f772700fc72458c0e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 27
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:46:39",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "783e7924fa23b19f8ed474753d844388",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 28
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:02",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "41bf92786962075a8d2ce0df5740a98c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:07",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "98a18fc6be359d56eb926a6f90edfeec",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:09",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b93a8be585b49624d18fa752d5284baf",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:10",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "cf3cdad10faf66609f567ea369049522",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:11",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "922f7b742ad867abfe653fcfe8f27593",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:13",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2b3e4974593e4e69f2a82d376dd5c45d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:14",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6d5d05678c29936fb39ea2231a07cb9b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:19",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "2928c7c9d979dc678c73a7fc300a6aaf",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:20",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "d28321779571aa60359e2f6f5b6da0c3",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c2f49aeea80f8974f9963f429d5c4957",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:24",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "fb2686412004d865679b5fd79ea08fc5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:26",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "cf34f94e396e787e65bdefbf5f144878",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:27",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9542fcfce4494ed72d0adcd165d3b855",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:49:28",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e20be43afb2d9fe14c5c654b16158a31",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:08",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "551b34b865711e95f673ad6d1bf049c5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:14",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1afc2688b7fc15d677bc7bd2c238fb7f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:15",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6dfc0d3f4a9a399225362f23d7eccf77",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:16",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "79ac3623fbf1cf2ca0646cca895fba5c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:17",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "50a14a334966a3bb204d3a7a284ec600",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:18",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "27cb6d2c773f7d98bae3b4e475f5bd62",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:19",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "982966da39fe250280eed86ef09500b5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:21",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "fb294696c4d1e04022e2c1bdf5b449c0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "23c29af6628cee140b37c7b20cf86028",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:25",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "43c4c9c829db92e2c34de91524f0baa0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:26",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1737790c5f7a6cdfa35fd59b43e81069",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:27",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5b094f73fd6b902774469da8e19f4274",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:29",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b1e82629e96666d98ef5842e582667b2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:30",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c455c5bcad9940c3eca418af63fb7b13",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:32",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "c3ec97a91e3948cd5138caf1b6248471",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 15
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:36",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "44c42e441e078ae17ba4bae6e5bc36ba",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 16
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:39",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "e1f2293588615d565c0d92b5d5b30f53",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 17
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:43",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0d6f1fc19d2c1cd43e31c7602e59d21a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 18
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:49",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "94d031b0a6f32e5bdbd08c3702665860",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 19
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:50:51",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a310ae10e07f80eb84815a67bb83ec28",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:19",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "9fb0b5a4fc300468c12d2b95ed1787f0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:23",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "04e6618a64bdcec40c48c2fde1f21066",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:25",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "fdb7ff1027bb4be6b1f22be8ca53ddb7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:27",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "604f0351f05b598b972c152577de973e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:29",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "fc3a748012c5960af6c22672d4cc7e23",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:31",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "467b37b0105b508fe38f6b7926dece49",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:32",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "273dfb2dbba77bf2cad985d859838ff6",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:35",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "8c3e4ad3de864becebc88c0237a21fc6",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 8
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:36",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "78e38441501bd1ba881d7684899ce482",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 9
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:38",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "99b6bbe21812c68f133e07df1ceef0e9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 10
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:39",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6be2eaf456abbebd9a39769208a43b47",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 11
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:40",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "56b520f8a1ae9d1361e5fbc7b9bd8110",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 12
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:42",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "5d11829477b74599913b5c2c5db7e10f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 13
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "48805a5b8b374a06a09e29d52c129432",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 14
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:48",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0a4b976d8451c2b5a4e52703dda85878",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 15
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:51:51",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "4c91975a6ca0e824be18f851f4589dea",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 16
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:52:56",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7c1dfc3aa5db926153bd3934ae9bb295",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "7/11/2023 14:52:57",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1201f8a1e077884e290d1031a845faac",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
   }
 ]
