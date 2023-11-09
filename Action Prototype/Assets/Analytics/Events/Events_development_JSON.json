@@ -5248,5 +5248,85 @@
     "eventParams": {
       "timesPlayerHasSwitched": 5
     }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:37",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b50c289d71aec142edcbed3eff6209ac",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:39",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6a94c902fcf44cafd9640d0f66a7a07a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 2
+    }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:41",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "540d0de9f1be1663840c982aa2a3060d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 3
+    }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:42",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "1ec62ae888d4d60de085dca58449cd3a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 4
+    }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:43",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "a978ca39bd94f0a8a18e1f788af3a2eb",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 5
+    }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:45",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b57f8d7058075f684d4972c1ce7ae512",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 6
+    }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "3abd74d5a7f1530c256bf7d8b366aa68",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 7
+    }
+  },
+  {
+    "eventTimestamp": "9/11/2023 17:12:48",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "bfcc0f8ddebefc5c9745c8a8c4694cd3",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
   }
 ]

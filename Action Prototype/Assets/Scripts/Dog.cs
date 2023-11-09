@@ -56,6 +56,10 @@ public class Dog : MonoBehaviour
     {
         moveInput = Vector2.zero;
     }
+    void OnQuit(InputValue value)
+    {
+        Application.Quit();
+    }
 
     void StaminaManagement()
     {

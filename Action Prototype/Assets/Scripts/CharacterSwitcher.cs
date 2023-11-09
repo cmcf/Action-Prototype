@@ -89,7 +89,6 @@ public class CharacterSwitcher : MonoBehaviour
 
         HandleSwitchInput();
     }
-
     void HandleSwitchInput()
     {
         // Checks if player has pressed switch button on keyboard or controller

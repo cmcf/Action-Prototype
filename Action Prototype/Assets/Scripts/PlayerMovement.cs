@@ -47,6 +47,11 @@ public class PlayerMovement : MonoBehaviour
         moveInput = Vector2.zero;
     }
 
+    void OnQuit(InputValue value)
+    {
+        Application.Quit();
+    }
+
     void OnMove(InputValue value)
     {
         // Player can't move if dead
