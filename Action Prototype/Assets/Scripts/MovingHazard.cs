@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 
@@ -22,10 +23,10 @@ public class MovingHazard : MonoBehaviour
     {
         if (collision.CompareTag("RedBullet"))
         {
-            SlowDown();
+            StartCoroutine(SlowDown());
         }
     }
-    void SlowDown()
+    private IEnumerator SlowDown()
     {
         // Decrease the speed of the moving hazard
         frequency -= decreaseAmount;
