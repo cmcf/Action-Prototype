@@ -40,7 +40,7 @@ public class HiddenRoom : MonoBehaviour
         }
     }
 
-    void RevealRoom()
+    public void RevealRoom()
     {
         enableLever = true;
         // Loops through tiles and sets them to be visible

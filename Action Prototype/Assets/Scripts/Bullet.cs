@@ -5,25 +5,23 @@ using UnityEngine;
 
 public class BlueBullet : MonoBehaviour
 {
-    Shield shield;
-    BlueObject blueObject;
+
+    public GameObject VFX;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Ignore"))
         {
             return;
         }
-        if (other.CompareTag("Shield"))
-        {
-            shield = other.GetComponent<Shield>();
-            shield.TakeDamage();
-        }
-        if (other.CompareTag("Blue"))
-        {
-            blueObject= other.GetComponent<BlueObject>();
-            blueObject.DestroyObject();
-        }
+      
+        PlayVFX();
         Destroy(gameObject);
+    }
+
+    void PlayVFX()
+    {
+        Vector3 vfxPosition = transform.position;
+        GameObject vfxInstance = Instantiate(VFX, vfxPosition, transform.rotation);
     }
 }
 

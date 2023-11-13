@@ -16,6 +16,11 @@ public class LevelExit : MonoBehaviour
 
     IEnumerator LoadNextLevel()
     {
+        if (Timer.Instance != null)
+        {
+            // Stops the timer
+            Timer.Instance.StopTime();
+        }
         // Loads level after a delay
         yield return new WaitForSecondsRealtime(loadDelay);
         // Gets current level
@@ -26,6 +31,7 @@ public class LevelExit : MonoBehaviour
         // Resets next level if player has reached the last level
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
+
             nextSceneIndex = 0;
         }
         // Loads next level

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class BlueObject : MonoBehaviour
 {
-    public void DestroyObject()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.CompareTag ("BlueBullet"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class RedBullet : MonoBehaviour
 {
-    Enemy enemy;
-    [System.Obsolete]
+    public GameObject VFX;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,14 +12,13 @@ public class RedBullet : MonoBehaviour
         {
             return;
         }
-        if (other.CompareTag("Enemy"))
-        {
-            Debug.Log("Red bullet hit the enemy.");
-            enemy = other.GetComponent<Enemy>();
-            enemy.EnemyDeath();
-        }
-
+        PlayVFX();
         Destroy(gameObject);
     }
 
+    void PlayVFX()
+    {
+        Vector3 vfxPosition = transform.position;
+        GameObject vfxInstance = Instantiate(VFX, vfxPosition, transform.rotation);
+    }
 }

@@ -1,37 +1,61 @@
-using System.Collections;
 using UnityEngine;
 
 
 public class MovingHazard : MonoBehaviour
 {
-    [SerializeField] float amplitude;
-    [SerializeField] float frequency; // How fast the object moves
-    [SerializeField] float decreaseAmount = 1.5f;
-    [SerializeField] float minimumFrequencyValue = 4f;
-    Vector3 initialPosition;
-    private void Start()
-    {
-        initialPosition = transform.position;
-    }
+    [SerializeField] private float originalMoveSpeed = 5f;
+    [SerializeField] private float minimumMoveSpeed = 2f;
+    [SerializeField] private float pauseDelay = 1.0f;
+    [SerializeField] private float decreaseSpeedAmount = 1.5f;
+
+    public Transform movingObject;
+    public Transform startPosition;
+    public Transform endPosition;
+
+    int direction = 1;
+
     private void Update()
     {
-        // Moves object smootly over time on the Y axis
-        transform.position = new Vector3(initialPosition.x, Mathf.Sin(Time.time * frequency) * amplitude + initialPosition.y, 0);
+        Vector2 target = currentTargetPosition();
+        movingObject.position = Vector2.Lerp(movingObject.position, target, originalMoveSpeed * Time.deltaTime);
+
+        float distance = (target - (Vector2)movingObject.position).magnitude;
+
+        if (distance <= 0.1f)
+        {
+            direction *= -1;
+        }
+    }
+
+    Vector2 currentTargetPosition()
+    {
+        if (direction == 1)
+        {
+            return startPosition.position;
+        }
+        else
+        {
+            return endPosition.position;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.CompareTag("RedBullet"))
         {
-            StartCoroutine(SlowDown());
+            Debug.Log("Hit");
+            SlowDown();
         }
     }
-    private IEnumerator SlowDown()
+
+    private void SlowDown()
     {
         // Decrease the speed of the moving hazard
-        frequency -= decreaseAmount;
+        originalMoveSpeed -= decreaseSpeedAmount;
 
-        // Clamp the frequency so it doesn't go below a certain amount
-        frequency = Mathf.Max(frequency, minimumFrequencyValue);
+        // Clamp the move speed so it doesn't go below a certain amount
+        originalMoveSpeed = Mathf.Max(originalMoveSpeed, minimumMoveSpeed);
     }
+
 }
