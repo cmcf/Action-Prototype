@@ -8,7 +8,6 @@ public class TutorialPromps : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
     BoxCollider2D firstCollider;
-    Canvas canvas;
     
     
     void Start()

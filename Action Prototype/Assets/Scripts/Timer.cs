@@ -1,19 +1,19 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
     public static Timer Instance; // Singleton instance
-    public Slider timerSlider;
 
-    [SerializeField] float currentTime;
-    [SerializeField] float maxTime = 150;
+    public TextMeshProUGUI timerMins;
+    public TextMeshProUGUI timerMins2;
+    public TextMeshProUGUI timerSeconds;
+    public TextMeshProUGUI timerSeconds2;
 
-    [SerializeField] float timeDelay = 0.001f;
-
-    public bool stopTimer = false;
+    private float timer = 0f;
+    private bool stopTimer = false;
 
     private void Awake()
     {
@@ -27,68 +27,41 @@ public class Timer : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void Start()
-    {
-        currentTime = maxTime;
-        timerSlider.maxValue = currentTime;
-        timerSlider.value = currentTime;
-        StartTimer();
-    }
-
-    public void StartTimer()
-    {
-        StartCoroutine(StartCountdown());
-    }
 
     private void Update()
     {
-        if (currentTime <= 0)
+        if (!stopTimer)
         {
-            OutOfTime();
+            timer += Time.deltaTime;
+
+            // Prevent timer from going below 0
+            timer = Mathf.Max(timer, 0f);
+
+            UpdateDisplay(timer);
         }
     }
 
-    IEnumerator StartCountdown()
+    private void UpdateDisplay(float time)
     {
-        while (!stopTimer)
-        {
-                // Decreases slider time
-                currentTime -= Time.deltaTime;
-                yield return new WaitForSeconds(timeDelay);
+        float minutes = Mathf.FloorToInt(time / 60);
+        float seconds = Mathf.FloorToInt(time % 60);
 
-                if (currentTime <= 0)
-                {
-                    stopTimer = true;
-                }
-                // Updates slider value
-                if (!stopTimer)
-                {
-                    if (timerSlider != null)
-                    {
-                        timerSlider.value = currentTime;
-                    }
-                    
-                }
-            }
-        }
+        // Displays time in time format
+        string currentTime = string.Format("{00:00}{1:00}", minutes, seconds);
+        timerMins.text = currentTime[0].ToString();
+        timerMins2.text = currentTime[1].ToString();
+        timerSeconds.text = currentTime[2].ToString();
+        timerSeconds2.text = currentTime[3].ToString();
+    }
+
 
     public void StopTime()
     {
         stopTimer = true;
     }
-
-    public void IncreaseTime()
+    public void DecreaseTime()
     {
-        // Check if increasing totalTime by 1 will not exceed max
-        if (currentTime + 1 <= maxTime)
-        {
-            currentTime++;
-        }
-    }
-
-    void OutOfTime ()
-    {
-        GameSession.Instance.PlayerHit();
-        currentTime = maxTime;
+        // Decreases time
+        timer--;
     }
 }

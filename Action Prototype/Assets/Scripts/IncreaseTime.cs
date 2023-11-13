@@ -9,7 +9,7 @@ public class IncreaseTime : MonoBehaviour
     {
         if (collision.tag == "Player"|| collision.tag == "Dog")
         {
-            Timer.Instance.IncreaseTime();
+            Timer.Instance.DecreaseTime();
             Destroy(gameObject);
         }
     }

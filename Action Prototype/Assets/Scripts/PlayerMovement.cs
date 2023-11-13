@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float minMoveSpeed = 0.15f; // Minimum movement speed
     [SerializeField] float moveSpeed = 1f; // Player default movement speed
     [SerializeField] float jumpForce = 5f; // How high the player can jump 
     [SerializeField] int maxJumps = 2; // Maximum amount of times the player can jump at once
@@ -146,12 +145,6 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetTrigger("isDead");
         }   
-    }
-
-    public void DecreaseMovementSpeed(float speedDecreaseAmount)
-    {
-        // Decrease movement speed, ensuring it doesn't go below the minimum
-        moveSpeed = Mathf.Max(moveSpeed - speedDecreaseAmount, minMoveSpeed);
     }
 }
 

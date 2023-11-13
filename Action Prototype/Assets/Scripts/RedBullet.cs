@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RedBullet : MonoBehaviour
 {
-    [System.Obsolete]
+    public GameObject VFX;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,8 +12,13 @@ public class RedBullet : MonoBehaviour
         {
             return;
         }
-
+        PlayVFX();
         Destroy(gameObject);
     }
 
+    void PlayVFX()
+    {
+        Vector3 vfxPosition = transform.position;
+        GameObject vfxInstance = Instantiate(VFX, vfxPosition, transform.rotation);
+    }
 }

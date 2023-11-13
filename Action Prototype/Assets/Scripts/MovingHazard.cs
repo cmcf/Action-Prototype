@@ -1,5 +1,3 @@
-using System.Collections;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
@@ -43,7 +41,6 @@ public class MovingHazard : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collision detected with: " + collision.gameObject.name);  // Add this line
 
         if (collision.CompareTag("RedBullet"))
         {
@@ -54,7 +51,7 @@ public class MovingHazard : MonoBehaviour
 
     private void SlowDown()
     {
-        // Decrease the speed of the moving hazard permanently
+        // Decrease the speed of the moving hazard
         originalMoveSpeed -= decreaseSpeedAmount;
 
         // Clamp the move speed so it doesn't go below a certain amount
