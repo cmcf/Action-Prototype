@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"D:/Unity Projects/Builds/Web Builds/Shapeshifter_v3;D:/Unity Projects/Builds/Web Builds/v3;D:/Unity Projects/Builds/Web Builds/Shapeshifter_v2;D:/Unity Projects/Builds/Web Builds/Proto_v1.2;D:/Unity Projects/Builds/Web Builds/Proto_v1;D:/Unity Projects/Action-Prototype/Action Prototype/WebGL Builds;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Unity Projects/Bui;D:/Unity Projects/Builds/Web Builds/Shapeshifter_v3;D:/Unity Projects/Builds/Web Builds/v3;D:/Unity Projects/Builds/Web Builds/Shapeshifter_v2;D:/Unity Projects/Builds/Web Builds/Proto_v1.2;D:/Unity Projects/Builds/Web Builds/Proto_v1;D:/Unity Projects/Action-Prototype/Action Prototype/WebGL Builds;;;\"}"
             }
         ]
     }

@@ -6,6 +6,7 @@ public class Ink : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float inkdesolveTime = 8f;
+    [SerializeField] GameObject dogPrompt;
 
     private void Start()
     {
@@ -16,6 +17,11 @@ public class Ink : MonoBehaviour
     {
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         Invoke("DestroyInk", inkdesolveTime);
+
+        if (collision.gameObject.CompareTag("Dog"))
+        {
+            dogPrompt.SetActive(false);
+        }
     }
 
     void DestroyInk()

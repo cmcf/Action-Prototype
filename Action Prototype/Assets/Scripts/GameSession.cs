@@ -2,12 +2,13 @@ using Abertay.Analytics;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 
 public class GameSession : MonoBehaviour
 {
     public static GameSession Instance { get; private set; }
-
+ 
     public ScenePersist scenePersist;
 
     public int lives = 3;
@@ -47,5 +48,10 @@ public class GameSession : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
         isAlive = true;
+    }
+
+    public static void Quit()
+    {
+        Application.Quit();
     }
 }
