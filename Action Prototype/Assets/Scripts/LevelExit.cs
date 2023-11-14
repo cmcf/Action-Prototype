@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Abertay.Analytics;
 
 public class LevelExit : MonoBehaviour
 {
     [SerializeField] float loadDelay = 1f;
+    float finalTime;
     void OnTriggerEnter2D(Collider2D collision)
     { 
         if (collision.CompareTag("Player") || collision.CompareTag("Dog"))
@@ -20,6 +22,10 @@ public class LevelExit : MonoBehaviour
         {
             // Stops the timer
             Timer.Instance.StopTime();
+            finalTime = Timer.Instance.timer;
+            Dictionary<string, object> playerTime = new Dictionary<string, object>();
+            playerTime.Add("playerFinalTime", finalTime);
+            AnalyticsManager.SendCustomEvent("PlayerTime", playerTime);
         }
         // Loads level after a delay
         yield return new WaitForSecondsRealtime(loadDelay);

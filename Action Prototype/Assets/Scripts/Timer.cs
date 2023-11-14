@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerSeconds;
     public TextMeshProUGUI timerSeconds2;
 
-    private float timer = 0f;
+    public float timer = 0f;
     private bool stopTimer = false;
 
     private void Awake()
