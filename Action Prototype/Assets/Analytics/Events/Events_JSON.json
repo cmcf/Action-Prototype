@@ -12478,5 +12478,95 @@
     "eventParams": {
       "timesPlayerHasSwitched": 2
     }
+  },
+  {
+    "eventTimestamp": "18/11/2023 17:58:55",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7054e0de50957ca120a88a5f4c49e4ac",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:01:33",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "88ef19a047dc6d592ad8bf858afbcf9d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:01:51",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "6e9ac043f0cebf2c43ac839ebb5d0078",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:02:22",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "ea4974481a105a4e6b8d461dbd28a115",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:02:46",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "0bba6347b6014303e5b1eecd4a750c2e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:04:07",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "4696c780ec15c64b9ec6caf2c7df1d61",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:04:20",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "592f4d92338a5825268e607f93117938",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:04:39",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7cea2f91aa37555065d9d7ae2672a6fe",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
+  },
+  {
+    "eventTimestamp": "18/11/2023 18:05:07",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "cee171a7d3309b10f7e18606b170badb",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 1
+    }
   }
 ]

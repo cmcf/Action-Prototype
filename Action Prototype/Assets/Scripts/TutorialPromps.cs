@@ -7,9 +7,11 @@ using TMPro;
 public class TutorialPromps : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
+    [SerializeField] TMP_Text inkText;
     BoxCollider2D firstCollider;
     [SerializeField] Image rmb;
     [SerializeField] Image lmb;
+    [SerializeField] Image key;
     
     void Start()
     {
@@ -29,7 +31,7 @@ public class TutorialPromps : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Dog") || other.CompareTag("Bear"))
+        if (other.CompareTag("Player") || other.CompareTag("Dog"))
         {
             // Display the tutorial message
             ShowTutorialMessage();
@@ -37,7 +39,7 @@ public class TutorialPromps : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Dog") || other.CompareTag("Bear"))
+        if (other.CompareTag("Player") || other.CompareTag("Dog"))
         {
             // Display the tutorial message
             HideMessage();
@@ -47,6 +49,10 @@ public class TutorialPromps : MonoBehaviour
     private void ShowTutorialMessage()
     {
         text.gameObject.SetActive(true);
+        if (inkText != null)
+        {
+            inkText.gameObject.SetActive(true);
+        }
         if (rmb != null)
         {
             rmb.gameObject.SetActive(true);
@@ -55,11 +61,19 @@ public class TutorialPromps : MonoBehaviour
         {
             lmb.gameObject.SetActive(true);
         }
+        if (key != null)
+        {
+            key.gameObject.SetActive(true);
+        }
     }
 
     void HideMessage()
     {
         text.gameObject.SetActive(false);
+        if (inkText!= null)
+        {
+            inkText.gameObject.SetActive(false);
+        }
         if (rmb != null)
         {
             rmb.gameObject.SetActive(false);
@@ -67,6 +81,10 @@ public class TutorialPromps : MonoBehaviour
         if (lmb != null)
         {
             lmb.gameObject.SetActive(false);
+        }
+        if (key != null)
+        {
+            key.gameObject.SetActive(false);
         }
     }
 }
