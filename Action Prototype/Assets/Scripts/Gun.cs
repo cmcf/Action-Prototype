@@ -4,6 +4,7 @@ using Unity.VisualScripting.InputSystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Abertay.Analytics;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class Gun : MonoBehaviour
 
     int redbulletsFired = 0;
 
+    public Image inkImage;
+
     Animator animator;
     PlayerMovement playerMovement;
 
@@ -30,6 +33,26 @@ public class Gun : MonoBehaviour
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
         AnalyticsManager.Initialise("development");
+    }
+
+    void Update()
+    {
+        UpdateInkUI();
+    }
+
+    void UpdateInkUI()
+    {
+        // Checks if player can fire ink in current area
+        bool inkAlreadyPresent = CheckForInk();
+
+        if (!inkAlreadyPresent)
+        {
+            inkImage.color = Color.white;
+        }
+        else
+        {
+            inkImage.color = Color.grey;
+        }
     }
 
     void OnFire(InputValue value)
@@ -73,7 +96,7 @@ public class Gun : MonoBehaviour
         Rigidbody2D bulletRigidbody = newBullet.GetComponent<Rigidbody2D>();
         if (bulletRigidbody != null)
         {
-            // Calculate the bullet's velocity based on the player's direction
+            // Calculates the bullet's velocity based on the player's direction
             Vector2 bulletVelocity = new Vector2(bulletSpeed * direction, 0f);
 
             // Set the bullet's velocity
@@ -86,48 +109,69 @@ public class Gun : MonoBehaviour
     void OnInk(InputValue value)
     {
         // Check if there's already ink at the desired spawn point
-        bool inkAlreadyPresent = false;
+        bool inkAlreadyPresent = CheckForInk();
+
+        if (!inkAlreadyPresent)
+        {
+            // Set the ink UI colour to white to indicate that the player can fire
+            inkImage.color = Color.white;
+
+            StartCoroutine(FireInk());
+        }
+        else
+        {
+            // Set the ink UI colour to grey to indicate that the player can't fire
+            inkImage.color = Color.grey;
+        }
+    }
+    bool CheckForInk()
+    {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(spawnPoint.position, inkCheckRadius);
 
         foreach (Collider2D hitCollider in hitColliders)
         {
             if (hitCollider.CompareTag("Ink"))
             {
-                inkAlreadyPresent = true;
-                break;
+                return true;
             }
         }
 
-        if (!inkAlreadyPresent)
-        {
-          
-            if (playerMovement.isGrounded)
-            {
-                // Enables animation
-                animator.SetBool("isFiring", true);
-                // Create a rotation
-                Quaternion inkRotation = Quaternion.Euler(0f, 0f, 90f); // Rotate by 45 degrees around the Z-axis
-                                                                        // Spawns ink
-                GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, spawnPoint.rotation);
-                // Add a force to make the ink move downwards
-                Rigidbody2D inkRigidbody = newInk.GetComponent<Rigidbody2D>();
-                if (inkRigidbody != null)
-                {
-                    // Adjust the force values as needed to control the speed and direction
-                    Vector2 downwardForce = Vector2.down * inkSpeed;
-                    Vector2 forwardForce = Vector2.right * inkForwardSpeed; // Adjust forwardSpeed as needed
-                    inkRigidbody.AddForce(downwardForce + forwardForce, ForceMode2D.Impulse);
-                }
-                // Fire delay is called which sets can fire back to true after a delay 
-                Invoke("FireDelay", fireDelay);
-            } 
-        }
-         
+        return false;
     }
-    void FireDelay()
+    IEnumerator FireInk()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        // Reset ink UI after firing
+        inkImage.color = Color.grey;
+
+        if (playerMovement.isGrounded)
+        {
+            // Enables animation
+            animator.SetBool("isFiring", true);
+            // Create a rotation
+            Quaternion inkRotation = Quaternion.Euler(0f, 0f, 90f); // Rotate by 45 degrees around the Z-axis
+                                                                    // Spawns ink
+            GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, spawnPoint.rotation);
+            // Add a force to make the ink move downwards
+            Rigidbody2D inkRigidbody = newInk.GetComponent<Rigidbody2D>();
+            if (inkRigidbody != null)
+            {
+                // Adjust the force values as needed to control the speed and direction
+                Vector2 downwardForce = Vector2.down * inkSpeed;
+                Vector2 forwardForce = Vector2.right * inkForwardSpeed; // Adjust forwardSpeed as needed
+                inkRigidbody.AddForce(downwardForce + forwardForce, ForceMode2D.Impulse);
+            }
+            // Fire delay is called which sets can fire back to true after a delay 
+            Invoke("FireDelay", fireDelay);
+        }
+    }
+
+void FireDelay()
     {
         // Enables the player to fire again and stops firing animation
         canFire = true;
+        inkImage.color = Color.white;
         animator.SetBool("isFiring", false);
     }
 

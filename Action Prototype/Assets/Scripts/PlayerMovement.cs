@@ -7,8 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f; // Player default movement speed
     [SerializeField] float jumpForce = 5f; // How high the player can jump 
-    [SerializeField] int maxJumps = 2; // Maximum amount of times the player can jump at once
-    [SerializeField] int jumpsRemaining; // Stores the amount of jumps the player has
+    [SerializeField] int jumpsRemaining = 0; // Stores the amount of jumps the player has
 
     [SerializeField] Vector2 moveInput;
 
@@ -23,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        jumpsRemaining = maxJumps;
+
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerCollider = GetComponent<CapsuleCollider2D>();
@@ -105,13 +104,20 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        isGrounded = true;
-        // play jump SFX at camera location.
-        //AudioSource.PlayClipAtPoint(jumpSFX, Camera.main.transform.position, 0.8f);
-        // player moves up by jump force amount.
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        // Decreases the number of remaining jumps 
-        jumpsRemaining--;
+        if (isGrounded || jumpsRemaining > 0)
+        {
+            // play jump SFX at camera location.
+            // AudioSource.PlayClipAtPoint(jumpSFX, Camera.main.transform.position, 0.8f);
+
+            // player moves up by jump force amount.
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+            // Decreases the number of remaining jumps only if not grounded
+            if (!isGrounded)
+            {
+                jumpsRemaining--;
+            }
+        }
     }
     void GroundCheck()
     {
@@ -123,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         if (!wasGrounded && isGrounded)
         {
             // Reset the number of jumps
-            jumpsRemaining = 2;
+            jumpsRemaining = 0;
         }
     }
 
