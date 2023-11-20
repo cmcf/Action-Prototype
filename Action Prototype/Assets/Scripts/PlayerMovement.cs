@@ -104,6 +104,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        // Check if the player is on a moving platform and unparent
+        if (transform.parent != null)
+        {
+            transform.parent = null;
+        }
+
         if (isGrounded || jumpsRemaining > 0)
         {
             // play jump SFX at camera location.
@@ -111,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
 
             // player moves up by jump force amount.
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-
+           
             // Decreases the number of remaining jumps only if not grounded
             if (!isGrounded)
             {
