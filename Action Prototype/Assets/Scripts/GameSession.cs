@@ -42,6 +42,11 @@ public class GameSession : MonoBehaviour
         Invoke("ReloadScene", loadLevelDelay);
     }
 
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
     public void ReloadScene()
     {
       

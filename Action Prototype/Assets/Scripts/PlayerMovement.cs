@@ -34,10 +34,10 @@ public class PlayerMovement : MonoBehaviour
     {
         Run();
         FlipSprite();
+        GroundCheck();
     }
     void Update()
-    { 
-        GroundCheck();
+    {  
         Die();
     }
     public void DisableInput()

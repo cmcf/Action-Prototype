@@ -13,10 +13,15 @@ public class MovingPlatform : MonoBehaviour
     public Transform movingObject;
     public Transform startPosition;
     public Transform endPosition;
+    Rigidbody2D rb;
 
     private Coroutine unparentCoroutine;
     int direction = 1;
 
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();   
+    }
     private void FixedUpdate()
     {
         Vector2 target = currentTargetPosition();
