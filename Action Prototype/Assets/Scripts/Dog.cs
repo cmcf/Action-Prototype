@@ -9,6 +9,7 @@ public class Dog : MonoBehaviour
     [SerializeField] float sprintSpeed = 10f; // Speed when sprinting
     [SerializeField]float stamina = 80f;      // Maximum stamina
     [SerializeField] float staminaDepletionRate = 10f;
+    [SerializeField] float staminaRegainRate = 10f;
     [SerializeField] float amplitude = 1f;
     [SerializeField] Transform spawnPoint;
     [SerializeField] float projectileSpeed = 5f;
@@ -51,7 +52,7 @@ public class Dog : MonoBehaviour
     }
 
     void Update()
-    { 
+    {
         StaminaManagement();
         UpdateDogUI();
         Die();
@@ -68,6 +69,7 @@ public class Dog : MonoBehaviour
         {
             bulletImage.color = Color.grey;
         }
+        staminaSlider.value = currentStamina;    
     }
 
     public void DisableInput()
@@ -82,13 +84,13 @@ public class Dog : MonoBehaviour
 
     void StaminaManagement()
     {
-        // Stamina reduces when dog is sprinting
         if (isSprinting)
         {
+            // Stamina reduces when dog is sprinting
             currentStamina -= staminaDepletionRate * Time.deltaTime;
             currentStamina = Mathf.Clamp(currentStamina, 0f, stamina);
 
-            // Dog stops spriting when stamina runs out
+            // Dog stops sprinting when stamina runs out
             if (currentStamina <= 0)
             {
                 StopSprinting();
@@ -96,8 +98,8 @@ public class Dog : MonoBehaviour
         }
         else
         {
-            // Regain staminia when not sprinting
-            currentStamina += (stamina / 2) * Time.deltaTime;
+            // Regain stamina when not sprinting
+            currentStamina += staminaRegainRate * Time.deltaTime;
             currentStamina = Mathf.Clamp(currentStamina, 0f, stamina);
         }
     }
