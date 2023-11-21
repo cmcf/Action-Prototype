@@ -19108,5 +19108,25 @@
     "eventParams": {
       "timesPlayerHasDied": 42
     }
+  },
+  {
+    "eventTimestamp": "21/11/2023 22:24:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "40bda8feb845ce08b8b30b13024f55c5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 22:24:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "40bda8feb845ce08b8b30b13024f55c5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
   }
 ]
