@@ -126,10 +126,6 @@ public class CharacterSwitcher : MonoBehaviour
         canSwitch = false;
         isSwitching = true;
 
-        Dictionary<string, object> switchData = new Dictionary<string, object>();
-        switchData.Add("timesPlayerHasSwitched", timesPlayerHasSwitched);
-        AnalyticsManager.SendCustomEvent("TimesSwitched", switchData);
-
         Rigidbody2D playerRigidbody = playerObject.GetComponent<Rigidbody2D>();
         Rigidbody2D dogRigidbody = dogObject.GetComponent<Rigidbody2D>();
 

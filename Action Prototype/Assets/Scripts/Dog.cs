@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Dog : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Dog : MonoBehaviour
     [SerializeField] float projectileSpeed = 5f;
 
     float currentStamina;
+    public Slider staminaSlider;
 
     Rigidbody2D rb;
     Animator animator;
@@ -21,6 +23,7 @@ public class Dog : MonoBehaviour
 
     public Transform attackPoint;
     public LayerMask enemyLayers;
+    public Image bulletImage;
 
     Vector3 initialPosition;
 
@@ -38,6 +41,7 @@ public class Dog : MonoBehaviour
         currentStamina = stamina;
         currentMoveSpeed = defaultMoveSpeed;
         initialPosition = transform.position;
+        staminaSlider.value = currentStamina;
     }
 
     void FixedUpdate()
@@ -49,7 +53,21 @@ public class Dog : MonoBehaviour
     void Update()
     { 
         StaminaManagement();
+        UpdateDogUI();
         Die();
+    }
+
+    void UpdateDogUI()
+    {
+        // Shows player when they can fire bullet
+        if (!isAttacking)
+        {
+            bulletImage.color = Color.white;
+        }
+        else
+        {
+            bulletImage.color = Color.grey;
+        }
     }
 
     public void DisableInput()
@@ -58,6 +76,7 @@ public class Dog : MonoBehaviour
     }
     void OnQuit(InputValue value)
     {
+        // Quits the game when player presses ESC
         Application.Quit();
     }
 

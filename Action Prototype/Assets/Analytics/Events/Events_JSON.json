@@ -17968,5 +17968,1145 @@
     "eventParams": {
       "timesPlayerHasSwitched": 1
     }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:24",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "dfea32539206fa3ff873ab65fe512024",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:25",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "eab3608c1ff52e15d028d739fbbcd9c4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:25",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "eab3608c1ff52e15d028d739fbbcd9c4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 3
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:25",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "eab3608c1ff52e15d028d739fbbcd9c4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 4
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:25",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "eab3608c1ff52e15d028d739fbbcd9c4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 5
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:25",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "eab3608c1ff52e15d028d739fbbcd9c4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 6
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:25",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "eab3608c1ff52e15d028d739fbbcd9c4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 7
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:25",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "eab3608c1ff52e15d028d739fbbcd9c4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 8
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:26",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "2bdd7b9f237e038c85e8f25b4bf87125",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:26",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "2bdd7b9f237e038c85e8f25b4bf87125",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:26",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "2bdd7b9f237e038c85e8f25b4bf87125",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 3
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:26",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "2bdd7b9f237e038c85e8f25b4bf87125",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 4
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:26",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "2bdd7b9f237e038c85e8f25b4bf87125",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 5
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:26",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "2bdd7b9f237e038c85e8f25b4bf87125",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 6
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:27",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "dcda550919f800382cce19b64c8d2e35",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 7
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:27",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "dcda550919f800382cce19b64c8d2e35",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 8
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:27",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "dcda550919f800382cce19b64c8d2e35",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 9
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:27",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "dcda550919f800382cce19b64c8d2e35",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 10
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:28",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "95009c8350da739bbde4b291b4475bf5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:28",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "95009c8350da739bbde4b291b4475bf5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:28",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "95009c8350da739bbde4b291b4475bf5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 3
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:28",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "95009c8350da739bbde4b291b4475bf5",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 4
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:29",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "11b5b1081559891aedc56ce080863ebc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 5
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:29",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "11b5b1081559891aedc56ce080863ebc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 6
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:29",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "11b5b1081559891aedc56ce080863ebc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 7
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:29",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "11b5b1081559891aedc56ce080863ebc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 8
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:29",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "11b5b1081559891aedc56ce080863ebc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 9
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:29",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "11b5b1081559891aedc56ce080863ebc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 10
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 11
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 12
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 13
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 14
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 15
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 16
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 17
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:30",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "1628e2da25c06752987793656278a70d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 18
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 3
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 4
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 5
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 6
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 7
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 8
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 9
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 10
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 11
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 12
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 13
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 14
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:32",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "3d5054374a0ec41b3983aa5e71b0129a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 15
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 16
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 17
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 18
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 19
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 20
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 21
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 22
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 23
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:33",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "c8387a605196f047a9b2dce547c85a22",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 24
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 25
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 26
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 27
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 28
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 29
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 30
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 31
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 32
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 33
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 34
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 35
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:34",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "71d81ce71088518edbef672d4b32cfbc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 36
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 3
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 4
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 5
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 6
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 7
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 8
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:38",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "20a70478a06e30dfc70882a5d7fe9d97",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 9
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 10
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 11
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 12
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 13
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 14
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 15
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 16
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 17
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 18
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 19
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 20
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 21
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 22
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 23
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 24
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 25
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 26
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:39",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "6b51f2da6e46829da1b8cb093ae232ae",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 27
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 28
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 29
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 30
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 31
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 32
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 33
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 34
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 35
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 36
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 37
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 38
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 39
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 40
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 41
+    }
+  },
+  {
+    "eventTimestamp": "21/11/2023 15:57:40",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "209932700746f9bc660ed02ef30d13dc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 42
+    }
   }
 ]
