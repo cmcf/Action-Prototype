@@ -21,6 +21,7 @@ public class Gun : MonoBehaviour
     int redbulletsFired = 0;
 
     public Image inkImage;
+    public Image bulletImage;
 
     Animator animator;
     PlayerMovement playerMovement;
@@ -52,6 +53,14 @@ public class Gun : MonoBehaviour
         else
         {
             inkImage.color = Color.grey;
+        }
+        if (canFire)
+        {
+            bulletImage.color = Color.red;
+        }
+        else
+        {
+            bulletImage.color = Color.black;
         }
     }
 

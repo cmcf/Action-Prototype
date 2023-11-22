@@ -10,6 +10,7 @@ public class HiddenRoom : MonoBehaviour
     BoxCollider2D boxCollider;
     public GameObject lever;
     bool enableLever = false;
+    bool isRevealed = false;
     void Start()
     {
         // Gets all hidden tilemaps
@@ -40,8 +41,10 @@ public class HiddenRoom : MonoBehaviour
         }
     }
 
+
     public void RevealRoom()
     {
+        isRevealed = true;
         enableLever = true;
         // Loops through tiles and sets them to be visible
         foreach (Vector3Int point in area.allPositionsWithin)
@@ -60,6 +63,10 @@ public class HiddenRoom : MonoBehaviour
         if (collision.tag == "Dog")
         {
             RevealRoom();
+        }
+        if (collision.tag == "Player" && !isRevealed)
+        {
+            GameSession.Instance.PlayerHit();
         }
     }
 
