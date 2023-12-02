@@ -31,6 +31,7 @@ public class Dog : MonoBehaviour
     [SerializeField] Vector2 moveInput;
 
     bool isSprinting = false;
+    bool isGrounded = true;
     public bool isAttacking = false;
     public bool canMoveDog = false;
 
@@ -140,8 +141,8 @@ public class Dog : MonoBehaviour
 
     void OnSprint(InputValue value)
     {
-        // Checks if the sprint button is held down and if the dog has enough stamina
-        if (value.isPressed && currentStamina > 0)
+        // Checks if the sprint button is held down and if the dog has enough stamina and is on the ground
+        if (value.isPressed && currentStamina > 0 && isGrounded)
         {
             Sprint();
             
@@ -226,6 +227,10 @@ public class Dog : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
         if (collision.gameObject.CompareTag("Ink"))
         {
             Ascend();
@@ -235,6 +240,7 @@ public class Dog : MonoBehaviour
     void Ascend()
     {
         rb.velocity = new Vector2(rb.velocity.x, amplitude);
+        isGrounded = false;
     }
 
     void Die()

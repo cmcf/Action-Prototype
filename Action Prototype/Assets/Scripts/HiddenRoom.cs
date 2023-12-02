@@ -46,6 +46,7 @@ public class HiddenRoom : MonoBehaviour
     {
         isRevealed = true;
         enableLever = true;
+        // Change the layer of the TilemapRenderer
         // Loops through tiles and sets them to be visible
         foreach (Vector3Int point in area.allPositionsWithin)
         {
@@ -66,7 +67,9 @@ public class HiddenRoom : MonoBehaviour
         }
         if (collision.tag == "Player" && !isRevealed)
         {
-            GameSession.Instance.PlayerHit();
+            // Disable collision for the player so that the human falls through the hidden area
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Hidden"), true);
+
         }
     }
 

@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f; // Player default movement speed
+    float defaultMoveSpeed = 3.5f; // Default movement speed
+    [SerializeField] float moveSpeed = 3.2f; // Player current movement speed
+    [SerializeField] float jumpMoveSpeed = 2.5f; // Player movement speed in air
     [SerializeField] float jumpForce = 5f; // How high the player can jump 
     [SerializeField] int jumpsRemaining = 0; // Stores the amount of jumps the player has
 
@@ -104,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        moveSpeed = jumpMoveSpeed;
         // Check if the player is on a moving platform and unparent
         if (transform.parent != null)
         {
@@ -128,14 +131,15 @@ public class PlayerMovement : MonoBehaviour
     void GroundCheck()
     {
         bool wasGrounded = isGrounded;
-        int layerMask = LayerMask.GetMask("Ground", "Enemy");
+        int layerMask = LayerMask.GetMask("Ground", "Enemy", "Hidden");
         isGrounded = feetCollider.IsTouchingLayers(layerMask);
 
         // Reset jumps if player was in the air and landed on the ground
         if (!wasGrounded && isGrounded)
         {
-            // Reset the number of jumps
+            // Reset the number of jumps and move speed
             jumpsRemaining = 0;
+            moveSpeed = defaultMoveSpeed;
         }
     }
 
