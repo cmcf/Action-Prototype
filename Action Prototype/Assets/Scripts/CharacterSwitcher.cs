@@ -49,7 +49,6 @@ public class CharacterSwitcher : MonoBehaviour
 
     void Start()
     {
-        AnalyticsManager.Initialise("development");
 
         // Initialize by activating the first character
         SwitchCharacter(currentCharacterIndex);

@@ -14,6 +14,8 @@ public class Dog : MonoBehaviour
     [SerializeField] Transform spawnPoint;
     [SerializeField] float projectileSpeed = 5f;
 
+    float airSpeed = 5f;
+    float defaultSprintSpeed = 8f;
     float currentStamina;
     public Slider staminaSlider;
 
@@ -103,6 +105,14 @@ public class Dog : MonoBehaviour
             currentStamina += staminaRegainRate * Time.deltaTime;
             currentStamina = Mathf.Clamp(currentStamina, 0f, stamina);
         }
+        if (!isGrounded)
+        {
+            sprintSpeed = airSpeed;
+        }
+        else
+        {
+            sprintSpeed = defaultSprintSpeed;
+        }
     }
 
     void OnMove(InputValue value)
@@ -142,7 +152,7 @@ public class Dog : MonoBehaviour
     void OnSprint(InputValue value)
     {
         // Checks if the sprint button is held down and if the dog has enough stamina and is on the ground
-        if (value.isPressed && currentStamina > 0 && isGrounded)
+        if (value.isPressed && currentStamina > 0)
         {
             Sprint();
             
