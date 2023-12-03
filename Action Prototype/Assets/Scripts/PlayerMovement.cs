@@ -24,12 +24,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-
+        // References
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerCollider = GetComponent<CapsuleCollider2D>();
         feetCollider = GetComponent<BoxCollider2D>();
-        
+
     }
 
     void FixedUpdate()
@@ -159,8 +159,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!GameSession.Instance.isAlive) 
         {
-            animator.SetTrigger("isDead");
-        }   
+            animator.SetBool("isDead", true);
+        }
+        else
+        {
+            animator.SetBool("isDead", false);
+        }
     }
 }
 

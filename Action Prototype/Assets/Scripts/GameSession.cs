@@ -10,13 +10,17 @@ public class GameSession : MonoBehaviour
     public static GameSession Instance { get; private set; }
  
     public ScenePersist scenePersist;
+    public GameObject checkpoint;
+    public CharacterSwitcher characterSwitcher;
 
     public int lives = 3;
     public int keysCollected = 0;
     public bool isAlive = true;
     int timesPlayerHasDied = 0;
 
-    float loadLevelDelay = 0.8f;
+    float delay = 0.66f;
+
+   
 
     private void Awake()
     {
@@ -39,7 +43,15 @@ public class GameSession : MonoBehaviour
 
 
         isAlive = false;
-        Invoke("ReloadScene", loadLevelDelay);
+        StartCoroutine(DeathAnimationReset());
+    }
+
+
+    private CharacterState currentCharacterState = CharacterState.Player;
+
+    public CharacterState GetCurrentCharacterState()
+    {
+        return currentCharacterState;
     }
 
     public void PlayAgain()
@@ -47,12 +59,16 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
-    public void ReloadScene()
+    IEnumerator DeathAnimationReset()
     {
-      
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+        // Wait for a short delay before resetting
+        yield return new WaitForSeconds(delay);
+
+        // Reset isAlive and isDead
         isAlive = true;
+
+        // Trigger scene reload
+        characterSwitcher.Respawn();
     }
 
     public static void Quit()

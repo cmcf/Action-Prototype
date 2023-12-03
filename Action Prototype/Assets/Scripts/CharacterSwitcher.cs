@@ -33,11 +33,13 @@ public class CharacterSwitcher : MonoBehaviour
     public AudioClip switchSFX;
 
     // Reference to the GameObject with the player movement script
+    private GameObject activePlayer;
     public GameObject playerObject;
     public Transform playerTransform;
     public CinemachineVirtualCamera virtualCamera;
     // Reference to an array of spawn points
     public Transform[] playerSpawnPoints;
+    
 
     public int timesPlayerHasSwitched = 0;
 
@@ -47,12 +49,24 @@ public class CharacterSwitcher : MonoBehaviour
     public bool canMovePlayer = true;
     public bool canMoveDog = false;
 
+    public int currentSpawnPointIndex = 0;
+
+    public void UpdateSpawnIndex(int newIndex)
+    {
+        currentSpawnPointIndex = newIndex;
+    }
+
+    public void Respawn()
+    {
+        playerTransform.position = playerSpawnPoints[currentSpawnPointIndex].position;
+    }
+
     void Start()
     {
 
         // Initialize by activating the first character
         SwitchCharacter(currentCharacterIndex);
-        playerTransform.position = playerSpawnPoints[currentCharacterIndex].transform.position;
+        Respawn();
 
         // Find and store the player movement script component
         PlayerMovement playerMovement = playerObject.GetComponent<PlayerMovement>();
@@ -119,6 +133,7 @@ public class CharacterSwitcher : MonoBehaviour
         }
     }
 
+
     private void SwitchCharacter(int characterIndex)
     {
         timesPlayerHasSwitched++;
@@ -172,6 +187,7 @@ public class CharacterSwitcher : MonoBehaviour
 
         }
     }
+
 
     void EnableSwitch()
     {

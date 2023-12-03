@@ -117,24 +117,22 @@ public class Dog : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        // Player can't move if dead
-        if (!GameSession.Instance.isAlive && !canMoveDog)
-        {
-            return;
-        }
-        rb.constraints = RigidbodyConstraints2D.None;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        // Gets value of player movement and true if greater than 0 
-        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
 
-        // Flips sprite by scaling the the x axis when player has horizonal speed
-        if (playerHasHorizontalSpeed)
+        // Gets value of dog movement and true if greater than 0 
+        bool dogHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+
+        // Flips sprite by scaling the x axis when dog has horizontal speed
+        if (dogHasHorizontalSpeed)
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
 
-        // Get input values from player 
+        // Get input values from dog
         moveInput = value.Get<Vector2>();
+
+        // Apply movement to the dog
+        Vector2 dogVelocity = new Vector2(moveInput.x * currentMoveSpeed, rb.velocity.y);
+        rb.velocity = dogVelocity;
     }
 
     void Walk()
@@ -257,7 +255,11 @@ public class Dog : MonoBehaviour
     {
         if (!GameSession.Instance.isAlive)
         {
-            animator.SetTrigger("isDead");
+            animator.SetBool("isDead", true);
+        }
+        else
+        {
+            animator.SetBool("isDead", false);
         }
     }
 }
