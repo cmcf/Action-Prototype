@@ -56,9 +56,4 @@ public class Spike : MonoBehaviour
     {
         return platformVelocity;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //FindObjectOfType<GameSession>().PlayerHit();
-    }
 }

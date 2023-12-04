@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -33,7 +34,7 @@ public class HiddenRoom : MonoBehaviour
             tilemap.SetTileFlags(point, TileFlags.None);
             // Sets colour of each tile and sets alpha to 0
             tilemap.SetColor(point, new Color(255f, 255f, 255f, 0f));
-            
+
         }
         if (lever != null)
         {
@@ -64,15 +65,16 @@ public class HiddenRoom : MonoBehaviour
         if (collision.tag == "Dog")
         {
             RevealRoom();
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Hidden"), false);
         }
-        if (collision.tag == "Player" && !isRevealed)
+        else if (collision.tag == "Player")
         {
+            HideTiles();
             // Disable collision for the player so that the human falls through the hidden area
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Hidden"), true);
-
         }
     }
-
 }
 
-   
+
+

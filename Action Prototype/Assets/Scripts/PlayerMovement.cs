@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         GroundCheck();
     }
     void Update()
-    {  
+    {
         Die();
     }
     public void DisableInput()
@@ -54,8 +54,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-       
-      
+
+
         // Gets value of player movement and true if greater than 0 
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
 
@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
             // player moves up by jump force amount.
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-           
+
             // Decreases the number of remaining jumps only if not grounded
             if (!isGrounded)
             {
@@ -151,9 +151,40 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Hidden"))
+        {
+            // Disable the player's collider
+            DisablePlayerCollision(true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Hidden"))
+        {
+            // Enable the player's collider when exiting the hidden tiles
+            DisablePlayerCollision(false);
+        }
+    }
+
+    private void DisablePlayerCollision(bool disable)
+    {
+        // Assuming the player has a Collider2D component
+        Collider2D playerCollider = GetComponent<Collider2D>();
+
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = !disable;
+        }
+
+        
+    }
     void Die()
     {
-        if (!GameSession.Instance.isAlive) 
+        if (!GameSession.Instance.isAlive)
         {
             animator.SetBool("isDead", true);
         }

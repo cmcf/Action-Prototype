@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using Abertay.Analytics;
+using System.Collections.Generic;
 
 public class MovingHazard : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class MovingHazard : MonoBehaviour
     public Transform movingObject;
     public Transform startPosition;
     public Transform endPosition;
+
+    private float slowdownAmount;
 
     int direction = 1;
 
@@ -44,18 +47,44 @@ public class MovingHazard : MonoBehaviour
 
         if (collision.CompareTag("RedBullet"))
         {
-            Debug.Log("Hit");
-            SlowDown();
+            if (collision.CompareTag("RedBullet"))
+            {
+                slowdownAmount = SlowDown(); // Get the slowdown amount
+                LogSlowDownEvent();
+            }
         }
     }
 
-    private void SlowDown()
+    private float SlowDown()
     {
+        // Calculate slowdown amount based on the initial speed
+        slowdownAmount = originalMoveSpeed * decreaseSpeedAmount;
+
         // Decrease the speed of the moving hazard
-        originalMoveSpeed -= decreaseSpeedAmount;
+        originalMoveSpeed -= slowdownAmount;
 
         // Clamp the move speed so it doesn't go below a certain amount
         originalMoveSpeed = Mathf.Max(originalMoveSpeed, minimumMoveSpeed);
+
+        return slowdownAmount;
     }
 
+    private void LogSlowDownEvent()
+    {
+
+        Dictionary<string, object> data = new Dictionary<string, object>();
+        data.Add("ObjectID", gameObject.name);
+        data.Add("SlowdownAmount", slowdownAmount);
+
+
+        // Convert the dictionary to a string for debugging
+        string debugString = "LogSlowDownEvent - Data: ";
+        foreach (var entry in data)
+        {
+            debugString += $"{entry.Key}: {entry.Value}, ";
+        }
+        Debug.Log(debugString);
+
+        AnalyticsManager.SendCustomEvent("SlowedDownObject", data);
+    }
 }
