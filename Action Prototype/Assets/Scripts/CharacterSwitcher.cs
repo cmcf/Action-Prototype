@@ -33,7 +33,6 @@ public class CharacterSwitcher : MonoBehaviour
     public AudioClip switchSFX;
 
     // Reference to the GameObject with the player movement script
-    private GameObject activePlayer;
     public GameObject playerObject;
     public Transform playerTransform;
     public CinemachineVirtualCamera virtualCamera;

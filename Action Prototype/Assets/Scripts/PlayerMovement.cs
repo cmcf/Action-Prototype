@@ -54,11 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        // Player can't move if dead
-        if (!canMovePlayer || rb == null)
-        {
-            return;
-        }
+       
       
         // Gets value of player movement and true if greater than 0 
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
