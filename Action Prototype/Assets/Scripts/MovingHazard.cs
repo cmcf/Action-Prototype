@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class MovingHazard : MonoBehaviour
 {
-    [SerializeField] private float originalMoveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float minimumMoveSpeed = 2f;
     [SerializeField] private float pauseDelay = 1.0f;
     [SerializeField] private float decreaseSpeedAmount = 1.5f;
@@ -13,17 +13,18 @@ public class MovingHazard : MonoBehaviour
     public Transform startPosition;
     public Transform endPosition;
 
-    private float slowdownAmount;
-
     int direction = 1;
 
     private void Update()
     {
+        // Calculate the target position where the moving object is moving towards
         Vector2 target = currentTargetPosition();
-        movingObject.position = Vector2.Lerp(movingObject.position, target, originalMoveSpeed * Time.deltaTime);
+        // Move the object towards the target using Vector2.Lerp for smooth movement
+        movingObject.position = Vector2.Lerp(movingObject.position, target, moveSpeed * Time.deltaTime);
 
         float distance = (target - (Vector2)movingObject.position).magnitude;
 
+        // Checks if the object is  close to the target
         if (distance <= 0.1f)
         {
             direction *= -1;
@@ -32,6 +33,7 @@ public class MovingHazard : MonoBehaviour
 
     Vector2 currentTargetPosition()
     {
+        
         if (direction == 1)
         {
             return startPosition.position;
@@ -49,33 +51,28 @@ public class MovingHazard : MonoBehaviour
         {
             if (collision.CompareTag("RedBullet"))
             {
-                slowdownAmount = SlowDown(); // Get the slowdown amount
+                SlowDown();
                 LogSlowDownEvent();
             }
         }
     }
 
-    private float SlowDown()
+    private void SlowDown()
     {
-        // Calculate slowdown amount based on the initial speed
-        slowdownAmount = originalMoveSpeed * decreaseSpeedAmount;
-
         // Decrease the speed of the moving hazard
-        originalMoveSpeed -= slowdownAmount;
+        moveSpeed -= decreaseSpeedAmount;
 
         // Clamp the move speed so it doesn't go below a certain amount
-        originalMoveSpeed = Mathf.Max(originalMoveSpeed, minimumMoveSpeed);
+        moveSpeed = Mathf.Max(moveSpeed, minimumMoveSpeed);
 
-        return slowdownAmount;
     }
 
     private void LogSlowDownEvent()
     {
 
         Dictionary<string, object> data = new Dictionary<string, object>();
+        data.Add("ObjectSpeed", moveSpeed);
         data.Add("ObjectID", gameObject.name);
-        data.Add("SlowdownAmount", slowdownAmount);
-
 
         // Convert the dictionary to a string for debugging
         string debugString = "LogSlowDownEvent - Data: ";
@@ -83,6 +80,11 @@ public class MovingHazard : MonoBehaviour
         {
             debugString += $"{entry.Key}: {entry.Value}, ";
         }
+
+        // Remove the trailing comma and space
+        debugString = debugString.TrimEnd(',', ' ');
+
+        // Log the debug string
         Debug.Log(debugString);
 
         AnalyticsManager.SendCustomEvent("SlowedDownObject", data);

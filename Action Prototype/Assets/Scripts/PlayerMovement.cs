@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnQuit(InputValue value)
     {
-        Application.Quit();
+        GameSession.Instance.Quit();
     }
 
     void OnMove(InputValue value)

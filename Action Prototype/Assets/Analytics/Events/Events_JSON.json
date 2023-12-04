@@ -27395,5 +27395,622 @@
       "ObjectID": "Moving Hazard",
       "SlowdownAmount": 6.0
     }
+  },
+  {
+    "eventTimestamp": "4/12/2023 14:59:23",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "6848e700fff75a28d7de6ead2e01de28",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 6.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 14:59:45",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "f009f34f9ef8a158a5341e38d7d423fc",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 2.5
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 14:59:49",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "654800f20decd92c61e82d8f307df981",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 1.25
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:02",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "2a136a5c4982af60247b5e4a6ae0ed3d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 4.5
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:05",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "7fc7f52649e8956e72f5c750bdc37ac4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 4.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:07",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "56360c782087b600c33ad0aea96a1e54",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 3.5
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:10",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "503699e6572613c5d0f1f3302bce58d8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:23",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "cd34aeaa0f3cf57c7b4bbcee77e90916",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 4.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:25",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "8c57ce9baf4f8e137edd8fa8df212639",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 3.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:28",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "697c75cd22deae9b150cf61bc45d05f7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:28",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "697c75cd22deae9b150cf61bc45d05f7",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:30",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "4c7191afe4d4c91d97702c0c8dd785e2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 2.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:53",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "f7cbd4f4c0bbe59bc53873565ce9b462",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 4.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:54",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "52428108ba6d613448862973fb024525",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 3.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:04:57",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "0e9458e62214109e2ecc8679b3b04df3",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 2.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:05:13",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "28749e3205acb30bdbc3e0c4c58ec4db",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 4.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:05:14",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "944f6760d90c0d0a70a13c8ef5028490",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "SlowdownAmount": 3.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:05:43",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "7779b7ae8b5473ef0148cdd429537129",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "ObjectSpeed": 4.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:05:45",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "ec2809aa7f8affea9bb45c137dcf87a2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "ObjectSpeed": 3.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:05:46",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "ac7d89f91d4d17c85a4cd611ca9af5d0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "ObjectSpeed": 2.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:05:58",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "3f0eebd71f9951b2dafa7cdfe908a62e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectID": "Moving Hazard",
+      "ObjectSpeed": 4.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:06:00",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "7520ba3c2c57a00944b7c2349f3424ac",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 15:06:00",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "7520ba3c2c57a00944b7c2349f3424ac",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:30:38",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "0cfc2734c12eb49ec49cf027796f65a0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:30:42",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "f713be6d3521ac3a7acdc68d353dbf4c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:30:48",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "5b5d622d874dbd5a4e11f89bfbd8e0c8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:30:48",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "5b5d622d874dbd5a4e11f89bfbd8e0c8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 2
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:30:48",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "5b5d622d874dbd5a4e11f89bfbd8e0c8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 3
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:30:48",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "5b5d622d874dbd5a4e11f89bfbd8e0c8",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 4
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:33:45",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "59975cb36eb3a2333daaa712b0e80de0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Moving Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:33:48",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "3a8bf78db7dca106293189cd09abfa0e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Moving Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:40:43",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "53777fb471dad4dcc7b2d0c489c9fa3e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Moving Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:40:45",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "d53b15c0bd9ed1d251ca0a62c849cbb2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Moving Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:42:25",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "0ca699d37f4cfaf594e79b766dd02365",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Moving Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:42:28",
+    "userID": "NULL",
+    "eventName": "TotalDeaths",
+    "eventUUID": "8b87da10bc4562c2b05816a0573a39f1",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasDied": 1
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:42:30",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "177fd836ebfefcb5e9f741242a4143a0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Moving Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:42:35",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "a2bf992244cde68670c5ddad8b57307c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "MovingPlatform"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 16:42:38",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "73cf1f42cd4117278c4983da1c384cce",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 2.0,
+      "ObjectID": "MovingPlatform"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:10:22",
+    "userID": "Test",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "228e578c9054ddb3063aee6bad351943",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Tutorial Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:10:23",
+    "userID": "Test",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "24ba3c9ccb650bbf130cf3a92b9c4b75",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Tutorial Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:10:27",
+    "userID": "Test",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "2b9d95bf38a1e61825b7e4cfbddfc767",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Tutorial Platform"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:10:52",
+    "userID": "Test",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "e8604028190447bd29b33593ceb76662",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:11:30",
+    "userID": "Test",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b0504981f8569c80147fd31b352f270e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:11:30",
+    "userID": "Test",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b0504981f8569c80147fd31b352f270e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:11:30",
+    "userID": "Test",
+    "eventName": "TimesSwitched",
+    "eventUUID": "b0504981f8569c80147fd31b352f270e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 20
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:11:45",
+    "userID": "Test",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "955db44063bcfaadcdccfa264a3adc0f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Level 3 Platform"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:11:46",
+    "userID": "Test",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "7dd8bc864b42c500cf5543fc7cfeb7e2",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 2.0,
+      "ObjectID": "Level 3 Platform"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:12:12",
+    "userID": "Test",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "352ea721457ee4af4dcf05e8c887ab74",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 3 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:12:15",
+    "userID": "Test",
+    "eventName": "PlayerTime",
+    "eventUUID": "b7d6526af289b3d33ec3099fe0dee25d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "playerFinalTime": 81.94999
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:12:15",
+    "userID": "Test",
+    "eventName": "PlayerTime",
+    "eventUUID": "b7d6526af289b3d33ec3099fe0dee25d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "playerFinalTime": 81.94999
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:12:15",
+    "userID": "Test",
+    "eventName": "PlayerTime",
+    "eventUUID": "b7d6526af289b3d33ec3099fe0dee25d",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "playerFinalTime": 81.94999
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:12:16",
+    "userID": "Test",
+    "eventName": "PlayerTime",
+    "eventUUID": "3dea4e6973f56df3aa1379d29badf024",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "playerFinalTime": 81.94999
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:12:16",
+    "userID": "Test",
+    "eventName": "PlayerTime",
+    "eventUUID": "3dea4e6973f56df3aa1379d29badf024",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "playerFinalTime": 81.94999
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:12:16",
+    "userID": "Test",
+    "eventName": "PlayerTime",
+    "eventUUID": "3dea4e6973f56df3aa1379d29badf024",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "playerFinalTime": 81.94999
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 18:15:52",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "6a9d8c91778942f45a76fc7aed3eff7f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 19:04:20",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "8db15dce1744aa58b5d122f64038407a",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 19:04:22",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "6b78aab89344a7a7106a5f16a6372036",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 2.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "4/12/2023 19:04:25",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "3d0c58c9a3c46526dfdbc00dde5f8a5c",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 2.0,
+      "ObjectID": "Level 2 Hazard"
+    }
   }
 ]

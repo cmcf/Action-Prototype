@@ -1,3 +1,4 @@
+using Abertay.Analytics;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,7 +6,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    [SerializeField] private float originalMoveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float minimumMoveSpeed = 2f;
     [SerializeField] private float pauseDelay = 1.0f;
     [SerializeField] private float decreaseSpeedAmount = 1.5f;
@@ -25,7 +26,7 @@ public class MovingPlatform : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 target = currentTargetPosition();
-        movingObject.position = Vector2.Lerp(movingObject.position, target, originalMoveSpeed * Time.deltaTime);
+        movingObject.position = Vector2.Lerp(movingObject.position, target, moveSpeed * Time.deltaTime);
 
         float distance = (target - (Vector2)movingObject.position).magnitude;
 
@@ -52,8 +53,8 @@ public class MovingPlatform : MonoBehaviour
 
         if (collision.CompareTag("RedBullet"))
         {
-            Debug.Log("Hit");
             SlowDown();
+            LogSlowDownEvent();
         }
     }
 
@@ -103,9 +104,32 @@ public class MovingPlatform : MonoBehaviour
     private void SlowDown()
     {
         // Decrease the speed of the moving hazard
-        originalMoveSpeed -= decreaseSpeedAmount;
+        moveSpeed -= decreaseSpeedAmount;
 
         // Clamp the move speed so it doesn't go below a certain amount
-        originalMoveSpeed = Mathf.Max(originalMoveSpeed, minimumMoveSpeed);
+        moveSpeed = Mathf.Max(moveSpeed, minimumMoveSpeed);
     }
+    private void LogSlowDownEvent()
+    {
+
+        Dictionary<string, object> data = new Dictionary<string, object>();
+        data.Add("ObjectSpeed", moveSpeed);
+        data.Add("ObjectID", gameObject.name);
+
+        // Convert the dictionary to a string for debugging
+        string debugString = "LogSlowDownEvent - Data: ";
+        foreach (var entry in data)
+        {
+            debugString += $"{entry.Key}: {entry.Value}, ";
+        }
+
+        // Remove the trailing comma and space
+        debugString = debugString.TrimEnd(',', ' ');
+
+        // Log the debug string
+        Debug.Log(debugString);
+
+        AnalyticsManager.SendCustomEvent("SlowedDownObject", data);
+    }
+
 }

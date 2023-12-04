@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting.InputSystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Abertay.Analytics;
 using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
@@ -18,8 +17,6 @@ public class Gun : MonoBehaviour
     [SerializeField] float inkForwardSpeed = 1f;
     [SerializeField] float inkCheckRadius = 0.2f;
 
-    int redbulletsFired = 0;
-
     public Image inkImage;
     public Image bulletImage;
 
@@ -33,7 +30,6 @@ public class Gun : MonoBehaviour
         
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
-        AnalyticsManager.Initialise("development");
     }
 
     void Update()
@@ -69,14 +65,6 @@ public class Gun : MonoBehaviour
         if(canFire)
         {
             Fire();
-            redbulletsFired++;
-
-            //Dictionary<string, object> data = new Dictionary<string, object>();
-            //data.Add("redBulletsFired", redbulletsFired);
-            //AnalyticsManager.SendCustomEvent("FiredRedBullet", data);
-            Color c = Color.red;
-            c.a = 0.4f;
-            AnalyticsManager.LogHeatmapEvent("FiredRedBullet", transform.position, c);
         }
     }
 

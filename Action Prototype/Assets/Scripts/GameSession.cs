@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-
 public class GameSession : MonoBehaviour
 {
     public static GameSession Instance { get; private set; }
@@ -35,10 +34,9 @@ public class GameSession : MonoBehaviour
         lives--;
         timesPlayerHasDied++;
 
-        Dictionary<string, object> deathData = new Dictionary<string, object>();
-        deathData.Add("timesPlayerHasDied", timesPlayerHasDied);
-        AnalyticsManager.SendCustomEvent("TotalDeaths", deathData);
-
+        Color c = Color.red;
+        c.a = 0.4f;
+        AnalyticsManager.LogHeatmapEvent("TotalDeaths", transform.position, c);
 
         isAlive = false;
         StartCoroutine(DeathAnimationReset());
@@ -69,8 +67,21 @@ public class GameSession : MonoBehaviour
         characterSwitcher.Respawn();
     }
 
-    public static void Quit()
+    public void Quit()
     {
+        // Save the name of the active scene
+        PlayerPrefs.SetString("LastActiveScene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.Save();
+
+        // Retrieve the saved scene name
+        string lastActiveScene = PlayerPrefs.GetString("LastActiveScene");
+        Debug.Log("Last Active Scene: " + lastActiveScene);
+     
+        Dictionary<string, object> data = new Dictionary<string, object>();
+        data.Add("LastLevelPlayed", lastActiveScene);
+        AnalyticsManager.SendCustomEvent("LastLevelName", data);
+
+        // Quits the game
         Application.Quit();
     }
 }

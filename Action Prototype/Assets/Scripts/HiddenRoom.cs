@@ -52,7 +52,7 @@ public class HiddenRoom : MonoBehaviour
         foreach (Vector3Int point in area.allPositionsWithin)
         {
             tilemap.SetTileFlags(point, TileFlags.None);
-            tilemap.SetColor(point, new Color(255f, 255f, 255f, 255f));
+            tilemap.SetColor(point, new Color(1f, 196f / 255f, 244f / 255f, 1f));
         }
         if (lever != null)
         {
