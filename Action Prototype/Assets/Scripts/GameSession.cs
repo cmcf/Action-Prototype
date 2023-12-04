@@ -20,8 +20,6 @@ public class GameSession : MonoBehaviour
 
     float delay = 0.66f;
 
-   
-
     private void Awake()
     {
         Instance = this;
