@@ -13,6 +13,8 @@ public class MovingHazard : MonoBehaviour
     public Transform startPosition;
     public Transform endPosition;
 
+    public bool canRotate = false;
+
     int direction = 1;
 
     private void Update()
@@ -28,6 +30,14 @@ public class MovingHazard : MonoBehaviour
         if (distance <= 0.1f)
         {
             direction *= -1;
+        }
+
+        if (canRotate)
+        {
+            float degreesPerSecond = 40;
+            
+            transform.Rotate(new Vector3(0, 0, degreesPerSecond) * Time.deltaTime);
+           
         }
     }
 

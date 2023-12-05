@@ -28012,5 +28012,27 @@
       "ObjectSpeed": 2.0,
       "ObjectID": "Level 2 Hazard"
     }
+  },
+  {
+    "eventTimestamp": "5/12/2023 14:09:50",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "2cf2dfaf160b32ebff83aff84853c6e0",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "5/12/2023 14:10:39",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "e10f96fbc36bc1e2c27672bfb02ba80b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 2 Hazard"
+    }
   }
 ]
