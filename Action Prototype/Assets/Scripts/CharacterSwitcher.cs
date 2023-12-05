@@ -1,5 +1,6 @@
 using Abertay.Analytics;
 using Cinemachine;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -38,9 +39,10 @@ public class CharacterSwitcher : MonoBehaviour
     public CinemachineVirtualCamera virtualCamera;
     // Reference to an array of spawn points
     public Transform[] playerSpawnPoints;
-    
 
+    float respawnDelay = 0.66f;
     public int timesPlayerHasSwitched = 0;
+    bool hasLoggedDeath = false;
 
     private bool canSwitch = true;
     public bool isSwitching = false;
@@ -58,6 +60,24 @@ public class CharacterSwitcher : MonoBehaviour
     public void Respawn()
     {
         playerTransform.position = playerSpawnPoints[currentSpawnPointIndex].position;
+        hasLoggedDeath = false;
+    }
+    
+    public void LogDeath()
+    {
+        // Check if death has been logged already
+        if (!hasLoggedDeath)
+        {
+            // Creates heat map for player death locations
+            Color c = Color.red;
+            c.a = 0.4f;
+            AnalyticsManager.LogHeatmapEvent("DeathLocation", playerTransform.position, c);
+            Debug.Log(playerTransform.position);
+
+            // Set the flag to true to indicate that death has been logged
+            hasLoggedDeath = true;
+        }
+        Invoke("Respawn", respawnDelay);
     }
 
     void Start()

@@ -17,7 +17,7 @@ public class GameSession : MonoBehaviour
     public bool isAlive = true;
     int timesPlayerHasDied = 0;
 
-    float delay = 0.66f;
+    float delay = 0f;
 
     private void Awake()
     {
@@ -34,12 +34,8 @@ public class GameSession : MonoBehaviour
         lives--;
         timesPlayerHasDied++;
 
-        Color c = Color.red;
-        c.a = 0.4f;
-        AnalyticsManager.LogHeatmapEvent("TotalDeaths", transform.position, c);
-
         isAlive = false;
-        StartCoroutine(DeathAnimationReset());
+        StartCoroutine(Death());
     }
 
 
@@ -55,16 +51,16 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
-    IEnumerator DeathAnimationReset()
+    IEnumerator Death()
     {
-        // Wait for a short delay before resetting
+        // Stores player death location
+        characterSwitcher.LogDeath();
+
+        // Wait for a short delay before resetting alive state
         yield return new WaitForSeconds(delay);
 
-        // Reset isAlive and isDead
+        // Reset isAlive
         isAlive = true;
-
-        // Trigger scene reload
-        characterSwitcher.Respawn();
     }
 
     public void Quit()
