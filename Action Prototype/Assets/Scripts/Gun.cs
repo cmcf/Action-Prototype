@@ -20,6 +20,8 @@ public class Gun : MonoBehaviour
     public Image inkImage;
     public LayerMask groundLayer;
     public Image bulletImage;
+    public AudioClip fireSFX;
+    public AudioClip inkSound;
 
     Animator animator;
     PlayerMovement playerMovement;
@@ -76,6 +78,8 @@ public class Gun : MonoBehaviour
         canFire = false;
         // Enables animation
         animator.SetBool("isFiring", true);
+        // Play sound
+        AudioSource.PlayClipAtPoint(fireSFX, Camera.main.transform.position, 0.2f);
         // Instantiate a new bullet from the bullet prefab
         GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
 
@@ -164,6 +168,9 @@ public class Gun : MonoBehaviour
             {
                 // Enables animation
                 animator.SetBool("isFiring", true);
+
+                // Play sound
+                AudioSource.PlayClipAtPoint(inkSound, Camera.main.transform.position, 0.8f);
 
                 // Spawns ink at the hit point
                 GameObject newInk = Instantiate(inkPrefab, hit.point, Quaternion.identity);

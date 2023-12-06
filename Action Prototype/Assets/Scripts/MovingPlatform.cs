@@ -14,7 +14,9 @@ public class MovingPlatform : MonoBehaviour
     public Transform movingObject;
     public Transform startPosition;
     public Transform endPosition;
+
     Rigidbody2D rb;
+    public AudioClip hitSFX;
 
     private Coroutine unparentCoroutine;
     int direction = 1;
@@ -108,6 +110,13 @@ public class MovingPlatform : MonoBehaviour
 
         // Clamp the move speed so it doesn't go below a certain amount
         moveSpeed = Mathf.Max(moveSpeed, minimumMoveSpeed);
+
+        if (moveSpeed > minimumMoveSpeed)
+        {
+            // Play sound
+            AudioSource.PlayClipAtPoint(hitSFX, Camera.main.transform.position, 0.5f);
+        }
+        
     }
     private void LogSlowDownEvent()
     {

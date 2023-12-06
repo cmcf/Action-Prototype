@@ -18,6 +18,7 @@ public class Dog : MonoBehaviour
     float defaultSprintSpeed = 8f;
     float currentStamina;
     public Slider staminaSlider;
+    public AudioClip bounceSFX;
 
     Rigidbody2D rb;
     Animator animator;
@@ -247,6 +248,8 @@ public class Dog : MonoBehaviour
 
     void Ascend()
     {
+        // Play sound
+        AudioSource.PlayClipAtPoint(bounceSFX, Camera.main.transform.position, 0.2f);
         rb.velocity = new Vector2(rb.velocity.x, amplitude);
         isGrounded = false;
     }
