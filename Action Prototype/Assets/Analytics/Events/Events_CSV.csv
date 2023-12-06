@@ -2801,3 +2801,44 @@ Timestamp,UserID,Event Name,UUID,Param/redBulletsFired,Param/totalTimesPlayerHas
 6/12/2023 20:00:57,NULL,SlowedDownObject,15c6b6733fd921b36aa6f3499fed48c9,,,,,,,Level 2 Hazard,,,3.5
 6/12/2023 20:01:50,NULL,TimesSwitched,7361925a41a8dedcd7555c15baa32e9f,,,33,,,,,,,
 6/12/2023 20:01:50,NULL,TimesSwitched,7361925a41a8dedcd7555c15baa32e9f,,,33,,,,,,,
+6/12/2023 20:08:49,NULL,SlowedDownObject,5b39bfb8ce0f3a56775b29c52f855593,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:09:55,NULL,SlowedDownObject,815cdb471c7f32d1c7ac092178b9e64d,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:09:58,NULL,SlowedDownObject,26cd61cab85e1c1356712a5cd93b784d,,,,,,,Level 2 Hazard,,,2
+6/12/2023 20:12:09,NULL,SlowedDownObject,801209d6cc5076591ddb709fd6bc5e0a,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:12:52,NULL,TimesSwitched,bbf65b6670a9667cc019b76b99ccb45c,,,30,,,,,,,
+6/12/2023 20:12:52,NULL,TimesSwitched,bbf65b6670a9667cc019b76b99ccb45c,,,30,,,,,,,
+6/12/2023 20:12:52,NULL,TimesSwitched,bbf65b6670a9667cc019b76b99ccb45c,,,30,,,,,,,
+6/12/2023 20:13:15,NULL,SlowedDownObject,23f3fef5cb27ce643302d71c7de8859d,,,,,,,Level 3 Hazard,,,4.5
+6/12/2023 20:13:16,NULL,SlowedDownObject,ebaaa0b4f1371a626c9af5419983f862,,,,,,,Level 3 Hazard,,,2.5
+6/12/2023 20:13:18,NULL,SlowedDownObject,648a3e22418377e294fd2aee60643b03,,,,,,,Level 3 Hazard,,,5
+6/12/2023 20:13:19,NULL,SlowedDownObject,59fc3941c021891c7e50b9e100d0c86e,,,,,,,Level 3 Hazard,,,2
+6/12/2023 20:13:33,NULL,SlowedDownObject,77f844a212d14442bcac3a7493938a81,,,,,,,Level 3 Platform 1,,,3
+6/12/2023 20:13:33,NULL,SlowedDownObject,77f844a212d14442bcac3a7493938a81,,,,,,,Level 3 Platform 1,,,2
+6/12/2023 20:13:34,NULL,SlowedDownObject,18b9be2e2a46294561e8140ac642df5c,,,,,,,Level 3 Platform 1,,,2
+6/12/2023 20:13:35,NULL,SlowedDownObject,d069d72848d75a34b769a260302972df,,,,,,,Level 3 Platform 1,,,2
+6/12/2023 20:13:44,NULL,SlowedDownObject,91e26592c9b4b92c5565c0ca03169b39,,,,,,,Level 3 Platform 2,,,3
+6/12/2023 20:13:45,NULL,SlowedDownObject,a0887d7206ca9ff9391aaa84259572f3,,,,,,,Level 3 Platform 2,,,2
+6/12/2023 20:13:46,NULL,SlowedDownObject,5915b6fd3a4a2edcbecbd56074d66865,,,,,,,Level 3 Platform 2,,,2
+6/12/2023 20:28:06,NULL,SlowedDownObject,e306bde3c8f797780acbb2b6c7641914,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:28:08,NULL,SlowedDownObject,4c5abaf656ca5b127854165e40f820ec,,,,,,,Level 2 Hazard,,,2
+6/12/2023 20:29:07,NULL,SlowedDownObject,d15af0bf3f90307538f59728933c270f,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:30:14,NULL,SlowedDownObject,e57df0d9b07dada554a3a6ec971919ac,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:30:23,NULL,SlowedDownObject,e8b27fbd11417660fa3a345df7c132a8,,,,,,,Level 2 Hazard,,,2
+6/12/2023 20:32:36,NULL,SlowedDownObject,8fb7c11185c6f48ab90124b9876560c9,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:32:43,NULL,SlowedDownObject,65cdb8d38b89b9d1c514e912b928fd84,,,,,,,Level 2 Hazard,,,2
+6/12/2023 20:34:22,NULL,SlowedDownObject,7495ab4b8e4967fec1fa846a79572d99,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:35:09,NULL,SlowedDownObject,2a3b8dbb1bcade3a062823500f6bbd6e,,,,,,,Level 2 Hazard,,,4
+6/12/2023 20:35:10,NULL,SlowedDownObject,72ff1bd57fb0cbc523ae95b12ee54f6f,,,,,,,Level 2 Hazard,,,3
+6/12/2023 20:35:41,NULL,TimesSwitched,fdbbeb6a69c4b6715df39c988d4b85f9,,,22,,,,,,,
+6/12/2023 20:35:41,NULL,TimesSwitched,fdbbeb6a69c4b6715df39c988d4b85f9,,,22,,,,,,,
+6/12/2023 20:35:41,NULL,TimesSwitched,fdbbeb6a69c4b6715df39c988d4b85f9,,,22,,,,,,,
+6/12/2023 20:35:53,NULL,SlowedDownObject,746d3735c496dc3b37fd4c1d9b5df90a,,,,,,,Level 3 Hazard,,,5
+6/12/2023 20:35:55,NULL,SlowedDownObject,03b87fa532bfd5839f40ae7dc2bad37d,,,,,,,Level 3 Hazard,,,3.5
+6/12/2023 20:35:57,NULL,SlowedDownObject,0a79422967de9db3b25d92d00d4f23bd,,,,,,,Level 3 Hazard,,,5
+6/12/2023 20:35:58,NULL,SlowedDownObject,eb64905876857d5c794450f697c4748b,,,,,,,Level 3 Hazard,,,2
+6/12/2023 20:36:12,NULL,SlowedDownObject,d5c854181d32b87464da2a7891e73478,,,,,,,Level 3 Platform 1,,,4
+6/12/2023 20:36:12,NULL,SlowedDownObject,d5c854181d32b87464da2a7891e73478,,,,,,,Level 3 Platform 1,,,3
+6/12/2023 20:36:13,NULL,SlowedDownObject,f52999d6ad427b642d85ac150408a8c2,,,,,,,Level 3 Platform 1,,,2
+6/12/2023 20:36:14,NULL,SlowedDownObject,34100bc8fbcf6b67f3219e3d817287d3,,,,,,,Level 3 Platform 1,,,2
+6/12/2023 20:36:23,NULL,SlowedDownObject,08d531f649c66d7122f8a254aa5aefdc,,,,,,,Level 3 Platform 2,,,4
+6/12/2023 20:36:24,NULL,SlowedDownObject,833bbdcc761dbeda1f16252f304ff437,,,,,,,Level 3 Platform 2,,,3

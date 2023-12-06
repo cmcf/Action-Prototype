@@ -133,7 +133,7 @@ public class CharacterSwitcher : MonoBehaviour
             // Play switch VFX and SFX
             Vector3 vfxPosition = playerTransform.position;
             GameObject vfxInstance = Instantiate(switchVFX, vfxPosition, playerTransform.rotation);
-            AudioSource.PlayClipAtPoint(switchSFX, Camera.main.transform.position, 0.2f);
+            AudioSource.PlayClipAtPoint(switchSFX, Camera.main.transform.position, 0.4f);
             Destroy(vfxInstance, switchVFXDuration);
            
 
