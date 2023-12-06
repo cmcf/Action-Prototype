@@ -40,10 +40,11 @@ public class Gun : MonoBehaviour
 
     void UpdateInkUI()
     {
+        CheckForInk();
         // Checks if player can fire ink in current area
         bool inkAlreadyPresent = CheckForInk();
 
-        if (!inkAlreadyPresent)
+        if (inkAlreadyPresent)
         {
             inkImage.color = Color.white;
         }
