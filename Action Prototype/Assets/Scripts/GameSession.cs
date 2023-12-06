@@ -17,7 +17,7 @@ public class GameSession : MonoBehaviour
     public bool isAlive = true;
     int timesPlayerHasDied = 0;
 
-    float delay = 0f;
+    float delay = 0.001f;
 
     private void Awake()
     {

@@ -18,6 +18,7 @@ public class Gun : MonoBehaviour
     [SerializeField] float inkCheckRadius = 0.2f;
 
     public Image inkImage;
+    public LayerMask groundLayer;
     public Image bulletImage;
 
     Animator animator;
@@ -105,10 +106,10 @@ public class Gun : MonoBehaviour
 
     void OnInk(InputValue value)
     {
-        // Check if there's already ink at the desired spawn point
-        bool inkAlreadyPresent = CheckForInk();
+        // Check if there's ground and no ink at the desired spawn point
+        bool groundAndNoInkPresent = CheckForInk();
 
-        if (!inkAlreadyPresent)
+        if (groundAndNoInkPresent)
         {
             // Set the ink UI colour to white to indicate that the player can fire
             inkImage.color = Color.white;
@@ -121,19 +122,29 @@ public class Gun : MonoBehaviour
             inkImage.color = Color.grey;
         }
     }
+
     bool CheckForInk()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(spawnPoint.position, inkCheckRadius);
+
+        bool inkPresent = false;
+        bool groundPresent = false;
 
         foreach (Collider2D hitCollider in hitColliders)
         {
             if (hitCollider.CompareTag("Ink"))
             {
-                return true;
+                inkPresent = true; // Ink is present
+            }
+
+            // Check if the collider belongs to the ground layer
+            if (hitCollider.CompareTag("Ground"))
+            {
+                groundPresent = true; // Ground is present
             }
         }
 
-        return false;
+        return groundPresent && !inkPresent; // Return true if there is ground and no ink
     }
     IEnumerator FireInk()
     {
@@ -142,25 +153,34 @@ public class Gun : MonoBehaviour
         // Reset ink UI after firing
         inkImage.color = Color.grey;
 
-        if (playerMovement.isGrounded)
+        // Cast a ray downwards to check for ground
+        RaycastHit2D hit = Physics2D.Raycast(spawnPoint.position, Vector2.down, Mathf.Infinity, groundLayer);
+
+        if (hit.collider != null)
         {
-            // Enables animation
-            animator.SetBool("isFiring", true);
-            // Create a rotation
-            Quaternion inkRotation = Quaternion.Euler(0f, 0f, 90f); // Rotate by 45 degrees around the Z-axis
-                                                                    // Spawns ink
-            GameObject newInk = Instantiate(inkPrefab, spawnPoint.position, spawnPoint.rotation);
-            // Add a force to make the ink move downwards
-            Rigidbody2D inkRigidbody = newInk.GetComponent<Rigidbody2D>();
-            if (inkRigidbody != null)
+            // Ground is detected, proceed to spawn ink
+            if (playerMovement.isGrounded)
             {
-                // Adjust the force values as needed to control the speed and direction
-                Vector2 downwardForce = Vector2.down * inkSpeed;
-                Vector2 forwardForce = Vector2.right * inkForwardSpeed; // Adjust forwardSpeed as needed
-                inkRigidbody.AddForce(downwardForce + forwardForce, ForceMode2D.Impulse);
+                // Enables animation
+                animator.SetBool("isFiring", true);
+
+                // Spawns ink at the hit point
+                GameObject newInk = Instantiate(inkPrefab, hit.point, Quaternion.identity);
+
+                // Add a force to make the ink move downwards
+                Rigidbody2D inkRigidbody = newInk.GetComponent<Rigidbody2D>();
+
+                if (inkRigidbody != null)
+                {
+                    // Values control the speed and direction of ink
+                    Vector2 downwardForce = Vector2.down * inkSpeed;
+                    Vector2 forwardForce = Vector2.right * inkForwardSpeed;
+                    inkRigidbody.AddForce(downwardForce + forwardForce, ForceMode2D.Impulse);
+                }
+
+                // Fire delay is called which sets can fire back to true after a delay 
+                Invoke("FireDelay", fireDelay);
             }
-            // Fire delay is called which sets can fire back to true after a delay 
-            Invoke("FireDelay", fireDelay);
         }
     }
 
