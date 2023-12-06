@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D playerCollider;
     BoxCollider2D feetCollider;
 
+    public AudioClip jumpSFX;
     public bool isGrounded = false;
     public bool canMovePlayer = true;
 
@@ -103,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         moveSpeed = jumpMoveSpeed;
+        AudioSource.PlayClipAtPoint(jumpSFX, Camera.main.transform.position, 2f);
         // Check if the player is on a moving platform and unparent
         if (transform.parent != null)
         {

@@ -28089,5 +28089,36 @@
       "ObjectSpeed": 2.0,
       "ObjectID": "Level 2 Hazard"
     }
+  },
+  {
+    "eventTimestamp": "6/12/2023 20:00:57",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "15c6b6733fd921b36aa6f3499fed48c9",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "6/12/2023 20:01:50",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7361925a41a8dedcd7555c15baa32e9f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 33
+    }
+  },
+  {
+    "eventTimestamp": "6/12/2023 20:01:50",
+    "userID": "NULL",
+    "eventName": "TimesSwitched",
+    "eventUUID": "7361925a41a8dedcd7555c15baa32e9f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "timesPlayerHasSwitched": 33
+    }
   }
 ]

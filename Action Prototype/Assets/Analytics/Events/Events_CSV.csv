@@ -2798,3 +2798,6 @@ Timestamp,UserID,Event Name,UUID,Param/redBulletsFired,Param/totalTimesPlayerHas
 6/12/2023 18:56:25,NULL,SlowedDownObject,4e91d384f3088a482103622ec4257fea,,,,,,,Level 2 Hazard,,,2
 6/12/2023 18:56:27,NULL,SlowedDownObject,4a955010ba54dcc71c5b55f78767f930,,,,,,,Level 2 Hazard,,,2
 6/12/2023 18:56:28,NULL,SlowedDownObject,aa0e3a2c2c88cc3bebbcd35127c9804a,,,,,,,Level 2 Hazard,,,2
+6/12/2023 20:00:57,NULL,SlowedDownObject,15c6b6733fd921b36aa6f3499fed48c9,,,,,,,Level 2 Hazard,,,3.5
+6/12/2023 20:01:50,NULL,TimesSwitched,7361925a41a8dedcd7555c15baa32e9f,,,33,,,,,,,
+6/12/2023 20:01:50,NULL,TimesSwitched,7361925a41a8dedcd7555c15baa32e9f,,,33,,,,,,,

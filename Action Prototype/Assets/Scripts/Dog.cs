@@ -17,8 +17,10 @@ public class Dog : MonoBehaviour
     float airSpeed = 5f;
     float defaultSprintSpeed = 8f;
     float currentStamina;
+
     public Slider staminaSlider;
     public AudioClip bounceSFX;
+    public AudioClip barkSFX;
 
     Rigidbody2D rb;
     Animator animator;
@@ -204,6 +206,7 @@ public class Dog : MonoBehaviour
     }
     public void DogAttack()
     {
+        AudioSource.PlayClipAtPoint(barkSFX, Camera.main.transform.position, 0.2f);
         isAttacking = true;
         Invoke("StopAttack", 0.2f);
     }
