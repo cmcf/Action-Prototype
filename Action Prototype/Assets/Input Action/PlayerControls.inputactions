@@ -347,6 +347,17 @@
                 },
                 {
                     "name": "",
+                    "id": "b82f54fe-84b5-43be-b3b1-8f2845b23220",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "901181a1-96b3-465d-a0e6-325dc5ad5cf5",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",

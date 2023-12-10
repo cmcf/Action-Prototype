@@ -338,6 +338,17 @@
                 },
                 {
                     "name": "",
+                    "id": "327066e8-31fc-4785-aa4b-b00cfa365ad0",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "dbb49c61-876c-4486-8af8-27e0ef3b2cdf",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
