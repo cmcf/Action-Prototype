@@ -34284,5 +34284,93 @@
     "eventParams": {
       "playerFinalTime": 40.27858
     }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:57:59",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "8c8f2adf6a92e1426f88cf7a7c57e732",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 5.0,
+      "ObjectID": "Level 3 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:58:00",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "5ece8c2d8ff0dec5f138d52f04a89272",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.5,
+      "ObjectID": "Level 3 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:58:03",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "d10fab75f19d8a13429fc2f3aa595afb",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 5.0,
+      "ObjectID": "Level 3 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:58:04",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "b06f58840b11ec361f63546af8b70e73",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 2.0,
+      "ObjectID": "Level 3 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:58:20",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "8657d6aaa6b61391f671e6c42b95d36e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Level 3 Platform 1"
+    }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:58:21",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "ebaf897c8293c43ca230923ea90a80a4",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Level 3 Platform 1"
+    }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:58:22",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "f3fd08fca6924232391a788591fecd83",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 2.0,
+      "ObjectID": "Level 3 Platform 1"
+    }
+  },
+  {
+    "eventTimestamp": "10/12/2023 18:58:22",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "f3fd08fca6924232391a788591fecd83",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 2.0,
+      "ObjectID": "Level 3 Platform 1"
+    }
   }
 ]

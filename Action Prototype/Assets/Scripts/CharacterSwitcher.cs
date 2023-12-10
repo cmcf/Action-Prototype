@@ -124,7 +124,8 @@ public class CharacterSwitcher : MonoBehaviour
     void HandleSwitchInput()
     {
         // Checks if player has pressed switch button on keyboard or controller
-        if (Gamepad.current != null && canSwitch && Gamepad.current.buttonNorth.wasPressedThisFrame || Input.GetKeyDown(KeyCode.Tab))
+        if ((Gamepad.current != null && canSwitch && Gamepad.current.buttonNorth.wasPressedThisFrame)
+           || Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
         {
             // Disable movement for the current character during switching
             canMovePlayer = false;

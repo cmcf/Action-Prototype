@@ -8,18 +8,15 @@ public class LockedDoor : MonoBehaviour
 {
     Animator anim;
     float loadDelay = 1f;
-    CharacterSwitcher characterSwitcher;
 
     void Start()
     {
         anim= GetComponent<Animator>();
-        characterSwitcher = FindObjectOfType<CharacterSwitcher>();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (GameSession.Instance.keysCollected >= 2)
         {
-            Debug.Log("Open door");
             anim.SetTrigger("IsOpen");
             StartCoroutine(LoadNextLevel());
         }
@@ -27,12 +24,12 @@ public class LockedDoor : MonoBehaviour
 
     IEnumerator LoadNextLevel()
     {
-        // Saves amount of times the player has switched each level
+        /* Old data collection event
+         * Saves amount of times the player has switched each level
         Dictionary<string, object> switchData = new Dictionary<string, object>();
         switchData.Add("timesPlayerHasSwitched", characterSwitcher.timesPlayerHasSwitched);
         AnalyticsManager.SendCustomEvent("TimesSwitched", switchData);
-
-        Debug.Log(characterSwitcher.timesPlayerHasSwitched);
+        */
 
         // Loads level after a delay
         yield return new WaitForSecondsRealtime(loadDelay);

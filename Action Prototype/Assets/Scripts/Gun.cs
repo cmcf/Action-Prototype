@@ -79,7 +79,7 @@ public class Gun : MonoBehaviour
         // Enables animation
         animator.SetBool("isFiring", true);
         // Play sound
-        AudioSource.PlayClipAtPoint(fireSFX, Camera.main.transform.position, 0.2f);
+        AudioSource.PlayClipAtPoint(fireSFX, Camera.main.transform.position, 0.5f);
         // Instantiate a new bullet from the bullet prefab
         GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
 

@@ -358,6 +358,28 @@
                 },
                 {
                     "name": "",
+                    "id": "70db3d98-343f-47b7-9687-922a1ae399c9",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3139dba-46f2-465d-882d-97853f4c30fe",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "901181a1-96b3-465d-a0e6-325dc5ad5cf5",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",

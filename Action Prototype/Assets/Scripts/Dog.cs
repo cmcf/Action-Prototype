@@ -1,3 +1,4 @@
+using Abertay.Analytics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ public class Dog : MonoBehaviour
     [SerializeField] float sprintSpeed = 10f; // Speed when sprinting
     [SerializeField]float stamina = 80f;      // Maximum stamina
     [SerializeField] float staminaDepletionRate = 10f;
-    [SerializeField] float staminaRegainRate = 10f;
+    [SerializeField] float staminaRegainRate = 20f;
     [SerializeField] float amplitude = 1f;
     [SerializeField] Transform spawnPoint;
     [SerializeField] float projectileSpeed = 5f;
@@ -169,11 +170,20 @@ public class Dog : MonoBehaviour
         // Movement speed is increased
         isSprinting = true;
         currentMoveSpeed = sprintSpeed;
-        Debug.Log("Start sprint: " + currentStamina);
+        LogStaminaUse();
     }
 
-    void OnFire()
-    {
+     void LogStaminaUse()
+     {
+        // Creates heat map for sprint locations
+        Color c = Color.blue;
+        c.a = 0.4f;
+        AnalyticsManager.LogHeatmapEvent("StaminaLocation", transform.position, c);
+        Debug.Log(transform.position);
+     }
+    
+     void OnFire()
+     { 
         if (!isAttacking)
         {
             isAttacking = true;
@@ -203,7 +213,7 @@ public class Dog : MonoBehaviour
                 bulletRigidbody.velocity = bulletVelocity;
             }
         }
-    }
+     }
     public void DogAttack()
     {
         AudioSource.PlayClipAtPoint(barkSFX, Camera.main.transform.position, 0.2f);
