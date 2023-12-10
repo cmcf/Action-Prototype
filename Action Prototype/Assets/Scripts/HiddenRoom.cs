@@ -4,6 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+/* This script was adapted based on code from the tutorial "Creating Hidden Rooms in Unity - Devlog 01" by Third Arm Labs. 
+ * The tutorial was used to implement the hide and reveal tilemap functionality
+ * The tutorial can be found on YouTube at https://www.youtube.com/watch?v=cyw2SdC_MDI
+ */
 public class HiddenRoom : MonoBehaviour
 {
     BoundsInt area;

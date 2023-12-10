@@ -2,6 +2,11 @@ using UnityEngine;
 using Abertay.Analytics;
 using System.Collections.Generic;
 
+/* The moving hazard script was adapted based on insights from the tutorial "Unity Tutorial - How to Make Moving Platform in Unity | Unity Tutorial for Beginners" by Pix and Dev. 
+ * The adjustments focused on improving the fluidity of hazard movement. 
+ * The tutorial can be found on YouTube at https://www.youtube.com/watch?v=vua2a_Z3zlY
+ */
+
 public class MovingHazard : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
@@ -82,26 +87,12 @@ public class MovingHazard : MonoBehaviour
         }
        
     }
-
     private void LogSlowDownEvent()
     {
-
+        // Collects the movement speed of the object each time it has been slowed down and stores the object name
         Dictionary<string, object> data = new Dictionary<string, object>();
         data.Add("ObjectSpeed", moveSpeed);
         data.Add("ObjectID", gameObject.name);
-
-        // Convert the dictionary to a string for debugging
-        string debugString = "LogSlowDownEvent - Data: ";
-        foreach (var entry in data)
-        {
-            debugString += $"{entry.Key}: {entry.Value}, ";
-        }
-
-        // Remove the trailing comma and space
-        debugString = debugString.TrimEnd(',', ' ');
-
-        // Log the debug string
-        Debug.Log(debugString);
 
         AnalyticsManager.SendCustomEvent("SlowedDownObject", data);
     }

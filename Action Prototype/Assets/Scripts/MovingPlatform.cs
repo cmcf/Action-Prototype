@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/* The moving platform script was adapted based on insights from the tutorial "Unity Tutorial - How to Make Moving Platform in Unity | Unity Tutorial for Beginners" by Pix and Dev. 
+ * The tutorial can be found on YouTube at https://www.youtube.com/watch?v=vua2a_Z3zlY
+ */
+
 public class MovingPlatform : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
