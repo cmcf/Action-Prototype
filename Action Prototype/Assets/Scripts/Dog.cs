@@ -17,7 +17,7 @@ public class Dog : MonoBehaviour
 
     float airSpeed = 5f;
     float defaultSprintSpeed = 8f;
-    float currentStamina;
+     public float currentStamina;
 
     public Slider staminaSlider;
     public AudioClip bounceSFX;
@@ -272,6 +272,7 @@ public class Dog : MonoBehaviour
         if (!GameSession.Instance.isAlive)
         {
             animator.SetBool("isDead", true);
+            currentStamina = stamina;
         }
         else
         {

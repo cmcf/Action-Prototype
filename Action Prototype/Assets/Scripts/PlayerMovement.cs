@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     float defaultMoveSpeed = 3.5f; // Default movement speed
+    float maxStamina = 20; // Max dog stamina
     [SerializeField] float moveSpeed = 3.2f; // Player current movement speed
     [SerializeField] float jumpMoveSpeed = 2.5f; // Player movement speed in air
     [SerializeField] float jumpForce = 5f; // How high the player can jump 
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D playerCollider;
     BoxCollider2D feetCollider;
 
+    public Dog dog;
     public AudioClip jumpSFX;
     public bool isGrounded = false;
     public bool canMovePlayer = true;
@@ -189,6 +191,8 @@ public class PlayerMovement : MonoBehaviour
         if (!GameSession.Instance.isAlive)
         {
             animator.SetBool("isDead", true);
+            // Resets dog stamina
+            dog.currentStamina = maxStamina; 
         }
         else
         {

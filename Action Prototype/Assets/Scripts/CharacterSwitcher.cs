@@ -72,7 +72,6 @@ public class CharacterSwitcher : MonoBehaviour
             Color c = Color.red;
             c.a = 0.4f;
             AnalyticsManager.LogHeatmapEvent("DeathLocation", playerTransform.position, c);
-            Debug.Log(playerTransform.position);
 
             // Set the flag to true to indicate that death has been logged
             hasLoggedDeath = true;

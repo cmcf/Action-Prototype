@@ -15,7 +15,7 @@ public class GameSession : MonoBehaviour
     public int lives = 3;
     public int keysCollected = 0;
     public bool isAlive = true;
-    int timesPlayerHasDied = 0;
+ 
 
     float delay = 0.001f;
 
@@ -32,7 +32,6 @@ public class GameSession : MonoBehaviour
     void TakeLife()
     {
         lives--;
-        timesPlayerHasDied++;
 
         isAlive = false;
         StartCoroutine(Death());
