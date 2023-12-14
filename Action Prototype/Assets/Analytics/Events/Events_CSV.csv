@@ -2842,3 +2842,12 @@ Timestamp,UserID,Event Name,UUID,Param/redBulletsFired,Param/totalTimesPlayerHas
 6/12/2023 20:36:14,NULL,SlowedDownObject,34100bc8fbcf6b67f3219e3d817287d3,,,,,,,Level 3 Platform 1,,,2
 6/12/2023 20:36:23,NULL,SlowedDownObject,08d531f649c66d7122f8a254aa5aefdc,,,,,,,Level 3 Platform 2,,,4
 6/12/2023 20:36:24,NULL,SlowedDownObject,833bbdcc761dbeda1f16252f304ff437,,,,,,,Level 3 Platform 2,,,3
+14/12/2023 18:42:27,NULL,SlowedDownObject,3dad8176d5c96b9678dd64f54a17ac9e,,,,,,,Level 2 Hazard,,,4
+14/12/2023 18:42:28,NULL,SlowedDownObject,d71a45c3fd0316287bbe7a525d98e66e,,,,,,,Level 2 Hazard,,,3
+14/12/2023 18:48:02,NULL,SlowedDownObject,5df098e6409588b256225f2046ca946f,,,,,,,Level 2 Hazard,,,4
+14/12/2023 18:48:03,NULL,SlowedDownObject,83a3d5126f0732d76bd5e3c0d979a079,,,,,,,Level 2 Hazard,,,3
+14/12/2023 18:49:06,NULL,SlowedDownObject,923e1aceea12080410f996a81938b3eb,,,,,,,Level 2 Hazard,,,4
+14/12/2023 18:50:58,NULL,SlowedDownObject,909d8db1d105d46f86e485ac155eb063,,,,,,,Level 2 Hazard,,,4
+14/12/2023 18:50:59,NULL,SlowedDownObject,3cae2da83ac69805d946177901b7f597,,,,,,,Level 2 Hazard,,,3
+14/12/2023 18:53:49,NULL,SlowedDownObject,2a02dfaede129363e1d29c221007ed1b,,,,,,,Level 2 Hazard,,,4
+14/12/2023 18:53:50,NULL,SlowedDownObject,34e0cf6f55d80ec670d4db8b2053bf2b,,,,,,,Level 2 Hazard,,,3

@@ -28565,5 +28565,104 @@
       "ObjectSpeed": 3.0,
       "ObjectID": "Level 3 Platform 2"
     }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:42:27",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "3dad8176d5c96b9678dd64f54a17ac9e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:42:28",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "d71a45c3fd0316287bbe7a525d98e66e",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:48:02",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "5df098e6409588b256225f2046ca946f",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:48:03",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "83a3d5126f0732d76bd5e3c0d979a079",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:49:06",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "923e1aceea12080410f996a81938b3eb",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:50:58",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "909d8db1d105d46f86e485ac155eb063",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:50:59",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "3cae2da83ac69805d946177901b7f597",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:53:49",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "2a02dfaede129363e1d29c221007ed1b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 4.0,
+      "ObjectID": "Level 2 Hazard"
+    }
+  },
+  {
+    "eventTimestamp": "14/12/2023 18:53:50",
+    "userID": "NULL",
+    "eventName": "SlowedDownObject",
+    "eventUUID": "34e0cf6f55d80ec670d4db8b2053bf2b",
+    "GA_Value": 0.0,
+    "eventParams": {
+      "ObjectSpeed": 3.0,
+      "ObjectID": "Level 2 Hazard"
+    }
   }
 ]
