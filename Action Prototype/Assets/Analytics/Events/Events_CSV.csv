@@ -2851,3 +2851,76 @@ Timestamp,UserID,Event Name,UUID,Param/redBulletsFired,Param/totalTimesPlayerHas
 14/12/2023 18:50:59,NULL,SlowedDownObject,3cae2da83ac69805d946177901b7f597,,,,,,,Level 2 Hazard,,,3
 14/12/2023 18:53:49,NULL,SlowedDownObject,2a02dfaede129363e1d29c221007ed1b,,,,,,,Level 2 Hazard,,,4
 14/12/2023 18:53:50,NULL,SlowedDownObject,34e0cf6f55d80ec670d4db8b2053bf2b,,,,,,,Level 2 Hazard,,,3
+19/12/2023 17:10:19,NULL,SlowedDownObject,12025aeb5c854ad388bb557bf23f10f3,,,,,,,Level 2 Hazard,,,4
+19/12/2023 17:10:20,NULL,SlowedDownObject,3f8b018876e8a3387ef915271054a53d,,,,,,,Level 2 Hazard,,,3
+19/12/2023 17:11:54,NULL,SlowedDownObject,01a4c1742ad829de1bbbbfa0ee1f1a73,,,,,,,Level 2 Hazard,,,4
+19/12/2023 17:11:55,NULL,SlowedDownObject,e7abf21a7abef6778f76529c6bcf2ac9,,,,,,,Level 2 Hazard,,,3
+19/12/2023 17:12:41,NULL,SlowedDownObject,85e057600341d1b219e6781318248a7b,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:12:42,NULL,SlowedDownObject,fb4476106251575349215d78f63d0b4a,,,,,,,Level 3 Hazard,,,3.5
+19/12/2023 17:12:44,NULL,SlowedDownObject,5d287104758361a3f0db0d580d2bbbf2,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:12:58,NULL,SlowedDownObject,ca62cab2e7f576bfee66646033958b78,,,,,,,Level 3 Platform 1,,,4
+19/12/2023 17:13:00,NULL,SlowedDownObject,31348da531bfacfca5e17038ebc3d21d,,,,,,,Level 3 Platform 1,,,3
+19/12/2023 17:13:13,NULL,SlowedDownObject,8a9a2a688f8b5a01f3c021d0aa398bff,,,,,,,Level 3 Platform 2,,,4.5
+19/12/2023 17:13:15,NULL,SlowedDownObject,6e10ebf18cf51eca13b582e857bb7f95,,,,,,,Level 3 Platform 2,,,3.5
+19/12/2023 17:13:23,NULL,PlayerTime,3db6b08a77d997be8e59913e290757c0,,,,,,77.792305,,,,
+19/12/2023 17:13:23,NULL,PlayerTime,3db6b08a77d997be8e59913e290757c0,,,,,,77.792305,,,,
+19/12/2023 17:13:23,NULL,PlayerTime,3db6b08a77d997be8e59913e290757c0,,,,,,77.792305,,,,
+19/12/2023 17:14:11,NULL,SlowedDownObject,f88a5d9a2a7a0f34d8f1f9d8665d4e90,,,,,,,Level 2 Hazard,,,4
+19/12/2023 17:15:01,NULL,SlowedDownObject,889997a9fffe9fd48dcd0ffb291a06b7,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:15:02,NULL,SlowedDownObject,33f43f6d3266833c1e6cd71578cbd3fc,,,,,,,Level 3 Hazard,,,3.5
+19/12/2023 17:15:03,NULL,SlowedDownObject,47f54ca8b5bb6dcc6269c6c2228a5392,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:15:04,NULL,SlowedDownObject,1715c30acc8b5696985bfa6a88b7ee79,,,,,,,Level 3 Hazard,,,2
+19/12/2023 17:15:20,NULL,SlowedDownObject,bb665ded66ef15885beb2b1056623620,,,,,,,Level 3 Platform 1,,,4
+19/12/2023 17:15:20,NULL,SlowedDownObject,bb665ded66ef15885beb2b1056623620,,,,,,,Level 3 Platform 1,,,3
+19/12/2023 17:15:21,NULL,SlowedDownObject,6ea3c2a652a1424eac1426ac43257c54,,,,,,,Level 3 Platform 1,,,2
+19/12/2023 17:15:29,NULL,SlowedDownObject,fdd809b09bbb755d4c895deee12ee243,,,,,,,Level 3 Platform 2,,,4.5
+19/12/2023 17:15:30,NULL,SlowedDownObject,27443c6bfb08987fd1d448a64f28d498,,,,,,,Level 3 Platform 2,,,3.5
+19/12/2023 17:15:36,NULL,PlayerTime,39bfe7eb199aa597e7578d08a8c8c6bc,,,,,,74.84874,,,,
+19/12/2023 17:15:36,NULL,PlayerTime,39bfe7eb199aa597e7578d08a8c8c6bc,,,,,,74.84874,,,,
+19/12/2023 17:15:36,NULL,PlayerTime,39bfe7eb199aa597e7578d08a8c8c6bc,,,,,,74.84874,,,,
+19/12/2023 17:18:41,NULL,SlowedDownObject,625731e2ead8cb2c92d80eec56e0af7d,,,,,,,Level 2 Hazard,,,4
+19/12/2023 17:18:41,NULL,SlowedDownObject,625731e2ead8cb2c92d80eec56e0af7d,,,,,,,Level 2 Hazard,,,3
+19/12/2023 17:18:57,NULL,SlowedDownObject,0f6c0329ac0d437ad5e500d1ea0c4574,,,,,,,Level 2 Hazard,,,2
+19/12/2023 17:18:58,NULL,SlowedDownObject,7bb5188b332039365a63e26807808496,,,,,,,Level 2 Hazard,,,2
+19/12/2023 17:19:44,NULL,SlowedDownObject,467fff7e8e6ed2781288366b3e7ab827,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:19:45,NULL,SlowedDownObject,989f0269a1821829f32a041aa599c8ac,,,,,,,Level 3 Hazard,,,3.5
+19/12/2023 17:19:46,NULL,SlowedDownObject,6e423f041bdeb0b8cbc2685d92ade2a0,,,,,,,Level 3 Hazard,,,2
+19/12/2023 17:19:47,NULL,SlowedDownObject,80383444d7b50dd849d808b9ed9fc8ce,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:19:48,NULL,SlowedDownObject,f0388e81dec3121a0827088e4714eb5f,,,,,,,Level 3 Hazard,,,2
+19/12/2023 17:20:01,NULL,SlowedDownObject,059fb043046ab3942131b255995a5084,,,,,,,Level 3 Platform 1,,,4
+19/12/2023 17:20:01,NULL,SlowedDownObject,059fb043046ab3942131b255995a5084,,,,,,,Level 3 Platform 1,,,3
+19/12/2023 17:20:04,NULL,SlowedDownObject,8538c979f6d35a13d2bb9afc5595743e,,,,,,,Level 3 Platform 1,,,2
+19/12/2023 17:20:10,NULL,SlowedDownObject,dba7370231a96974461e3279d3138fdc,,,,,,,Level 3 Platform 2,,,4.5
+19/12/2023 17:20:11,NULL,SlowedDownObject,f5f288b9dd4fd88954f0927b97ae43ff,,,,,,,Level 3 Platform 2,,,3.5
+19/12/2023 17:20:12,NULL,SlowedDownObject,2bf98b0e4a60ecf034c7b4edf2e5b84a,,,,,,,Level 3 Platform 2,,,2.5
+19/12/2023 17:20:20,NULL,PlayerTime,a3158057892fb5e85a46bfc047d4403d,,,,,,84.04056,,,,
+19/12/2023 17:20:20,NULL,PlayerTime,a3158057892fb5e85a46bfc047d4403d,,,,,,84.04056,,,,
+19/12/2023 17:20:20,NULL,PlayerTime,a3158057892fb5e85a46bfc047d4403d,,,,,,84.04056,,,,
+19/12/2023 17:25:42,NULL,SlowedDownObject,3a9a6d4f7dbd8bd45a9d385ec375be72,,,,,,,Level 2 Hazard,,,4
+19/12/2023 17:26:32,NULL,SlowedDownObject,581e327c271d20c177be6c731e21336c,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:26:58,NULL,SlowedDownObject,a2849a6b8f1090871c293c16f795bb21,,,,,,,Level 3 Hazard,,,2
+19/12/2023 17:26:59,NULL,SlowedDownObject,dba1a616109002338eb401d0b096d071,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:27:02,NULL,SlowedDownObject,25c70f039324bca117fa4a9fe861fb0c,,,,,,,Level 3 Hazard,,,2
+19/12/2023 17:27:10,NULL,SlowedDownObject,6f9aa751bd862ab16cd5181d61294aef,,,,,,,Level 3 Platform 1,,,4
+19/12/2023 17:27:10,NULL,SlowedDownObject,6f9aa751bd862ab16cd5181d61294aef,,,,,,,Level 3 Platform 1,,,3
+19/12/2023 17:27:11,NULL,SlowedDownObject,24ad581422309e943a687ed3c8f72734,,,,,,,Level 3 Platform 1,,,2
+19/12/2023 17:27:20,NULL,SlowedDownObject,9099d56c547dc251f9733a3e0d9e4b30,,,,,,,Level 3 Platform 2,,,4.5
+19/12/2023 17:27:22,NULL,SlowedDownObject,29e27aaf09684df7ef770546993440f9,,,,,,,Level 3 Platform 2,,,3.5
+19/12/2023 17:27:40,NULL,SlowedDownObject,61f5713c5ed840808b4fdabdeb952731,,,,,,,Level 3 Platform 2,,,2.5
+19/12/2023 17:27:45,NULL,PlayerTime,8e37db4ee629009a96c693552121094d,,,,,,113.748161,,,,
+19/12/2023 17:27:45,NULL,PlayerTime,8e37db4ee629009a96c693552121094d,,,,,,113.748161,,,,
+19/12/2023 17:27:45,NULL,PlayerTime,8e37db4ee629009a96c693552121094d,,,,,,113.748161,,,,
+19/12/2023 17:30:39,NULL,SlowedDownObject,e0d66c1fe451006eb4b8b0153034edc6,,,,,,,Level 2 Hazard,,,4
+19/12/2023 17:30:39,NULL,SlowedDownObject,e0d66c1fe451006eb4b8b0153034edc6,,,,,,,Level 2 Hazard,,,3
+19/12/2023 17:31:25,NULL,SlowedDownObject,30166a3d46569583a53a3115e1b32998,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:32:33,NULL,SlowedDownObject,9d2cab0196aee16be1ac4bdf764f3d52,,,,,,,Level 3 Hazard,,,3.5
+19/12/2023 17:32:36,NULL,SlowedDownObject,a9351f7adb63c8ea0a1590a840718802,,,,,,,Level 3 Hazard,,,5
+19/12/2023 17:32:48,NULL,SlowedDownObject,f5dfeefcdd976507a5c6eada1d30243d,,,,,,,Level 3 Platform 1,,,4
+19/12/2023 17:32:49,NULL,SlowedDownObject,60cc1beaad575ee4e0326ebc904e0f2f,,,,,,,Level 3 Platform 1,,,3
+19/12/2023 17:32:50,NULL,SlowedDownObject,ae353ca49d11e2fbe3dd9ad3d26a4a8d,,,,,,,Level 3 Platform 1,,,2
+19/12/2023 17:32:57,NULL,SlowedDownObject,a843529da46fc67c5eecba530bb91b2e,,,,,,,Level 3 Platform 2,,,4.5
+19/12/2023 17:32:58,NULL,SlowedDownObject,c1618552211607ad890ece1258d4ee31,,,,,,,Level 3 Platform 2,,,3.5
+19/12/2023 17:33:04,NULL,PlayerTime,b30b377e490f9c2045bbf935799d1f0b,,,,,,135.57663,,,,
+19/12/2023 17:33:04,NULL,PlayerTime,b30b377e490f9c2045bbf935799d1f0b,,,,,,135.57663,,,,
+19/12/2023 17:33:04,NULL,PlayerTime,b30b377e490f9c2045bbf935799d1f0b,,,,,,135.57663,,,,
+19/12/2023 17:33:04,NULL,PlayerTime,b30b377e490f9c2045bbf935799d1f0b,,,,,,135.5766,,,,

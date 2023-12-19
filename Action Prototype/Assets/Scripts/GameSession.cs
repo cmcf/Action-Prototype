@@ -47,7 +47,8 @@ public class GameSession : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("Tutorial");
+
+        SceneManager.LoadScene("Level2");
     }
 
     IEnumerator Death()
