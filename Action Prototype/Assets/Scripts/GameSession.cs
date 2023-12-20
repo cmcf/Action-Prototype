@@ -45,12 +45,6 @@ public class GameSession : MonoBehaviour
         return currentCharacterState;
     }
 
-    public void PlayAgain()
-    {
-
-        SceneManager.LoadScene("Level2");
-    }
-
     IEnumerator Death()
     {
         // Stores player death location
@@ -77,6 +71,7 @@ public class GameSession : MonoBehaviour
         data.Add("LastLevelPlayed", lastActiveScene);
         AnalyticsManager.SendCustomEvent("LastLevelName", data);
 
+        Debug.Log("Quit");
         // Quits the game
         Application.Quit();
     }
